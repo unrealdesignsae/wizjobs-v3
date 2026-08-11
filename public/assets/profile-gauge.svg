@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 133.5" width="100%" role="img" aria-label="Practitioner, level 2 of 6" style="display: block; height: auto; overflow: visible;"><g fill="none" stroke-linecap="round"><path d="M 50.50 114.38 A 92 92 0 0 1 57.95 86.58" stroke="#06B6D4" stroke-width="12" opacity="1"></path><path d="M 67.57 69.92 A 92 92 0 0 1 87.92 49.57" stroke="#06B6D4" stroke-width="15" opacity="1"></path><path d="M 104.58 39.95 A 92 92 0 0 1 132.38 32.50" stroke="#D6E4F5" stroke-width="12" opacity="0.35"></path><path d="M 151.62 32.50 A 92 92 0 0 1 179.42 39.95" stroke="#D6E4F5" stroke-width="12" opacity="0.35"></path><path d="M 196.08 49.57 A 92 92 0 0 1 216.43 69.92" stroke="#D6E4F5" stroke-width="12" opacity="0.35"></path><path d="M 226.05 86.58 A 92 92 0 0 1 233.50 114.38" stroke="#D6E4F5" stroke-width="12" opacity="0.35"></path></g><g font-size="10" fill="#ffffff"><text x="41.54" y="97.08" text-anchor="end" opacity="0.45" font-weight="400">Explorer</text><text x="68.46" y="50.46" text-anchor="end" opacity="0.95" font-weight="600">Practitioner</text><text x="115.08" y="23.54" text-anchor="end" opacity="0.3" font-weight="400">Specialist</text><text x="168.92" y="23.54" text-anchor="start" opacity="0.3" font-weight="400">Strategist</text><text x="215.54" y="50.46" text-anchor="start" opacity="0.3" font-weight="400">Innovator</text><text x="242.46" y="97.08" text-anchor="start" opacity="0.3" font-weight="400">Visionary</text></g><text x="142" y="96.4" text-anchor="middle" font-size="24" font-weight="600" fill="#ffffff">Practitioner</text><text x="142" y="112.96000000000001" text-anchor="middle" font-size="10" letter-spacing="1" fill="rgba(255,255,255,0.5)">Level Progress</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 133.5" width="100%" role="img" aria-label="Practitioner, level 2 of 6" font-family="Roboto, Arial, sans-serif" style="display:block;height:auto;overflow:visible">
+  <g fill="none" stroke-linecap="round">
+    <path d="M 50.50 114.38 A 92 92 0 0 1 57.95 86.58" stroke="#06B6D4" stroke-width="12" />
+    <path d="M 67.57 69.92 A 92 92 0 0 1 87.92 49.57" stroke="#06B6D4" stroke-width="15" />
+    <path d="M 104.58 39.95 A 92 92 0 0 1 132.38 32.50" stroke="#D6E4F5" stroke-width="12" opacity=".35" />
+    <path d="M 151.62 32.50 A 92 92 0 0 1 179.42 39.95" stroke="#D6E4F5" stroke-width="12" opacity=".35" />
+    <path d="M 196.08 49.57 A 92 92 0 0 1 216.43 69.92" stroke="#D6E4F5" stroke-width="12" opacity=".35" />
+    <path d="M 226.05 86.58 A 92 92 0 0 1 233.50 114.38" stroke="#D6E4F5" stroke-width="12" opacity=".35" />
+  </g>
+  <g font-size="10" fill="#fff">
+    <text x="41.54" y="97.08" text-anchor="end" opacity=".45" font-weight="400">Explorer</text>
+    <text x="68.46" y="50.46" text-anchor="end" opacity=".95" font-weight="600">Practitioner</text>
+    <text x="115.08" y="23.54" text-anchor="end" opacity=".55" font-weight="400">Specialist</text>
+    <text x="168.92" y="23.54" text-anchor="start" opacity=".55" font-weight="400">Strategist</text>
+    <text x="215.54" y="50.46" text-anchor="start" opacity=".55" font-weight="400">Innovator</text>
+    <text x="242.46" y="97.08" text-anchor="start" opacity=".55" font-weight="400">Visionary</text>
+  </g>
+  <text x="142" y="96.4" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">Practitioner</text>
+  <text x="142" y="112.96" text-anchor="middle" font-size="10" letter-spacing="1" fill="#DCE3FF">Level Progress</text>
+</svg>

@@ -1,4 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
+import { WizyPet } from "./components/WizyPet";
+import { ExploreJobs, jobs as hubJobs } from "./components/ExploreJobs";
+import HomeV2 from "./components/HomeV2";
+import ProfileSummaryV2 from "./components/ProfileSummaryV2";
+import AnalyticsV2 from "./components/AnalyticsV2";
 import {
   ArrowRight,
   BadgeCheck,
@@ -10,6 +15,7 @@ import {
   ChevronUp,
   CircleAlert,
   ClipboardList,
+  Clock3,
   FileText,
   Filter,
   Flag,
@@ -19,10 +25,14 @@ import {
   Mail,
   MapPin,
   Menu,
+  MessageCircle,
+  Moon,
   Phone,
   Plus,
   RotateCcw,
+  Send,
   ShieldCheck,
+  Sun,
   Upload,
   Eye,
   X,
@@ -32,6 +42,7 @@ const ROUTES = {
   home: "/jobs-dashboard/",
   profile: "/profile-summary/",
   analytics: "/analytics/",
+  explore: "/explore-jobs/",
   settings: "/profile-settings/",
   login: "/login/",
   cv: "/cv-preview/",
@@ -89,12 +100,12 @@ function routeFromPath() {
 function Avatar({ size = 40, className = "" }) {
   return (
     <span className={`avatar ${className}`} style={{ width: size, height: size }}>
-      <img src="/assets/avatar.png" alt="ARIES BLACK" />
+      <img src="/assets/profile-aries-v2.png" alt="ARIES BLACK" />
     </span>
   );
 }
 
-function Header({ route, navigate }) {
+function Header({ route, navigate, theme, toggleTheme }) {
   const [languageOpen, setLanguageOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -110,6 +121,7 @@ function Header({ route, navigate }) {
     ["home", "Home"],
     ["profile", "Profile Summary"],
     ["analytics", "Analytics"],
+    ["explore", "Hub"],
   ];
 
   return (
@@ -129,6 +141,16 @@ function Header({ route, navigate }) {
           </div>
 
           <div className="header-actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            >
+              {theme === "dark" ? <Sun aria-hidden="true" /> : <Moon aria-hidden="true" />}
+              <span>{theme === "dark" ? "Light" : "Dark"}</span>
+            </button>
             <div className="menu-wrap language-wrap">
               <button
                 className={`language-button ${languageOpen ? "open" : ""}`}
@@ -575,16 +597,8 @@ function CertificateModal({ close }) {
   );
 }
 
-function AnalyticsPage() {
-  const [loading, setLoading] = useState(true);
+function LegacyAnalyticsPage() {
   const [viewTab, setViewTab] = useState("Titles");
-  useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), 1600);
-    return () => window.clearTimeout(timer);
-  }, []);
-
-  if (loading) return <div className="analytics-loading"><span /></div>;
-
   return (
     <main className="analytics-page">
       <div className="analytics-grid">
@@ -621,6 +635,39 @@ function AnalyticsPage() {
   );
 }
 
+function AnalyticsPage({ navigate }) {
+  const [period, setPeriod] = useState("30 days");
+  const factor = period === "7 days" ? .45 : period === "90 days" ? 2.4 : 1;
+  const metric = (value) => Math.round(value * factor);
+  const trend = [31, 46, 38, 58, 54, 73, 67, 82, 78, 91, 86, 100];
+  const openHub = (view = "explore") => {
+    window.history.pushState({}, "", `/explore-jobs/?hub=${view}`);
+    window.dispatchEvent(new PopStateEvent("popstate"));
+  };
+  const kpis = [
+    { label: "Search appearances", value: metric(642), delta: "+12%", Icon: Eye, note: "How often recruiters discovered you" },
+    { label: "Profile views", value: metric(128), delta: "+18%", Icon: BadgeCheck, note: "Recruiters who opened your profile" },
+    { label: "CV downloads", value: metric(17), delta: "+6", Icon: FileText, note: "Portfolio and CV downloads" },
+    { label: "Recruiter messages", value: metric(6), delta: "+2", Icon: MessageCircle, note: "New hiring conversations" },
+  ];
+  return (
+    <main className="career-analytics-page">
+      <header className="career-analytics-header"><div><span>Career performance</span><h1>Your job-search analytics</h1><p>Mock insights across visibility, matches, applications, recruiter conversations, and outcomes.</p></div><div className="analytics-period" aria-label="Analytics period">{["7 days", "30 days", "90 days"].map((item) => <button type="button" key={item} className={period === item ? "active" : ""} onClick={() => setPeriod(item)}>{item}</button>)}</div></header>
+      <section className="career-kpis">{kpis.map(({ label, value, delta, Icon, note }, index) => <article key={label} style={{ "--delay": `${index * 90}ms` }}><span><Icon /></span><div><small>{label}</small><strong>{value.toLocaleString()}</strong><p>{note}</p></div><b>{delta}</b></article>)}</section>
+      <section className="career-analytics-grid">
+        <article className="analytics-panel visibility-panel"><header><div><span>Visibility trend</span><h2>Recruiter discovery is growing</h2></div><strong>+18.4%</strong></header><div className="analytics-chart-legend"><span><i />Profile views</span><span><i />Search appearances</span></div><div className="analytics-trend-bars" key={period}>{trend.map((height, index) => <div key={index} style={{ "--bar": `${height}%`, "--delay": `${index * 45}ms` }}><span style={{ height: `${Math.max(18, height * .68)}%` }} /><i style={{ height: `${height}%` }} /><small>{index % 2 === 0 ? `${index + 1}` : ""}</small></div>)}</div><footer><span>1 {period === "7 days" ? "Aug" : "Jul"}</span><span>11 Aug</span></footer></article>
+        <article className="analytics-panel profile-health-panel"><header><div><span>Profile strength</span><h2>Ready to be discovered</h2></div></header><div className="profile-health"><div className="profile-health-ring" style={{ "--score": "82%" }}><span><strong>82%</strong>complete</span></div><div><p><span>Experience</span><b>96%</b></p><p><span>Skills</span><b>78%</b></p><p><span>Portfolio</span><b>72%</b></p></div></div><button type="button" onClick={() => navigate("profile")}>Strengthen profile <ArrowRight /></button></article>
+        <article className="analytics-panel funnel-panel"><header><div><span>Opportunity funnel</span><h2>From discovery to offer</h2></div><button type="button" onClick={() => openHub("applications")}>Open applications</button></header><div className="conversion-funnel" key={`funnel-${period}`}>{[["Matched",32],["Saved",3],["Applied",6],["Interview",2],["Offer",1]].map(([label,value], index) => <div key={label}><span>{label}<small>{index ? `${Math.round(value / 32 * 100)}% of matches` : "Best-fit roles"}</small></span><div><i style={{ width: `${Math.max(12, value / 32 * 100)}%`, "--delay": `${index * 90}ms` }} /></div><strong>{metric(value)}</strong></div>)}</div></article>
+        <article className="analytics-panel response-panel"><header><div><span>Recruiter engagement</span><h2>Conversation health</h2></div></header><div className="response-metrics"><div><MessageCircle /><strong>{metric(6)}</strong><span>Active threads</span></div><div><Clock3 /><strong>3h 12m</strong><span>Avg. response</span></div><div><Check /><strong>83%</strong><span>Reply rate</span></div></div><div className="response-callout"><span><CalendarDays /></span><div><strong>Intro call tomorrow</strong><small>Mosaic Events · 10:30</small></div><button type="button" onClick={() => openHub("messages")}>Prepare</button></div></article>
+        <article className="analytics-panel market-panel"><header><div><span>Market fit</span><h2>Where your strongest roles are</h2></div></header><div className="market-columns"><div className="market-list"><strong>Top locations</strong>{[["Dubai",18],["Abu Dhabi",7],["Remote",5],["Sharjah",2]].map(([name,count]) => <p key={name}><span>{name}</span><i><b style={{ width: `${count / 18 * 100}%` }} /></i><em>{count}</em></p>)}</div><div className="market-list"><strong>Top role families</strong>{[["3D & Realtime",12],["Creative Tech",9],["Experiential",7],["Motion",4]].map(([name,count]) => <p key={name}><span>{name}</span><i><b style={{ width: `${count / 12 * 100}%` }} /></i><em>{count}</em></p>)}</div></div></article>
+        <article className="analytics-panel skills-panel"><header><div><span>Skill alignment</span><h2>Skills driving your matches</h2></div></header><div className="skill-insight-list">{[["3D visualization",94],["Realtime workflows",88],["Creative direction",82],["Client presentation",71]].map(([skill,score]) => <div key={skill}><span>{skill}<b>{score}%</b></span><i><b style={{ width: `${score}%` }} /></i></div>)}</div><div className="analytics-recommendation"><Lightbulb /><div><strong>Best next move</strong><p>Add two measurable realtime-project outcomes to increase alignment for 7 high-fit roles.</p></div></div></article>
+      </section>
+      <section className="analytics-job-preview"><header><div><span>High-signal opportunities</span><h2>Roles responding to your profile</h2></div><button type="button" onClick={() => openHub("daily")}>See daily matches <ArrowRight /></button></header><div>{hubJobs.slice(0,3).map((job) => <button type="button" key={job.id} onClick={() => { window.history.pushState({}, "", `/explore-jobs/?hub=job&job=${job.id}`); window.dispatchEvent(new PopStateEvent("popstate")); }}><img src={job.image} alt="" /><span><strong>{job.role}</strong><small>{job.company} · {job.location}</small><em>{job.match}% match</em></span><ArrowRight /></button>)}</div></section>
+      <p className="analytics-source-note">Prototype data · Updated 11 Aug 2026 · Metrics are illustrative and designed to connect to live platform events later.</p>
+    </main>
+  );
+}
+
 function AnalyticsHeader({ title }) {
   return (
     <header className="analytics-header">
@@ -631,27 +678,29 @@ function AnalyticsHeader({ title }) {
 }
 
 function SettingsPage() {
-  const [open, setOpen] = useState("profile");
+  const [open, setOpen] = useState({ profile: true, contacts: true, blocks: false });
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 1400);
     return () => window.clearTimeout(timer);
   }, []);
 
+  const toggleSection = (name) => (next) => setOpen((current) => ({ ...current, [name]: next === name }));
+
   return (
     <main className="settings-page">
       <h1>Account Settings</h1>
-      <SettingsAccordion title="Profile information" name="profile" open={open} setOpen={setOpen}>
+      <SettingsAccordion title="Profile information" name="profile" open={open} setOpen={toggleSection("profile")}>
         {loading ? <SettingsSkeleton /> : <ProfileInformation />}
       </SettingsAccordion>
-      <SettingsAccordion title="Contacts Info" name="contacts" open={open} setOpen={setOpen}><ContactsInfo /></SettingsAccordion>
-      <SettingsAccordion title="Block and reports" name="blocks" open={open} setOpen={setOpen}><BlockReports /></SettingsAccordion>
+      <SettingsAccordion title="Contacts Info" name="contacts" open={open} setOpen={toggleSection("contacts")}><ContactsInfo /></SettingsAccordion>
+      <SettingsAccordion title="Block and reports" name="blocks" open={open} setOpen={toggleSection("blocks")}><BlockReports /></SettingsAccordion>
     </main>
   );
 }
 
 function SettingsAccordion({ title, name, open, setOpen, children }) {
-  const active = open === name;
+  const active = Boolean(open[name]);
   return (
     <section className={`settings-accordion ${active ? "open" : ""}`}>
       <button className="accordion-heading" onClick={() => setOpen(active ? "" : name)}><span>{title}</span>{active ? <span className="minus">−</span> : <Plus />}</button>
@@ -758,8 +807,158 @@ function CvPreview() {
   );
 }
 
+const coachMoments = [
+  { pose: "Ready", line: "Let’s get you interview-ready." },
+  { pose: "Thinking", line: "Give me a second—I’m shaping your strongest answer." },
+  { pose: "Presenting", line: "Lead with the result, then explain how you achieved it." },
+  { pose: "Listening", line: "That’s a good start. What changed because of your work?" },
+  { pose: "Encouraging", line: "You’ve got this. Keep the answer clear and specific." },
+  { pose: "Celebrating", line: "Excellent answer! That sounded confident." },
+];
+
+const WIZY_CLIPS = {
+  "idle-breathe": { fps: 10, moment: 0, next: "idle-glance" },
+  "idle-glance": { fps: 10, moment: 0, next: "idle-shift" },
+  "idle-shift": { fps: 10, moment: 0, next: "idle-breathe" },
+  "greet-pop": { fps: 12, moment: 5, next: "greet-wave" },
+  "greet-wave": { fps: 12, moment: 5, next: "listen-tilt" },
+  "listen-lean": { fps: 10, moment: 3, next: "listen-tilt" },
+  "listen-tilt": { fps: 10, moment: 3, next: "idle-breathe" },
+  "think-idea": { fps: 10, moment: 1, next: "coach-explain" },
+  "coach-explain": { fps: 12, moment: 2, next: "idle-breathe" },
+  "coach-point": { fps: 12, moment: 2, next: "idle-breathe" },
+  "coach-thumb": { fps: 12, moment: 4, next: "idle-breathe" },
+  "celebrate-clap": { fps: 12, moment: 5, next: "celebrate-hop" },
+  "celebrate-hop": { fps: 12, moment: 5, next: "idle-breathe" },
+  "playful-tap": { fps: 10, moment: 0, next: "playful-stumble" },
+  "playful-stumble": { fps: 12, moment: 0, next: "idle-breathe" },
+};
+
+const WIZY_CLIP_NAMES = Object.keys(WIZY_CLIPS);
+const wizyFramePath = (clip, frame) => `/assets/wizy/clips/${clip}/${String(frame + 1).padStart(2, "0")}.webp`;
+
+const quickPrompts = ["Practice an interview", "Improve my CV", "Find matching jobs"];
+
+function WizyCoach() {
+  const [clip, setClip] = useState("idle-breathe");
+  const [frame, setFrame] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [input, setInput] = useState("");
+  const [reducedMotion, setReducedMotion] = useState(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  const [messages, setMessages] = useState([
+    { from: "wizzy", text: "Hi! I’m Wizy, your job-search coach. What should we work on?" },
+  ]);
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(media.matches);
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    WIZY_CLIP_NAMES.forEach((name) => {
+      for (let index = 0; index < 8; index += 1) new Image().src = wizyFramePath(name, index);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion) return undefined;
+    const timer = window.setTimeout(() => {
+      if (frame < 7) {
+        setFrame((value) => value + 1);
+        return;
+      }
+      setClip(WIZY_CLIPS[clip].next);
+      setFrame(0);
+    }, 1000 / WIZY_CLIPS[clip].fps);
+    return () => window.clearTimeout(timer);
+  }, [clip, frame, reducedMotion]);
+
+  const playClip = (name) => {
+    setClip(name);
+    setFrame(0);
+  };
+
+  useEffect(() => {
+    if (open || reducedMotion) return undefined;
+    const playfulTimer = window.setTimeout(() => playClip("playful-tap"), 18000);
+    return () => window.clearTimeout(playfulTimer);
+  }, [open, reducedMotion]);
+
+  const reply = (prompt) => {
+    const clean = prompt.trim();
+    if (!clean) return;
+    setMessages((items) => [
+      ...items,
+      { from: "user", text: clean },
+      { from: "wizzy", text: clean.toLowerCase().includes("cv")
+        ? "Let’s sharpen your CV. Start with one achievement you’re proud of, including a measurable result."
+        : clean.toLowerCase().includes("match")
+          ? "I’ll help you focus the search. Which role, location, and work mode are you targeting?"
+          : "Great—let’s rehearse. Tell me about a project where you solved a difficult problem." },
+    ]);
+    setInput("");
+    const lower = clean.toLowerCase();
+    if (["offer", "hired", "success", "passed", "great news"].some((word) => lower.includes(word))) playClip("celebrate-clap");
+    else if (lower.includes("match")) playClip("coach-point");
+    else if (lower.includes("cv")) playClip("coach-explain");
+    else if (["thanks", "thank you", "got it"].some((word) => lower.includes(word))) playClip("coach-thumb");
+    else playClip("think-idea");
+  };
+
+  const currentMoment = coachMoments[WIZY_CLIPS[clip].moment];
+
+  return (
+    <aside className={`wizzy-coach ${open ? "chat-open" : ""}`} aria-label="Wizy job coach">
+      <div className="wizzy-nudge" aria-hidden={open}>
+        <strong>{currentMoment.pose}</strong>
+        <span>{currentMoment.line}</span>
+      </div>
+
+      {open && (
+        <section className="wizzy-chat" aria-label="Chat with Wizy">
+          <header>
+            <span className="wizzy-status-dot" />
+            <div><strong>Wizy</strong><small>Interview coach · Online</small></div>
+            <button onClick={() => setOpen(false)} aria-label="Close chat"><X /></button>
+          </header>
+          <div className="wizzy-messages" aria-live="polite">
+            {messages.map((message, index) => <p key={`${message.from}-${index}`} className={message.from}>{message.text}</p>)}
+          </div>
+          <div className="wizzy-prompts">
+            {quickPrompts.map((prompt) => <button key={prompt} onClick={() => reply(prompt)}>{prompt}</button>)}
+          </div>
+          <form onSubmit={(event) => { event.preventDefault(); reply(input); }}>
+            <input value={input} onFocus={() => playClip("listen-lean")} onChange={(event) => { setInput(event.target.value); if (event.target.value.length === 1) playClip("listen-lean"); }} placeholder="Ask Wizy anything…" aria-label="Message Wizy" />
+            <button aria-label="Send message" type="submit"><Send /></button>
+          </form>
+        </section>
+      )}
+
+      <button className="wizzy-pet" onClick={() => { setOpen((value) => !value); playClip(open ? "idle-breathe" : "greet-pop"); }} aria-label={open ? "Close Wizy chat" : "Open Wizy chat"}>
+        <span className="wizzy-stage">
+          <img className="wizzy-frame active" src={wizyFramePath(clip, reducedMotion ? 0 : frame)} alt={`Wizy ${currentMoment.pose.toLowerCase()}`} />
+        </span>
+        <span className="wizzy-chat-icon"><MessageCircle /></span>
+      </button>
+    </aside>
+  );
+}
+
 export function App() {
   const [route, setRoute] = useState(routeFromPath);
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = window.localStorage.getItem("wizjobs-theme");
+    if (savedTheme === "light" || savedTheme === "dark") return savedTheme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+    window.localStorage.setItem("wizjobs-theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const onPop = () => setRoute(routeFromPath());
@@ -778,12 +977,14 @@ export function App() {
   if (route === "cv") return <CvPreview />;
 
   return (
-    <div className="app-shell">
-      <Header route={route} navigate={navigate} />
-      {route === "home" && <HomePage />}
-      {route === "profile" && <ProfilePage />}
-      {route === "analytics" && <AnalyticsPage />}
+    <div className={`app-shell v2-route-${route}`}>
+      <Header route={route} navigate={navigate} theme={theme} toggleTheme={() => setTheme((value) => value === "dark" ? "light" : "dark")} />
+      {route === "home" && <HomeV2 navigate={navigate} />}
+      {route === "profile" && <ProfileSummaryV2 navigate={navigate} />}
+      {route === "analytics" && <AnalyticsV2 navigate={navigate} />}
+      {route === "explore" && <ExploreJobs />}
       {route === "settings" && <SettingsPage />}
+      <WizyPet />
     </div>
   );
 }

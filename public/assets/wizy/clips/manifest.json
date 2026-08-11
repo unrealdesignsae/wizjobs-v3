@@ -1,0 +1,227 @@
+{
+  "idle-breathe": {
+    "fps": 10,
+    "loop": true,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/idle-breathe/01.webp",
+      "/assets/wizy/clips/idle-breathe/02.webp",
+      "/assets/wizy/clips/idle-breathe/03.webp",
+      "/assets/wizy/clips/idle-breathe/04.webp",
+      "/assets/wizy/clips/idle-breathe/05.webp",
+      "/assets/wizy/clips/idle-breathe/06.webp",
+      "/assets/wizy/clips/idle-breathe/07.webp",
+      "/assets/wizy/clips/idle-breathe/08.webp"
+    ]
+  },
+  "idle-glance": {
+    "fps": 10,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/idle-glance/01.webp",
+      "/assets/wizy/clips/idle-glance/02.webp",
+      "/assets/wizy/clips/idle-glance/03.webp",
+      "/assets/wizy/clips/idle-glance/04.webp",
+      "/assets/wizy/clips/idle-glance/05.webp",
+      "/assets/wizy/clips/idle-glance/06.webp",
+      "/assets/wizy/clips/idle-glance/07.webp",
+      "/assets/wizy/clips/idle-glance/08.webp"
+    ]
+  },
+  "idle-shift": {
+    "fps": 10,
+    "loop": true,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/idle-shift/01.webp",
+      "/assets/wizy/clips/idle-shift/02.webp",
+      "/assets/wizy/clips/idle-shift/03.webp",
+      "/assets/wizy/clips/idle-shift/04.webp",
+      "/assets/wizy/clips/idle-shift/05.webp",
+      "/assets/wizy/clips/idle-shift/06.webp",
+      "/assets/wizy/clips/idle-shift/07.webp",
+      "/assets/wizy/clips/idle-shift/08.webp"
+    ]
+  },
+  "greet-pop": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/greet-pop/01.webp",
+      "/assets/wizy/clips/greet-pop/02.webp",
+      "/assets/wizy/clips/greet-pop/03.webp",
+      "/assets/wizy/clips/greet-pop/04.webp",
+      "/assets/wizy/clips/greet-pop/05.webp",
+      "/assets/wizy/clips/greet-pop/06.webp",
+      "/assets/wizy/clips/greet-pop/07.webp",
+      "/assets/wizy/clips/greet-pop/08.webp"
+    ]
+  },
+  "greet-wave": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/greet-wave/01.webp",
+      "/assets/wizy/clips/greet-wave/02.webp",
+      "/assets/wizy/clips/greet-wave/03.webp",
+      "/assets/wizy/clips/greet-wave/04.webp",
+      "/assets/wizy/clips/greet-wave/05.webp",
+      "/assets/wizy/clips/greet-wave/06.webp",
+      "/assets/wizy/clips/greet-wave/07.webp",
+      "/assets/wizy/clips/greet-wave/08.webp"
+    ]
+  },
+  "listen-lean": {
+    "fps": 10,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/listen-lean/01.webp",
+      "/assets/wizy/clips/listen-lean/02.webp",
+      "/assets/wizy/clips/listen-lean/03.webp",
+      "/assets/wizy/clips/listen-lean/04.webp",
+      "/assets/wizy/clips/listen-lean/05.webp",
+      "/assets/wizy/clips/listen-lean/06.webp",
+      "/assets/wizy/clips/listen-lean/07.webp",
+      "/assets/wizy/clips/listen-lean/08.webp"
+    ]
+  },
+  "listen-tilt": {
+    "fps": 10,
+    "loop": true,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/listen-tilt/01.webp",
+      "/assets/wizy/clips/listen-tilt/02.webp",
+      "/assets/wizy/clips/listen-tilt/03.webp",
+      "/assets/wizy/clips/listen-tilt/04.webp",
+      "/assets/wizy/clips/listen-tilt/05.webp",
+      "/assets/wizy/clips/listen-tilt/06.webp",
+      "/assets/wizy/clips/listen-tilt/07.webp",
+      "/assets/wizy/clips/listen-tilt/08.webp"
+    ]
+  },
+  "think-idea": {
+    "fps": 10,
+    "loop": true,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/think-idea/01.webp",
+      "/assets/wizy/clips/think-idea/02.webp",
+      "/assets/wizy/clips/think-idea/03.webp",
+      "/assets/wizy/clips/think-idea/04.webp",
+      "/assets/wizy/clips/think-idea/05.webp",
+      "/assets/wizy/clips/think-idea/06.webp",
+      "/assets/wizy/clips/think-idea/07.webp",
+      "/assets/wizy/clips/think-idea/08.webp"
+    ]
+  },
+  "coach-explain": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/coach-explain/01.webp",
+      "/assets/wizy/clips/coach-explain/02.webp",
+      "/assets/wizy/clips/coach-explain/03.webp",
+      "/assets/wizy/clips/coach-explain/04.webp",
+      "/assets/wizy/clips/coach-explain/05.webp",
+      "/assets/wizy/clips/coach-explain/06.webp",
+      "/assets/wizy/clips/coach-explain/07.webp",
+      "/assets/wizy/clips/coach-explain/08.webp"
+    ]
+  },
+  "coach-point": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/coach-point/01.webp",
+      "/assets/wizy/clips/coach-point/02.webp",
+      "/assets/wizy/clips/coach-point/03.webp",
+      "/assets/wizy/clips/coach-point/04.webp",
+      "/assets/wizy/clips/coach-point/05.webp",
+      "/assets/wizy/clips/coach-point/06.webp",
+      "/assets/wizy/clips/coach-point/07.webp",
+      "/assets/wizy/clips/coach-point/08.webp"
+    ]
+  },
+  "coach-thumb": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/coach-thumb/01.webp",
+      "/assets/wizy/clips/coach-thumb/02.webp",
+      "/assets/wizy/clips/coach-thumb/03.webp",
+      "/assets/wizy/clips/coach-thumb/04.webp",
+      "/assets/wizy/clips/coach-thumb/05.webp",
+      "/assets/wizy/clips/coach-thumb/06.webp",
+      "/assets/wizy/clips/coach-thumb/07.webp",
+      "/assets/wizy/clips/coach-thumb/08.webp"
+    ]
+  },
+  "celebrate-clap": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/celebrate-clap/01.webp",
+      "/assets/wizy/clips/celebrate-clap/02.webp",
+      "/assets/wizy/clips/celebrate-clap/03.webp",
+      "/assets/wizy/clips/celebrate-clap/04.webp",
+      "/assets/wizy/clips/celebrate-clap/05.webp",
+      "/assets/wizy/clips/celebrate-clap/06.webp",
+      "/assets/wizy/clips/celebrate-clap/07.webp",
+      "/assets/wizy/clips/celebrate-clap/08.webp"
+    ]
+  },
+  "celebrate-hop": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/celebrate-hop/01.webp",
+      "/assets/wizy/clips/celebrate-hop/02.webp",
+      "/assets/wizy/clips/celebrate-hop/03.webp",
+      "/assets/wizy/clips/celebrate-hop/04.webp",
+      "/assets/wizy/clips/celebrate-hop/05.webp",
+      "/assets/wizy/clips/celebrate-hop/06.webp",
+      "/assets/wizy/clips/celebrate-hop/07.webp",
+      "/assets/wizy/clips/celebrate-hop/08.webp"
+    ]
+  },
+  "playful-tap": {
+    "fps": 10,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/playful-tap/01.webp",
+      "/assets/wizy/clips/playful-tap/02.webp",
+      "/assets/wizy/clips/playful-tap/03.webp",
+      "/assets/wizy/clips/playful-tap/04.webp",
+      "/assets/wizy/clips/playful-tap/05.webp",
+      "/assets/wizy/clips/playful-tap/06.webp",
+      "/assets/wizy/clips/playful-tap/07.webp",
+      "/assets/wizy/clips/playful-tap/08.webp"
+    ]
+  },
+  "playful-stumble": {
+    "fps": 12,
+    "loop": false,
+    "registration": "shared-size-center-baseline",
+    "frames": [
+      "/assets/wizy/clips/playful-stumble/01.webp",
+      "/assets/wizy/clips/playful-stumble/02.webp",
+      "/assets/wizy/clips/playful-stumble/03.webp",
+      "/assets/wizy/clips/playful-stumble/04.webp",
+      "/assets/wizy/clips/playful-stumble/05.webp",
+      "/assets/wizy/clips/playful-stumble/06.webp",
+      "/assets/wizy/clips/playful-stumble/07.webp",
+      "/assets/wizy/clips/playful-stumble/08.webp"
+    ]
+  }
+}
