@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1F3A">
+  <title>WizJobs Research Readout</title>
+  <link rel="stylesheet" href="design-tokens.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: #061426;
+      color: var(--wj-gray-900);
+      font-family: var(--font-family);
+      -webkit-font-smoothing: antialiased;
+    }
+    button { font: inherit; }
+    .deck {
+      position: relative;
+      width: min(100vw, 177.7778vh);
+      height: min(100vh, 56.25vw);
+      overflow: hidden;
+      background: var(--wj-white);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      gap: var(--space-5);
+      padding: clamp(32px, 4vw, 64px);
+      overflow: hidden;
+      background: var(--wj-white);
+    }
+    .slide.active { display: flex; }
+    .slide.soft { background: var(--wj-gray-50); }
+    .slide.dark { background: var(--wj-navy-950); color: var(--wj-white); }
+    .slide::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .slide.active .reveal {
+      animation: rise var(--motion-enter) var(--motion-ease) both;
+      animation-delay: calc(var(--i, 0) * 55ms);
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .topbar {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      min-height: 30px;
+      color: var(--wj-gray-600);
+      font-size: var(--text-micro);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .dark .topbar { color: rgba(255,255,255,.64); }
+    .brand-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: inherit;
+      letter-spacing: -.01em;
+      text-transform: none;
+      font-size: var(--text-caption);
+      font-weight: 700;
+    }
+    .mark {
+      width: 25px;
+      height: 19px;
+      display: inline-block;
+      position: relative;
+    }
+    .mark::before, .mark::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      width: 8px;
+      height: 18px;
+      border-radius: 3px;
+      background: var(--wj-blue-500);
+      transform: skew(30deg);
+    }
+    .mark::before { left: 3px; }
+    .mark::after { right: 3px; background: var(--wj-blue-400); transform: skew(-30deg); }
+    .section-label { justify-self: center; }
+    .slide-no { justify-self: end; font-variant-numeric: tabular-nums; }
+    .content {
+      position: relative;
+      z-index: 2;
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--space-5);
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { letter-spacing: -.035em; }
+    h1 { max-width: 1100px; font-size: var(--text-display); line-height: 1.06; font-weight: 600; }
+    h2 { max-width: 1080px; font-size: var(--text-h1); line-height: 1.15; font-weight: 600; }
+    h3 { font-size: var(--text-h2); line-height: 1.2; font-weight: 600; }
+    p { font-size: var(--text-body); line-height: 1.5; }
+    .muted { color: var(--wj-gray-600); }
+    .dark .muted { color: rgba(255,255,255,.68); }
+    .blue { color: var(--wj-blue-500); }
+    .dark .blue { color: var(--wj-blue-400); }
+    .accent-rule { width: 68px; height: 4px; border-radius: var(--radius-pill); background: var(--wj-blue-500); }
+    .kicker {
+      color: var(--wj-blue-500);
+      font-size: var(--text-caption);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .dark .kicker { color: var(--wj-blue-400); }
+    .source {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-4);
+      color: var(--wj-gray-600);
+      font-size: var(--text-micro);
+      line-height: 1.35;
+    }
+    .source strong { color: var(--wj-gray-900); font-weight: 600; }
+    .dark .source { color: rgba(255,255,255,.56); }
+    .dark .source strong { color: var(--wj-white); }
+    .insight {
+      padding: var(--space-4) var(--space-5);
+      border-left: 4px solid var(--wj-blue-500);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      background: var(--wj-blue-100);
+      color: var(--wj-navy-950);
+      font-weight: 600;
+    }
+    .dark .insight { background: rgba(96,165,250,.13); color: var(--wj-white); border-left-color: var(--wj-blue-400); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); min-height: 0; align-items: stretch; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+    .card {
+      padding: var(--space-5);
+      border: 1px solid var(--wj-gray-100);
+      border-radius: var(--radius-md);
+      background: var(--wj-white);
+    }
+    .dark .card { border-color: rgba(255,255,255,.12); background: var(--wj-navy-900); }
+    .card-label { margin-bottom: var(--space-3); color: var(--wj-gray-600); font-size: var(--text-caption); font-weight: 600; }
+    .dark .card-label { color: rgba(255,255,255,.6); }
+    .metric { font-size: clamp(38px, 4.4vw, 58px); line-height: 1; font-weight: 600; letter-spacing: -.05em; color: var(--wj-navy-950); }
+    .dark .metric { color: var(--wj-white); }
+    .chart-panel {
+      position: relative;
+      min-height: 0;
+      padding: var(--space-5);
+      border: 1px solid var(--wj-gray-100);
+      border-radius: var(--radius-lg);
+      background: var(--wj-white);
+      box-shadow: var(--shadow-soft);
+    }
+    .chart-panel canvas { width: 100% !important; height: 100% !important; }
+    .chart-title { position: absolute; z-index: 2; top: var(--space-5); left: var(--space-5); }
+    .chart-title strong { display: block; color: var(--wj-navy-950); font-size: var(--text-caption); }
+    .chart-title span { display: block; margin-top: 2px; color: var(--wj-gray-600); font-size: var(--text-micro); }
+    .title-slide .content { justify-content: center; width: 70%; }
+    .title-slide h1 { margin-top: var(--space-2); font-size: clamp(56px, 7vw, 92px); }
+    .title-slide .subtitle { max-width: 720px; font-size: clamp(24px, 2.7vw, 34px); line-height: 1.25; color: rgba(255,255,255,.78); }
+    .title-meta { display: flex; gap: var(--space-5); align-items: center; color: rgba(255,255,255,.62); font-size: var(--text-caption); }
+    .shape { position: absolute; z-index: 1; border-radius: var(--radius-lg); background: rgba(37,99,235,.26); transform: rotate(45deg); }
+    .shape.one { width: 340px; height: 340px; right: -75px; top: 125px; }
+    .shape.two { width: 230px; height: 230px; right: 150px; bottom: -130px; border-radius: 50%; background: rgba(96,165,250,.2); }
+    .shape.three { width: 180px; height: 180px; right: 330px; bottom: -90px; background: rgba(37,99,235,.2); }
+    .verdict { width: min(1100px, 92%); }
+    .verdict h1 { font-size: clamp(44px, 5.6vw, 76px); }
+    .verdict .promise { margin-top: var(--space-6); max-width: 900px; color: rgba(255,255,255,.68); font-size: clamp(19px, 2vw, 26px); }
+    .market-layout { display: grid; grid-template-columns: .9fr 1.15fr; gap: var(--space-7); min-height: 0; flex: 1; }
+    .market-copy { display: flex; flex-direction: column; justify-content: center; gap: var(--space-5); }
+    .fact-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    .mini-fact { padding-top: var(--space-4); border-top: 1px solid var(--wj-gray-100); }
+    .mini-fact strong { display: block; font-size: 24px; color: var(--wj-navy-950); }
+    .mini-fact span { display: block; margin-top: var(--space-2); color: var(--wj-gray-600); font-size: var(--text-caption); line-height: 1.4; }
+    .matrix-note {
+      position: absolute;
+      right: var(--space-5);
+      top: var(--space-5);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-pill);
+      background: var(--wj-blue-100);
+      color: var(--wj-blue-600);
+      font-size: var(--text-micro);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .axis-label { position: absolute; color: var(--wj-gray-600); font-size: var(--text-micro); font-weight: 600; }
+    .axis-label.x { left: 50%; bottom: 8px; transform: translateX(-50%); }
+    .axis-label.y { left: 3px; top: 50%; transform: rotate(-90deg) translateX(-50%); transform-origin: top left; }
+    .comparison-copy { display: flex; flex-direction: column; justify-content: center; gap: var(--space-4); }
+    .comparison-copy .insight { margin-top: var(--space-3); }
+    .jtbd-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: var(--space-7); min-height: 0; flex: 1; align-items: center; }
+    .job-list { display: flex; flex-direction: column; gap: var(--space-3); }
+    .job {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+      padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--wj-gray-100);
+    }
+    .job:last-child { border-bottom: 0; }
+    .job-num { color: var(--wj-blue-500); font-size: var(--text-caption); font-weight: 700; }
+    .job strong { display: block; margin-bottom: var(--space-1); font-size: 19px; }
+    .job span { color: var(--wj-gray-600); font-size: var(--text-caption); line-height: 1.4; }
+    .promise-card { padding: var(--space-7); border-radius: var(--radius-lg); background: var(--wj-navy-950); color: var(--wj-white); }
+    .promise-card blockquote { margin: 0; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.35; letter-spacing: -.025em; }
+    .promise-card p { margin-top: var(--space-5); color: rgba(255,255,255,.6); font-size: var(--text-caption); }
+    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+    .pillar { min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-5); border-radius: var(--radius-md); background: var(--wj-white); border: 1px solid var(--wj-gray-100); }
+    .pillar .num { color: var(--wj-blue-500); font-size: var(--text-caption); font-weight: 700; }
+    .pillar h3 { margin-top: var(--space-5); font-size: 20px; }
+    .pillar p { margin-top: var(--space-2); color: var(--wj-gray-600); font-size: var(--text-caption); line-height: 1.4; }
+    .system { display: grid; grid-template-columns: 1fr 90px 1fr 90px 1fr; align-items: center; gap: var(--space-3); }
+    .node { min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-6); border-radius: var(--radius-lg); background: var(--wj-white); border: 1px solid var(--wj-gray-100); }
+    .node.wizy { background: var(--wj-navy-950); color: var(--wj-white); border-color: var(--wj-navy-950); }
+    .node .node-top { display: flex; justify-content: space-between; align-items: center; }
+    .node .node-id { color: var(--wj-blue-500); font-size: var(--text-caption); font-weight: 700; }
+    .node.wizy .node-id { color: var(--wj-blue-400); }
+    .node p { margin-top: var(--space-3); color: var(--wj-gray-600); font-size: var(--text-caption); }
+    .node.wizy p { color: rgba(255,255,255,.65); }
+    .arrow { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); color: var(--wj-blue-500); }
+    .arrow svg { width: 100%; height: 26px; }
+    .arrow span { color: var(--wj-gray-600); font-size: 10px; font-weight: 600; text-align: center; }
+    .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+    .risk-col { padding: var(--space-5); border-radius: var(--radius-lg); background: var(--wj-white); }
+    .risk-col h3 { display: flex; align-items: center; gap: var(--space-3); font-size: 21px; }
+    .risk-col h3::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--wj-danger); }
+    .risk-col.guard h3::before { background: var(--wj-success); }
+    .risk-col ul { margin: var(--space-5) 0 0; padding: 0; list-style: none; }
+    .risk-col li { position: relative; padding: var(--space-3) 0 var(--space-3) 22px; border-bottom: 1px solid var(--wj-gray-100); font-size: 15px; line-height: 1.4; }
+    .risk-col li:last-child { border-bottom: 0; }
+    .risk-col li::before { content: ""; position: absolute; left: 0; top: 20px; width: 8px; height: 2px; background: var(--wj-gray-400); }
+    .bets { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: var(--space-5); }
+    .bet { display: flex; flex-direction: column; min-height: 300px; padding: var(--space-6); border-radius: var(--radius-lg); background: var(--wj-white); color: var(--wj-gray-900); }
+    .bet.primary { background: var(--wj-blue-600); color: var(--wj-white); }
+    .bet .order { color: var(--wj-blue-500); font-size: var(--text-caption); font-weight: 700; }
+    .bet.primary .order { color: var(--wj-blue-100); }
+    .bet h3 { margin-top: auto; font-size: clamp(22px, 2.5vw, 30px); }
+    .bet p { margin-top: var(--space-3); color: var(--wj-gray-600); font-size: var(--text-caption); }
+    .bet.primary p { color: rgba(255,255,255,.72); }
+    .bet .measure { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--wj-gray-100); font-size: var(--text-micro); font-weight: 600; }
+    .bet.primary .measure { border-color: rgba(255,255,255,.25); }
+    .sources-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--space-7); align-items: start; }
+    .source-list { display: flex; flex-direction: column; }
+    .source-item { display: grid; grid-template-columns: 32px 1fr; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .source-item:last-child { border-bottom: 0; }
+    .source-item .n { color: var(--wj-blue-400); font-size: var(--text-micro); font-weight: 700; }
+    .source-item strong { display: block; font-size: 15px; }
+    .source-item span { display: block; margin-top: 3px; color: rgba(255,255,255,.55); font-size: var(--text-micro); line-height: 1.35; }
+    .confidence { padding: var(--space-6); border-radius: var(--radius-lg); background: var(--wj-navy-900); }
+    .confidence-row { margin-top: var(--space-5); }
+    .confidence-head { display: flex; justify-content: space-between; margin-bottom: var(--space-2); font-size: var(--text-caption); }
+    .confidence-track { height: 8px; border-radius: var(--radius-pill); background: rgba(255,255,255,.12); overflow: hidden; }
+    .confidence-fill { height: 100%; border-radius: inherit; background: var(--wj-blue-400); }
+    .confidence small { display: block; margin-top: var(--space-5); color: rgba(255,255,255,.55); line-height: 1.5; }
+    .controls {
+      position: fixed;
+      z-index: 20;
+      right: 18px;
+      bottom: 18px;
+      display: flex;
+      gap: 8px;
+      opacity: 0;
+      transition: opacity 180ms ease;
+    }
+    body:hover .controls, .controls:focus-within { opacity: 1; }
+    .controls button {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      background: rgba(11,31,58,.88);
+      color: white;
+      cursor: pointer;
+    }
+    .controls button:hover { background: var(--wj-blue-600); }
+    .controls svg { width: 18px; height: 18px; }
+    .progress { position: absolute; z-index: 10; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(176,176,176,.25); }
+    .progress span { display: block; height: 100%; width: 8.333%; background: var(--wj-blue-500); transition: width 260ms var(--motion-ease); }
+    .rotate-note { display: none; }
+    @media (max-width: 900px) {
+      :root { --text-body: 14px; --text-caption: 11px; --text-micro: 9px; }
+      .slide { padding: 24px; gap: 14px; }
+      .topbar { min-height: 20px; }
+      .content { gap: 14px; }
+      .chart-panel, .card, .pillar { padding: 14px; }
+      .pillar { min-height: 112px; }
+      .node { min-height: 190px; padding: 18px; }
+      .job { padding: 8px 0; }
+      .bet { min-height: 220px; padding: 20px; }
+    }
+    @media (orientation: portrait) {
+      .rotate-note {
+        position: fixed;
+        z-index: 50;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background: var(--wj-navy-950);
+        color: white;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    @media (max-width: 900px) and (max-height: 500px) {
+      .rotate-note {
+        position: fixed;
+        z-index: 50;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background: var(--wj-navy-950);
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 0;
+      }
+      .rotate-note::after {
+        content: "This presentation is designed for a laptop, desktop, or meeting-room display.";
+        max-width: 420px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" id="deck" aria-live="polite">
+    <section class="slide dark title-slide active" data-section="Research readout" aria-label="Slide 1 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Research readout</div><div class="slide-no">01 / 12</div></div>
+      <div class="content">
+        <div class="kicker reveal" style="--i:1">General audience · Dubai first</div>
+        <h1 class="reveal" style="--i:2">WizJobs</h1>
+        <p class="subtitle reveal" style="--i:3">Research readout: where a local hiring marketplace can actually win.</p>
+        <div class="accent-rule reveal" style="--i:4"></div>
+        <div class="title-meta reveal" style="--i:5"><span>Internal design review</span><span>11 August 2026</span></div>
+      </div>
+      <div class="shape one"></div><div class="shape two"></div><div class="shape three"></div>
+    </section>
+
+    <section class="slide dark" data-section="Verdict" aria-label="Slide 2 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Verdict</div><div class="slide-no">02 / 12</div></div>
+      <div class="content verdict">
+        <div class="accent-rule reveal" style="--i:1"></div>
+        <h1 class="reveal" style="--i:2">Do not out-volume the giants. Own <span class="blue">trusted local progress.</span></h1>
+        <p class="promise reveal" style="--i:3">Any role. Any employer. Dubai first. Real jobs, clear fit, visible next steps, and employers accountable for response.</p>
+      </div>
+      <div class="source reveal" style="--i:4"><span><strong>North star:</strong> verified hiring progress events per weekly active seeker</span><span>Canonical unified research</span></div>
+    </section>
+
+    <section class="slide" data-section="Market context" aria-label="Slide 3 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Market context</div><div class="slide-no">03 / 12</div></div>
+      <div class="content">
+        <div class="market-layout">
+          <div class="market-copy">
+            <div class="kicker reveal" style="--i:1">A broad market</div>
+            <h2 class="reveal" style="--i:2">General means frontline, field, shift, trade, regulated, and office work.</h2>
+            <p class="muted reveal" style="--i:3">The UAE workforce is not a white-collar profile feed. A city-first product must handle many job realities without becoming many products.</p>
+            <div class="fact-row reveal" style="--i:4">
+              <div class="mini-fact"><strong>61%</strong><span>reported being ghosted after an interview</span></div>
+              <div class="mini-fact"><strong>18–22%</strong><span>of jobs classified as ghost jobs in a typical quarter</span></div>
+            </div>
+          </div>
+          <div class="chart-panel reveal" style="--i:3"><div class="chart-title"><strong>UAE labor force by sector</strong><span>2024 share</span></div><canvas id="marketChart" role="img" aria-label="Doughnut chart of UAE labor force sectors"></canvas></div>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:5"><span><strong>Sources:</strong> FCSC Unified UAE Numbers; Greenhouse 2024 State of Job Hunting</span><span>Verified facts</span></div>
+    </section>
+
+    <section class="slide soft" data-section="Competitor map" aria-label="Slide 4 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Competitor map</div><div class="slide-no">04 / 12</div></div>
+      <div class="content">
+        <h2 class="reveal" style="--i:1">The open space is <span class="blue">local utility + follow-through.</span></h2>
+        <div class="chart-panel reveal" style="--i:2; flex:1"><span class="matrix-note">Directional synthesis</span><span class="axis-label x">Local decision utility →</span><span class="axis-label y">Hiring follow-through →</span><canvas id="competitorChart" role="img" aria-label="Directional competitor positioning map"></canvas></div>
+      </div>
+      <div class="source reveal" style="--i:3"><span><strong>Sources:</strong> Bayt, Naukrigulf, GulfTalent, LinkedIn, Indeed, Dubizzle, WTTJ, Wellfound product reviews</span><span>Relative, not measured market scores</span></div>
+    </section>
+
+    <section class="slide" data-section="Winners vs gaps" aria-label="Slide 5 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Winners vs gaps</div><div class="slide-no">05 / 12</div></div>
+      <div class="content">
+        <div class="grid-2" style="flex:1">
+          <div class="comparison-copy">
+            <div class="kicker reveal" style="--i:1">What the market rewards</div>
+            <h2 class="reveal" style="--i:2">Incumbents win acquisition. Curated products win trust.</h2>
+            <p class="muted reveal" style="--i:3">Indeed and Bayt own breadth. LinkedIn owns network. Wellfound and WTTJ show the value of transparency and active employers. Nobody combines those lessons for every role in a local UAE workflow.</p>
+            <div class="insight reveal" style="--i:4">The product gap is not another feed. It is a verified loop from discovery to employer action.</div>
+          </div>
+          <div class="chart-panel reveal" style="--i:3"><div class="chart-title"><strong>Where competitor models over-index</strong><span>Directional research emphasis</span></div><canvas id="gapChart" role="img" aria-label="Directional comparison of competitor strengths and gaps"></canvas></div>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:5"><span><strong>Source:</strong> canonical competitive landscape and table-stakes analysis</span><span>Ranked emphasis, not percentages</span></div>
+    </section>
+
+    <section class="slide soft" data-section="Seeker jobs" aria-label="Slide 6 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Seeker jobs-to-be-done</div><div class="slide-no">06 / 12</div></div>
+      <div class="content">
+        <div class="jtbd-grid">
+          <div>
+            <div class="kicker reveal" style="--i:1">Candidate promise</div>
+            <h2 class="reveal" style="--i:2">Help me find work that fits my life, then tell me what happened.</h2>
+            <div class="job-list">
+              <div class="job reveal" style="--i:3"><div class="job-num">01</div><div><strong>See only credible opportunity</strong><span>Verified employer, last-confirmed role, pay, schedule, location, and work mode.</span></div></div>
+              <div class="job reveal" style="--i:4"><div class="job-num">02</div><div><strong>Judge fit without decoding a score</strong><span>Must-haves, preferences, evidence, and unknowns in plain language.</span></div></div>
+              <div class="job reveal" style="--i:5"><div class="job-num">03</div><div><strong>Know whether the job fits daily life</strong><span>Commute time and schedule fit beside role relevance.</span></div></div>
+              <div class="job reveal" style="--i:6"><div class="job-num">04</div><div><strong>Track the next verified action</strong><span>Status provenance, timestamps, last activity, and next step.</span></div></div>
+            </div>
+          </div>
+          <div class="promise-card reveal" style="--i:3"><blockquote>“Find real jobs that fit your life, understand why they fit, and always know what happened next.”</blockquote><p>Canonical candidate promise</p></div>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:7"><span><strong>Source:</strong> candidate UX playbook</span><span>Research synthesis</span></div>
+    </section>
+
+    <section class="slide" data-section="Employer jobs" aria-label="Slide 7 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Employer jobs-to-be-done</div><div class="slide-no">07 / 12</div></div>
+      <div class="content">
+        <div class="jtbd-grid">
+          <div>
+            <div class="kicker reveal" style="--i:1">Employer promise</div>
+            <h2 class="reveal" style="--i:2">Sell hiring progress, not impressions.</h2>
+            <div class="job-list">
+              <div class="job reveal" style="--i:3"><div class="job-num">01</div><div><strong>Publish a complete, credible role</strong><span>Role-adaptive fields, quality preview, verification, and expiry.</span></div></div>
+              <div class="job reveal" style="--i:4"><div class="job-num">02</div><div><strong>Review fewer, more relevant people</strong><span>Candidate shortlists with visible match evidence and screening reasons.</span></div></div>
+              <div class="job reveal" style="--i:5"><div class="job-num">03</div><div><strong>Move candidates without spreadsheet chaos</strong><span>Inbox stages, messages, scheduling, reminders, and closure.</span></div></div>
+              <div class="job reveal" style="--i:6"><div class="job-num">04</div><div><strong>Protect marketplace trust</strong><span>Review SLAs, response metrics, stale-role pauses, and close reasons.</span></div></div>
+            </div>
+          </div>
+          <div class="promise-card reveal" style="--i:3"><blockquote>“Reach fewer but more relevant people, act on them quickly, and run hiring without spreadsheet chaos.”</blockquote><p>Canonical employer promise</p></div>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:7"><span><strong>Source:</strong> employer website playbook</span><span>Research synthesis</span></div>
+    </section>
+
+    <section class="slide soft" data-section="Differentiation" aria-label="Slide 8 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Differentiation pillars</div><div class="slide-no">08 / 12</div></div>
+      <div class="content">
+        <div><div class="kicker reveal" style="--i:1">One trust system</div><h2 class="reveal" style="--i:2">Six pillars, one promise: <span class="blue">less uncertainty.</span></h2></div>
+        <div class="pillars">
+          <article class="pillar reveal" style="--i:3"><div class="num">01</div><div><h3>Verified freshness</h3><p>Employer identity, open-role heartbeat, last-confirmed time, real close reason.</p></div></article>
+          <article class="pillar reveal" style="--i:4"><div class="num">02</div><div><h3>Commute-aware</h3><p>Map and list answer whether the job can fit the seeker’s real day.</p></div></article>
+          <article class="pillar reveal" style="--i:5"><div class="num">03</div><div><h3>Explainable fit</h3><p>Reasons, evidence, unknowns, and control. Never false hire probability.</p></div></article>
+          <article class="pillar reveal" style="--i:6"><div class="num">04</div><div><h3>Status provenance</h3><p>Every application event shows source, timestamp, confidence, and next action.</p></div></article>
+          <article class="pillar reveal" style="--i:7"><div class="num">05</div><div><h3>Response accountability</h3><p>Review SLAs, reminders, stale pauses, candidate closure, and visible behavior.</p></div></article>
+          <article class="pillar reveal" style="--i:8"><div class="num">06</div><div><h3>Grounded Wizy</h3><p>Based on known facts, explicit unknowns, and one useful next action.</p></div></article>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:9"><span><strong>Source:</strong> four strategic bets plus candidate and employer playbooks</span><span>Canonical product position</span></div>
+    </section>
+
+    <section class="slide" data-section="Product principles" aria-label="Slide 9 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Feature implications</div><div class="slide-no">09 / 12</div></div>
+      <div class="content">
+        <div><div class="kicker reveal" style="--i:1">System, not screens</div><h2 class="reveal" style="--i:2">Every feature should create or clarify a <span class="blue">verified progress event.</span></h2></div>
+        <div class="system">
+          <article class="node reveal" style="--i:3"><div class="node-top"><span class="node-id">SEEKER</span><span class="metric">01</span></div><div><h3>Decide with confidence</h3><p>Browse all, use commute, understand fit, apply with intent, track verified status.</p></div></article>
+          <div class="arrow reveal" style="--i:4"><svg viewBox="0 0 100 24" fill="none" aria-hidden="true"><path d="M4 12h88M83 4l9 8-9 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 4l-9 8 9 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>facts + actions</span></div>
+          <article class="node wizy reveal" style="--i:5"><div class="node-top"><span class="node-id">WIZY</span><span class="metric">02</span></div><div><h3>Ground, explain, advance</h3><p>Based on. Unknown. Next action. Draft only, never auto-send or auto-apply.</p></div></article>
+          <div class="arrow reveal" style="--i:6"><svg viewBox="0 0 100 24" fill="none" aria-hidden="true"><path d="M4 12h88M83 4l9 8-9 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 4l-9 8 9 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>evidence + SLA</span></div>
+          <article class="node reveal" style="--i:7"><div class="node-top"><span class="node-id">EMPLOYER</span><span class="metric">03</span></div><div><h3>Respond with discipline</h3><p>Structured role, shortlist evidence, pipeline action, closure, and measured response.</p></div></article>
+        </div>
+        <div class="insight reveal" style="--i:8">Map, matches, Wizy, and SLAs are not separate feature bets. They are interfaces into the same trust loop.</div>
+      </div>
+      <div class="source reveal" style="--i:9"><span><strong>Source:</strong> feature implications synthesized from UX and marketplace mechanics</span><span>Principles, not wireframes</span></div>
+    </section>
+
+    <section class="slide soft" data-section="Risks" aria-label="Slide 10 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Risks and anti-goals</div><div class="slide-no">10 / 12</div></div>
+      <div class="content">
+        <div><div class="kicker reveal" style="--i:1">Protect the wedge</div><h2 class="reveal" style="--i:2">The fastest way to lose is to optimize <span class="blue">activity over progress.</span></h2></div>
+        <div class="risk-grid">
+          <article class="risk-col reveal" style="--i:3"><h3>Anti-goals</h3><ul><li>Raw listing volume and uncontrolled aggregation</li><li>One-click or automated mass apply</li><li>Match percentages presented as hire odds</li><li>Social feed, public reviews, or ad-auction relevance</li><li>Black-box ranking, personality scoring, or reusable AI interviews</li></ul></article>
+          <article class="risk-col guard reveal" style="--i:4"><h3>Guardrails</h3><ul><li>Authorized supply with canonical IDs and close events</li><li>Intent checks plus employer review obligations</li><li>Evidence, unknowns, confidence, and user control</li><li>Core flows work without Wizy</li><li>Stop segments that cannot deliver five credible matches</li></ul></article>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:5"><span><strong>Source:</strong> unified do/don’t rules and 90-day kill criteria</span><span>Strategic constraints</span></div>
+    </section>
+
+    <section class="slide dark" data-section="Phase 0 bets" aria-label="Slide 11 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Recommended bets</div><div class="slide-no">11 / 12</div></div>
+      <div class="content">
+        <div><div class="kicker reveal" style="--i:1">Phase 0</div><h2 class="reveal" style="--i:2">Prove the outcome loop before scaling the product.</h2></div>
+        <div class="bets">
+          <article class="bet primary reveal" style="--i:3"><div class="order">BET 01 · SUPPLY</div><h3>Verified Dubai inventory</h3><p>20–30 founding employers across at least six sector clusters, with complete roles and a 72-hour review commitment.</p><div class="measure">PROOF: 95% verified supply · under 5% stale reports</div></article>
+          <article class="bet reveal" style="--i:4"><div class="order">BET 02 · LOOP</div><h3>Explain, apply, track</h3><p>One candidate path from credible match to employer-originated progress event.</p><div class="measure">PROOF: 70% status coverage · 80% reviewed in 72h</div></article>
+          <article class="bet reveal" style="--i:5"><div class="order">BET 03 · LOCAL</div><h3>Commute as utility</h3><p>Map and list support real decisions across dense Dubai employment corridors.</p><div class="measure">PROOF: shortlist quality at least matches list-origin applications</div></article>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:6"><span><strong>Source:</strong> cold-start sequence and 90-day roadmap</span><span>Targets are research recommendations</span></div>
+    </section>
+
+    <section class="slide dark" data-section="Sources" aria-label="Slide 12 of 12">
+      <div class="topbar reveal" style="--i:0"><div class="brand-mini"><span class="mark"></span>WizJobs</div><div class="section-label">Sources and confidence</div><div class="slide-no">12 / 12</div></div>
+      <div class="content">
+        <div class="sources-grid">
+          <div>
+            <div class="kicker reveal" style="--i:1">Grounded, not guessed</div>
+            <h2 class="reveal" style="--i:2">Strategy is strong. Product outcomes still need a live-market test.</h2>
+            <div class="source-list">
+              <div class="source-item reveal" style="--i:3"><div class="n">01</div><div><strong>UAE market and safety</strong><span>FCSC, u.ae, FTC</span></div></div>
+              <div class="source-item reveal" style="--i:4"><div class="n">02</div><div><strong>Application behavior and freshness</strong><span>Greenhouse, LinkedIn Help, Indeed Support, Google JobPosting</span></div></div>
+              <div class="source-item reveal" style="--i:5"><div class="n">03</div><div><strong>Regional competitor products</strong><span>Bayt, Naukrigulf, GulfTalent, LinkedIn UAE, Indeed UAE, Dubizzle Jobs</span></div></div>
+              <div class="source-item reveal" style="--i:6"><div class="n">04</div><div><strong>Transferable patterns</strong><span>WTTJ, Wellfound, Handshake, Rezi Map, ONJob.ai</span></div></div>
+              <div class="source-item reveal" style="--i:7"><div class="n">05</div><div><strong>Canonical synthesis</strong><span>Unified general-audience research, 11 August 2026</span></div></div>
+            </div>
+          </div>
+          <aside class="confidence reveal" style="--i:3">
+            <h3>Confidence by decision</h3>
+            <div class="confidence-row"><div class="confidence-head"><span>Positioning</span><span>High</span></div><div class="confidence-track"><div class="confidence-fill" style="width:92%"></div></div></div>
+            <div class="confidence-row"><div class="confidence-head"><span>Trust mechanics</span><span>High</span></div><div class="confidence-track"><div class="confidence-fill" style="width:90%"></div></div></div>
+            <div class="confidence-row"><div class="confidence-head"><span>Feature priority</span><span>Medium-high</span></div><div class="confidence-track"><div class="confidence-fill" style="width:78%"></div></div></div>
+            <div class="confidence-row"><div class="confidence-head"><span>Dubai liquidity</span><span>To validate</span></div><div class="confidence-track"><div class="confidence-fill" style="width:52%"></div></div></div>
+            <small>Confidence bars communicate research confidence, not measured probability. Phase 0 should test employer compliance, usable inventory per commute zone, and whether local discovery improves shortlist outcomes.</small>
+          </aside>
+        </div>
+      </div>
+      <div class="source reveal" style="--i:8"><span><strong>Read next:</strong> unified-general-audience-2026-08-11.md</span><span>End</span></div>
+    </section>
+
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </main>
+
+  <nav class="controls" aria-label="Presentation controls">
+    <button id="prevBtn" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none"><path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button id="nextBtn" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button id="fullBtn" aria-label="Toggle fullscreen"><svg viewBox="0 0 24 24" fill="none"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </nav>
+  <div class="rotate-note">Rotate your device to landscape to view the presentation.</div>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const progressBar = document.getElementById('progressBar');
+    const deck = document.getElementById('deck');
+    let current = 0;
+    const charts = {};
+
+    const palette = {
+      navy950: '#0B1F3A', navy800: '#1A3A5C', blue500: '#2563EB', blue400: '#60A5FA',
+      blue100: '#DBEAFE', gray100: '#EBEBEB', gray400: '#B0B0B0', gray600: '#6A6A6A', success: '#0F766E'
+    };
+    Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
+    Chart.defaults.color = palette.gray600;
+    Chart.defaults.animation.duration = 850;
+    Chart.defaults.animation.easing = 'easeOutQuart';
+
+    const pointLabels = {
+      id: 'pointLabels',
+      afterDatasetsDraw(chart) {
+        if (chart.canvas.id !== 'competitorChart') return;
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.font = "600 11px 'Plus Jakarta Sans'";
+        ctx.textAlign = 'center';
+        ctx.fillStyle = palette.navy950;
+        chart.data.datasets.forEach((dataset, datasetIndex) => {
+          const meta = chart.getDatasetMeta(datasetIndex);
+          meta.data.forEach((point, index) => ctx.fillText(dataset.data[index].label, point.x, point.y - 13));
+        });
+        ctx.restore();
+      }
+    };
+    Chart.register(pointLabels);
+
+    function marketChart() {
+      charts.market = new Chart(document.getElementById('marketChart'), {
+        type: 'doughnut',
+        data: { labels: ['Services 63.8%', 'Manufacturing + construction 34.5%', 'Other 1.7%'], datasets: [{ data: [63.8, 34.5, 1.7], backgroundColor: [palette.blue500, palette.navy800, palette.blue400], borderWidth: 0, hoverOffset: 4 }] },
+        options: { responsive: true, maintainAspectRatio: false, cutout: '67%', layout: { padding: { top: 55, bottom: 5 } }, plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 18, font: { size: 12 } } }, tooltip: { callbacks: { label: context => ` ${context.label}` } } } }
+      });
+    }
+    function competitorChart() {
+      const data = [
+        { x: 2.2, y: 4.3, r: 9, label: 'LinkedIn' }, { x: 2.7, y: 3.0, r: 10, label: 'Indeed' },
+        { x: 4.1, y: 3.5, r: 10, label: 'Bayt' }, { x: 4.8, y: 4.4, r: 8, label: 'Naukrigulf' },
+        { x: 6.2, y: 5.5, r: 8, label: 'GulfTalent' }, { x: 7.7, y: 2.7, r: 8, label: 'Dubizzle' },
+        { x: 5.7, y: 7.4, r: 8, label: 'Wellfound' }, { x: 6.5, y: 8.1, r: 8, label: 'WTTJ' },
+        { x: 8.7, y: 8.8, r: 12, label: 'WizJobs wedge' }
+      ];
+      charts.competitor = new Chart(document.getElementById('competitorChart'), {
+        type: 'bubble', data: { datasets: [{ data, backgroundColor: data.map(d => d.label === 'WizJobs wedge' ? palette.blue500 : palette.blue400 + 'B8'), borderColor: data.map(d => d.label === 'WizJobs wedge' ? palette.navy950 : '#FFFFFF'), borderWidth: 2 }] },
+        options: { responsive: true, maintainAspectRatio: false, layout: { padding: { top: 34, right: 38, bottom: 25, left: 24 } }, scales: { x: { min: 0, max: 10, ticks: { display: false }, grid: { color: palette.gray100 }, border: { display: false } }, y: { min: 0, max: 10, ticks: { display: false }, grid: { color: palette.gray100 }, border: { display: false } } }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.raw.label } } } }
+      });
+    }
+    function gapChart() {
+      charts.gap = new Chart(document.getElementById('gapChart'), {
+        type: 'bar',
+        data: { labels: ['Listing breadth', 'Network context', 'Local utility', 'Freshness proof', 'Response accountability'], datasets: [
+          { label: 'Incumbent emphasis', data: [9, 8, 4, 3, 2], backgroundColor: palette.gray400, borderRadius: 5, barThickness: 12 },
+          { label: 'WizJobs opportunity', data: [4, 4, 9, 9, 10], backgroundColor: palette.blue500, borderRadius: 5, barThickness: 12 }
+        ] },
+        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, layout: { padding: { top: 55, bottom: 6 } }, scales: { x: { min: 0, max: 10, ticks: { display: false }, grid: { color: palette.gray100 }, border: { display: false } }, y: { grid: { display: false }, border: { display: false }, ticks: { color: palette.navy950, font: { size: 12, weight: 600 } } } }, plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 18, font: { size: 11 } } }, tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: directional ${ctx.raw}/10` } } } }
+      });
+    }
+    const chartFactories = { 2: marketChart, 3: competitorChart, 4: gapChart };
+
+    function showSlide(index) {
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+      progressBar.style.width = `${((current + 1) / slides.length) * 100}%`;
+      history.replaceState(null, '', `#${current + 1}`);
+      if (chartFactories[current]) {
+        const key = current === 2 ? 'market' : current === 3 ? 'competitor' : 'gap';
+        if (!charts[key]) requestAnimationFrame(chartFactories[current]); else requestAnimationFrame(() => charts[key].resize());
+      }
+    }
+    function next() { showSlide(current + 1); }
+    function prev() { showSlide(current - 1); }
+    function toggleFullscreen() { if (!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); }
+
+    document.getElementById('nextBtn').addEventListener('click', e => { e.stopPropagation(); next(); });
+    document.getElementById('prevBtn').addEventListener('click', e => { e.stopPropagation(); prev(); });
+    document.getElementById('fullBtn').addEventListener('click', e => { e.stopPropagation(); toggleFullscreen(); });
+    deck.addEventListener('click', next);
+    document.addEventListener('keydown', event => {
+      if (['ArrowRight', ' ', 'PageDown'].includes(event.key)) { event.preventDefault(); next(); }
+      if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); prev(); }
+      if (event.key === 'Home') showSlide(0);
+      if (event.key === 'End') showSlide(slides.length - 1);
+      if (event.key.toLowerCase() === 'f') toggleFullscreen();
+    });
+    window.addEventListener('resize', () => Object.values(charts).forEach(chart => chart.resize()));
+    const initial = Number(location.hash.slice(1));
+    showSlide(Number.isFinite(initial) && initial > 0 ? initial - 1 : 0);
+  </script>
+</body>
+</html>

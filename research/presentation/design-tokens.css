@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* WizJobs brand palette */
+  --wj-navy-950: #0B1F3A;
+  --wj-navy-900: #122A4A;
+  --wj-navy-800: #1A3A5C;
+  --wj-blue-600: #1D4ED8;
+  --wj-blue-500: #2563EB;
+  --wj-blue-400: #60A5FA;
+  --wj-blue-100: #DBEAFE;
+  --wj-white: #FFFFFF;
+  --wj-gray-50: #F7F7F7;
+  --wj-gray-100: #EBEBEB;
+  --wj-gray-400: #B0B0B0;
+  --wj-gray-600: #6A6A6A;
+  --wj-gray-900: #222222;
+  --wj-success: #0F766E;
+  --wj-warning: #B45309;
+  --wj-danger: #B91C1C;
+
+  /* One-family presentation typography */
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --text-display: clamp(40px, 5vw, 64px);
+  --text-h1: clamp(28px, 3.5vw, 40px);
+  --text-h2: clamp(22px, 2.5vw, 28px);
+  --text-body: 18px;
+  --text-caption: 14px;
+  --text-micro: 12px;
+
+  /* Airbnb-inspired 4px spacing rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Soft, marketplace-friendly geometry */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* One restrained elevation tier */
+  --shadow-soft: 0 6px 16px rgba(11, 31, 58, 0.08);
+
+  /* Motion */
+  --motion-enter: 360ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
