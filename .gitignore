@@ -5,3 +5,4 @@ dist/
 *.log
 .qa/
 WizJobs-Cloud-Handover-*.zip
+.vercel
