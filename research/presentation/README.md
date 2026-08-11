@@ -2,6 +2,8 @@
 
 A self-contained HTML presentation for the 11 August 2026 general-audience research readout.
 
+The supplied Wizjobs logo is stored at `assets/wizjobs-logo.png` and used verbatim in the title and slide headers.
+
 ## Open
 
 Open `index.html` in a modern browser. An internet connection is required for Plus Jakarta Sans and Chart.js. Press `F` to enter fullscreen.
@@ -29,4 +31,3 @@ Open `index.html` in a modern browser. An internet connection is required for Pl
 - `D:\UNREAL\BRAIN\Projects\Wizjobs\research\unified-general-audience-2026-08-11.md`
 - `D:\UNREAL\CODE\Wizjobs\research\UNIFIED-RESEARCH.md`
 - `D:\UNREAL\CODE\Wizjobs\research\wizjobs-deep-research-general-audience.md`
-
