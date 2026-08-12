@@ -1,0 +1,9 @@
+﻿Invoke-RestMethod : The remote server returned an error: (402) Payment Required.
+At D:\UNREAL\CODE\Wizjobs\research\run_deepapi_research.ps1:72 char:13
++     $resp = Invoke-RestMethod -Method Post -Uri "$base/v1/research/de ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 
+

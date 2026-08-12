@@ -23,3 +23,7 @@ Vite + React frontend-only visual/product line. See `package.json`, `DESIGN.md`,
 ## Rules
 
 Follow vault `CLAUDE.md` / `AGENTS.md` for Obsidian syntax and routing when writing vault notes. Never put secrets in this repo.
+
+## Research
+
+Do **not** use DeepAPI for WizJobs research unless Mohammed explicitly asks. Prefer Firecrawl / web search. Product audience is **general job seekers** (any role), not creative-tech only; employer website is in scope.

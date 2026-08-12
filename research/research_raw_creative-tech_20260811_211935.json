@@ -1,0 +1,605 @@
+﻿{
+    "requestId":  "987c4217-7a77-4a25-8b86-9254f9d179a7",
+    "route":  "/v1/research/deep",
+    "capability":  "research.deep",
+    "status":  "succeeded",
+    "replayed":  false,
+    "costFinal":  true,
+    "debitMicrousd":  215313,
+    "output":  {
+                   "answer":  "## Platform patterns and strategic lessons\n\n### Behance Jobs â portfolio depth + discovery\n- Behance combines a global creative job board with a large portfolio/discovery network and Adobe Creative Cloud integration; it suits designers, illustrators, photographers, industrial designers, architects, and UX/research practitioners who need to show full project context. https://www.behance.net/  \n- Its core portfolio pattern is the **case-study project**: brief, research/process, decisions, and final workânot merely a rÃ©sumÃ© or thumbnail gallery. https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- Behance announced **Recruiter Pro** in July 2026 as âportfolio-first hiring,â allowing employers to search portfolios before full-time recruitment; it claimed more than 100,000 freelance jobs posted annually and over $100 million in freelance opportunities. These figures and product claims should be independently validated before relying on them. https://www.behance.net/blog/recruiter-pro  \n- Behanceâs 2025 product updates described an end-to-end workflowâresponding to inquiries, sending proposals, requesting payments, reviewing feedback, and applying to recommended jobs without leaving Behance. https://www.behance.net/blog/max-2025-behance-updates  \n- **Lesson for WizJobs:** make the portfolio the primary candidate object; connect jobs to relevant projects, not only to profiles or CVs.\n\n### ArtStation Jobs â craft credibility + technical visual work\n- ArtStation is strongly associated with professional digital-art portfolios and roles such as character art, environment art, games, animation, VFX, and 3D; its jobs page includes explicit location, compensation, and on-site/relocation detailsâfor example, a Singapore 3D Character Artist listing showed â12K/monthâ and on-site requirements. https://www.artstation.com/jobs  \n- ArtStationâs advantage is **craft-specific visual proof**: finished renders, breakdowns, material/lighting quality, animation, and production credibility. Its evidence base here does not establish the full current employer feature set or hiring workflow.  \n- Search evidence includes reports of scam/spam concerns on art and design platforms, including ArtStation; this is anecdotal rather than systematic, but it makes job verification and employer trust important. https://www.linkedin.com/posts/christina-dehaan-668a82285_as-an-artist-outside-of-my-own-site-portfolio-activity-7386517106109865984-j952  \n- **Lesson for WizJobs:** support high-resolution media, reels, turntables, wireframes, texture/material maps, lighting passes, optimization breakdowns, and engine screenshotsânot just image uploads.\n\n### Dribbble â visual polish + fast scanning\n- Dribbble began around small, polished âshotsâ; its culture and discovery model favor visual polish, UI/UX, graphic design, illustration, animation, and quick aesthetic evaluation. https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- The practical distinction is **Dribbble for immediate visual impact** versus **Behance for process and full case studies**; the comparison recommends maintaining both for maximum discovery. https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- Employer pricing evidence conflicts: one source reports $150/month for a standard post and $300/month for a Hiring Suite, while Dribbbleâs hiring page currently shows $150/month posting and a $300/month highlighted option; other third-party sources report different per-listing prices. Verify current terms directly. https://dribbble.com/hiring ; https://recooty.com/blog/how-to-post-a-job-on-dribbble/ ; https://resources.workable.com/tutorial/how-to-post-a-job-on-dribbble  \n- Dribbble advertises full-time, part-time, and contract hiring, no placement fees, and a 2â5% platform fee for hiring services. https://dribbble.com/hiring  \n- **Lesson for WizJobs:** provide a fast-scan visual feed, but pair every âshotâ with deeper craft evidence and production context.\n\n### Working Not Working â curation, seniority, and human-feeling discovery\n- Working Not Working connected experienced writers, editors, designers, illustrators, developers, animators, photographers, directors, and producers with companies; creatives paid no fees while companies paid platform fees. https://sidehusl.com/workingnotworking/  \n- Its positioning was high-end and curated/invite-oriented, with âjob feelersâ that let creatives discover opportunities without a rigid bid marketplace. https://sidehusl.com/workingnotworking/ ; https://contently.net/2014/08/14/resources/news/working-not-working-provides-unique-opportunities-freelancers/  \n- Profiles emphasized portfolios organized by discipline so creative directors could find talent through work rather than applications. https://sidehusl.com/workingnotworking/  \n- The platform shut down at the end of June 2025 after Fiverr acquired it in 2021; alumni could join Fiverr or an unlisted talent pool. https://sidehusl.com/workingnotworking/ ; https://www.adweek.com/agencies/fiverr-acquires-creative-talent-site-working-not-working/  \n- Its model illustrates a tradeoff: curation and flexibility create quality and prestige, while large marketplaces create visibility but more crowding and commoditization. https://sidehusl.com/workingnotworking/  \n- **Lesson for WizJobs:** build a credible local shortlist and quality bar rather than becoming an undifferentiated open directory.\n\n### Creative Circle â recruiter-assisted matching and staffing\n- Creative Circle focuses on creative and marketing staffing, including short-term projects and peak workloads, with no long-term commitment for employers. https://www.creativecircle.com/staffing-recruiting/  \n- It uses human recruiters to match candidates with organizations, giving candidates a guided process rather than only self-service search. https://www.creativecircle.com/contact-us/  \n- Candidate reviews describe recruiters as friendly, thorough, and attentive to candidate needs, but also report substantial contract work and less full-time work. https://www.g2.com/products/creative-circle/reviews  \n- Reported candidate/employer rate markups are inconsistent and anecdotal: complaints cite clients being billed substantially more than candidate pay, while other commentary references standard agency markups. These claims should not be treated as verified pricing. https://www.glassdoor.com/Community/creatives/is-creative-circle-legit-for-finding-a-job-ive-heard-they-may-take-10-of-your-salary-spill-the-tea-please ; https://www.fishbowlapp.com/post/creativecircle  \n- **Lesson for WizJobs:** combine marketplace efficiency with optional human matching, especially for employers unfamiliar with technical-art and real-time 3D roles.\n\n### Contra â portfolio-first independent work + low-friction operations\n- Contra positions itself as a network for âcreative intelligence,â combining talent discovery with tools to start projects. https://contra.com/  \n- Its differentiator is **portfolio-first discovery rather than bidding**; independent professionals showcase work, services, and capabilities, while clients can engage directly. https://www.hackdesign.org/toolkit/contra/ ; https://www.linkedin.com/posts/ismelfigueroa_after-earning-110k-as-a-top-independent-activity-7414680150879002625-Tjbw  \n- Contra combines portfolio pages with proposals, contracts, invoicing, and payments; it markets commission-free earnings for freelancers. https://contra.com/commission-free ; https://www.twine.net/blog/best-contra-alternatives/  \n- The model has a known marketplace risk: commentary describes Contra as a portfolio site trying to become a marketplace and needing stronger client acquisition. https://www.reddit.com/r/Upwork/comments/1n1zfn7/does-contra-actually-work-for-freelancers/  \n- **Lesson for WizJobs:** let candidates present capabilities and service packages, but avoid forcing technical-art work into overly rigid predefined âgigs.â\n\n### YunoJuno â vetted creative marketplace + employer back office\n- YunoJuno connects businesses with experienced creatives across disciplines and combines marketplace sourcing with freelancer-management software. https://www.yunojuno.com/disciplines/creatives ; https://www.yunojuno.com/  \n- Its employer-side workflow covers talent sourcing/internal talent pools, onboarding and compliance, contracts, engagement lifecycle, global payments/invoicing, spend visibility, analytics, integrations, and adoption. https://www.yunojuno.com/blogs/freelance-management-systems-7-key-features-to-look-for  \n- YunoJuno says freelancers are free and are not charged a cut of their rates; it makes money from hirers. https://www.yunojuno.com/blogs/looking-to-join-the-largest-freelance-marketplace-check-out-our-most-asked-questions  \n- Public figures vary by page and date: LinkedIn describes 100,000+ vetted contractors, while its freelancer page says 150,000+ freelancers; another source describes 70,000+ registered freelancers. Treat the counts as marketing figures, not directly comparable. https://www.linkedin.com/company/yunojuno ; https://www.yunojuno.com/freelancers ; https://www.jobbers.io/vs-yunojuno  \n- YunoJuno claims payment capability across more than 165 countries, while its own pages should be checked for country-specific availability and compliance. https://www.g2.com/products/yunojuno/reviews  \n- **Lesson for WizJobs:** employer trust is not only candidate search; contracts, UAE/GCC compliance, invoices, payments, availability, and contractor records can become a major wedge.\n\n### Arc.dev and tech-freelancer platforms â technical screening and remote access\n- Arc.dev represents the broader remote-tech marketplace pattern: employers value access to international specialists and platforms, marketplaces, or hiring networks that reduce sourcing effort. The supplied evidence is category-level rather than Arc-specific. https://builtin.com/articles/platforms-for-hiring-remote-international-talent  \n- Generic job platforms expose many Unreal/3D roles but typically offer broad keyword search rather than craft-aware evaluation: LinkedIn, ZipRecruiter, Indeed, Remote Rocketship, Glassdoor, and specialist game-job boards all list Unreal or 3D roles. https://www.linkedin.com/jobs/unreal-technical-artist-jobs ; https://www.ziprecruiter.com/Jobs/Remote-3D-Technical-Artist ; https://www.indeed.com/q-unreal-engine-artist-remote-jobs.html ; https://www.remoterocketship.com/us/jobs/3d-artist/ ; https://www.glassdoor.com/Job/unreal-engine-artist-jobs-SRCH_KO0,20.htm ; https://ingamejob.com/en/job/technical-3d-artist-unreal-engine-blender-xr-simulation  \n- **Lesson for WizJobs:** compete on domain understanding and evidence quality, not on the number of listings.\n\n## Portfolio-first and craft-first UX patterns that matter most\n\n### Candidate experience\n- **Work before rÃ©sumÃ©:** candidate cards should lead with a hero project, reel/turntable, discipline, tools, location, availability, and rate; rÃ©sumÃ© and education should be secondary. The portfolio-first distinction is supported by Behance, Contra, Behance Recruiter Pro, and portfolio research. https://www.behance.net/blog/recruiter-pro ; https://contra.com/ ; https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- **Project case-study structure:** require or encourage title, role, client/studio, dates, brief, personal contribution, tools/version, constraints, process, final output, and measurable result. This preserves Behanceâs process depth while adding production specificity. https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- **Craft proof, not self-rated skills:** replace generic â proficient in Unrealâ claims with inspectable evidenceâengine version, Blueprints/C++, shader/material work, Niagara/VFX, rigging, optimization, profiling, Python/tools, asset budgets, target platform, FPS/frame-time gains, and shipped/live status. This is a product recommendation based on the technical-art hiring gap; supplied sources establish the existence of such roles but not a standardized schema. https://ingamejob.com/en/job/technical-3d-artist-unreal-engine-blender-xr-simulation  \n- **Multiple media modes:** support stills, video reels, 360Â° turntables, embedded interactive/WebGL/Pixel Streaming experiences, before/after comparisons, wireframes, topology, UVs, texture maps, node graphs, animation previews, and downloadable breakdown PDFs. This follows the craft-heavy ArtStation model. https://www.artstation.com/jobs  \n- **Contribution transparency:** make âwhat I didâ prominent for team projectsâlead, sole contributor, asset owner, technical-art responsibilities, tools authored, and percentage or scope of contribution.\n- **Fast scan plus deep dive:** use Dribbble-like visual cards for browsing, then open Behance-like long-form case studies. https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs  \n- **Structured availability:** show Dubai/UAE location, relocation status, visa/work authorization, on-site/hybrid/remote preference, notice period, time zone, contract/full-time preference, and availability date.\n- **Rate clarity:** support hourly, daily, monthly, project, and full-time compensation formats; show currency and whether rates are gross/net or inclusive of platform fees.\n- **No bidding-race default:** prioritize direct matching, invitations, saved searches, and curated opportunities over low-price proposals; Contra and WNW demonstrate the appeal of portfolio discovery and non-commoditized creative work. https://www.hackdesign.org/toolkit/contra/ ; https://sidehusl.com/workingnotworking/  \n- **Free and portable identity:** preserve candidate ownership of portfolio URLs, media, and contact history; YunoJuno and Contra both use no-fee or commission-free positioning as a talent attraction lever. https://www.yunojuno.com/blogs/looking-to-join-the-largest-freelance-marketplace-check-out-our-most-asked-questions ; https://contra.com/commission-free  \n\n### Employer experience\n- **Search by outcome and pipeline, not job title alone:** filters should include Unreal Engine version, Unity, Blender, Maya, Houdini, Substance, ZBrush, Nuke, CAD/BIM, XR, visualization, simulation, games, film/VFX, architecture, automotive, and technical-art specialization.\n- **Craft-aware shortlist cards:** show the three most relevant projects, role/contribution, shipped work, engine/tool versions, availability, location, rate, and verification status before the CV.\n- **Visual comparison workspace:** employers should compare portfolios side-by-side, annotate projects, invite candidates, share shortlists with hiring teams, and record structured reasons for advance/reject.\n- **Brief-to-portfolio matching:** employers enter project type, visual references, engine/version, platform, deliverables, quality bar, budget, timeline, work mode, and location; the system returns relevant evidence rather than keyword matches.\n- **Portfolio-based screening:** allow employers to request one focused work sample or technical review tied to the actual brief, rather than generic tests. Avoid opaque automated rejection; AI screening can reproduce bias, and Stanford HAI warns that AI hiring tools can yield racial bias and systemic rejection. https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection  \n- **Human matching layer:** offer recruiter/curator-assisted shortlists for difficult roles, taking the strongest part of Creative Circleâs model without requiring every employer to use an agency. https://www.creativecircle.com/contact-us/  \n- **Complete contractor workflow:** add scoped briefs, NDAs, contracts, milestones, approvals, timesheets, invoices, payments, tax/compliance documentation, and spend reportingâYunoJunoâs FMS model demonstrates the employer value. https://www.yunojuno.com/blogs/freelance-management-systems-7-key-features-to-look-for  \n- **Employer quality controls:** verify company identity, domain email, hiring authority, compensation range, project legitimacy, decision-maker, and closing date; show âlast confirmedâ and hiring-status signals.\n- **Response and closure guarantees:** ghost-job evidence indicates a material trust problem: Greenhouse data cited in the supplied results found 18â22% of postings may be ghost jobs, reaching 31% in corporate services; other sources estimate 20â30% or roughly one-third. The estimates conflict, but the direction is consistent. https://www.congress.gov/crs-product/IF12977 ; https://www.glassdoor.ca/Community/job-hunting-in-tech/the-prevalence-of-ghost-jobs ; https://www.vidcruiter.com/resources/fake-and-ghost-jobs/  \n- **Transparent employer behavior:** display response-time commitments, applicants reviewed, shortlist date, interview stages, role age, and whether the employer has hired through WizJobs before.\n\n## Must-have niche differentiators versus generic job boards\n\n- **A 3D/real-time craft taxonomy:** separate 3D artist, environment/prop/character artist, technical artist, pipeline/tools artist, shader/material artist, lighting artist, VFX/Niagara artist, virtual-production artist, BIM/visualization artist, XR developer, and Unreal developer; generic â3D designerâ categories are insufficient.\n- **Evidence-rich technical profiles:** engine versions, DCC tools, scripting languages, renderers, platforms, production scale, optimization metrics, shipped/live projects, and playable or viewable proof.\n- **Dubai-first market intelligence:** UAE location and relocation filters; Dubai salary/day-rate benchmarks; visa and sponsorship status; Arabic/English capability; local availability; on-site studio and hybrid constraints; Gulf time-zone matching. The supplied evidence does not provide Dubai-specific salary or demand data, so these require local validation.\n- **Industry-specific matching:** games, film/VFX, architecture, real estate, automotive, retail, simulation, defense, tourism, metaverse/XR, and advertising should be first-class sectors rather than free-text tags.\n- **Portfolio verification and provenance:** verify authorship, studio/client credits where permissible, shipped-project claims, software versions, and whether work is personal, school, AI-assisted, or production work.\n- **Technical-art work samples:** optional standardized tests such as a shader/material recreation, asset optimization, Blueprint/tool task, lighting pass, or profiling exerciseâshort, paid where possible, and clearly scoped.\n- **Curated local talent supply:** invite respected Dubai/MENA artists, studios, educators, Unreal communities, and production houses; use human review or visible quality tiers rather than an unfiltered directory.\n- **Fast visual discovery plus craft depth:** a polished feed for browsing, deep project pages for evaluation, and recruiter-grade search over structured craft metadata.\n- **Trusted, verified jobs only:** employer verification, active-hiring confirmation, compensation transparency, application status, closing dates, anti-scam controls, and guaranteed closure/response standards.\n- **Built-in hiring operations:** briefs, shortlist collaboration, interviews, NDAs, contracts, milestones, timesheets, payments, and UAE/GCC contractor compliance.\n- **Candidate economics as a brand promise:** no candidate commission, transparent employer-paid fees, portability of portfolio data, and no pay-to-rank requirement; this mirrors the attraction logic used by Contra and YunoJuno. https://contra.com/commission-free ; https://www.yunojuno.com/blogs/looking-to-join-the-largest-freelance-marketplace-check-out-our-most-asked-questions  \n- **Do not copy failed or ambiguous models uncritically:** Working Not Workingâs prestige and flexibility were attractive, but the platform ultimately closed in 2025; Contraâs portfolio-first model still faces client-liquidity concerns; open job boards face crowding, spam, and ghost-job trust problems. https://sidehusl.com/workingnotworking/ ; https://www.reddit.com/r/Upwork/comments/1n1zfn7/does-contra-actually-work-for-freelancers/ ; https://www.linkedin.com/posts/christina-dehaan-668aace8_as-an-artist-outside-of-my-own-site-portfolio-activity-7386517106109865984-j952  \n\n## Highest-priority WizJobs product sequence\n\n1. **Structured creative-tech profile and project schema.**\n2. **Media-rich portfolio pages with reels, turntables, breakdowns, and technical metadata.**\n3. **Craft-aware employer search and portfolio-first shortlist.**\n4. **Verified Dubai/UAE jobs with compensation, work mode, visa, and hiring-status transparency.**\n5. **Human-curated shortlists for specialized Unreal, technical-art, visualization, and XR roles.**\n6. **Brief, shortlist, interview, contract, milestone, invoice, and payment workflow.**\n7. **Local salary/rate data and trusted response metrics.**",
+                   "sources":  [
+                                   {
+                                       "title":  "Find Creative Jobs",
+                                       "url":  "https://www.behance.net/joblist"
+                                   },
+                                   {
+                                       "title":  "Which is better for digital artists, Artstation or Behance ...",
+                                       "url":  "https://www.quora.com/Which-is-better-for-digital-artists-Artstation-or-Behance-when-it-comes-to-showcasing-work-and-getting-noticed-by-employers-companies"
+                                   },
+                                   {
+                                       "title":  "Top 20 Design Job Boards in 2026",
+                                       "url":  "https://adplist.org/blog/top-20-design-job-boards-in-2024"
+                                   },
+                                   {
+                                       "title":  "10 Best Behance Alternatives to Hire Top Designers in 2026",
+                                       "url":  "https://www.twine.net/blog/best-behance-alternatives-to-hire-top-designers/"
+                                   },
+                                   {
+                                       "title":  "Is Behance actually a good platform to promote your work ...",
+                                       "url":  "https://www.reddit.com/r/graphic_design/comments/1nk4gw7/is_behance_actually_a_good_platform_to_promote/"
+                                   },
+                                   {
+                                       "title":  "Behance: Showcase, Discover, and Hire Creatives",
+                                       "url":  "https://www.behance.net/"
+                                   },
+                                   {
+                                       "title":  "Christina DeHaan - Scams on Art and Design Platforms",
+                                       "url":  "https://www.linkedin.com/posts/christina-dehaan-668a82285_as-an-artist-outside-of-my-own-site-portfolio-activity-7386517106109865984-j952"
+                                   },
+                                   {
+                                       "title":  "Use the Hire Me feature and link your profiles from freelance ...",
+                                       "url":  "https://www.instagram.com/reel/DYpLzYfDUmK/"
+                                   },
+                                   {
+                                       "title":  "Behance Jobs vs Dribbble Jobs: Which Platform Is Better?",
+                                       "url":  "https://listallexperts.com/compare/behance-jobs-vs-dribbble-jobs"
+                                   },
+                                   {
+                                       "title":  "Fiverr Acquires Creative Talent Site Working Not Working",
+                                       "url":  "https://www.adweek.com/agencies/fiverr-acquires-creative-talent-site-working-not-working/"
+                                   },
+                                   {
+                                       "title":  "Working Not Working (@wnotw)",
+                                       "url":  "https://www.instagram.com/wnotw/?hl=en"
+                                   },
+                                   {
+                                       "title":  "Fiverr acquires creative freelance platform Working Not ...",
+                                       "url":  "https://www.staffingindustry.com/news/global-daily-news/world-fiverr-acquires-creative-freelance-platform-working-not-working"
+                                   },
+                                   {
+                                       "title":  "What other freelance platforms are used besides Upwork?",
+                                       "url":  "https://www.facebook.com/groups/1033016563818566/posts/1926927771094103/"
+                                   },
+                                   {
+                                       "title":  "How to attract and retain creative talent globally",
+                                       "url":  "https://www.talentdesk.io/blog/finding-retaining-top-talent"
+                                   },
+                                   {
+                                       "title":  "Stop using Fiverr and Upwork. | Shweta Kukreja",
+                                       "url":  "https://www.linkedin.com/posts/shwetakukreja_stop-using-fiverr-and-upwork-its-underpaying-activity-7331639121100136449-cNvn"
+                                   },
+                                   {
+                                       "title":  "Working Not Working Alternatives: Creative Talent ...",
+                                       "url":  "https://listallexperts.com/alternatives/working-not-working"
+                                   },
+                                   {
+                                       "title":  "Upwork | Hire Top Freelance Talent with Confidence",
+                                       "url":  "https://www.upwork.com/"
+                                   },
+                                   {
+                                       "title":  "WorkingNotWorking: Now Gone, Go-To for Creatives",
+                                       "url":  "https://sidehusl.com/workingnotworking/"
+                                   },
+                                   {
+                                       "title":  "What has been your experience with Creative Circle?",
+                                       "url":  "https://www.reddit.com/r/Design/comments/1253hk5/what_has_been_your_experience_with_creative_circle/"
+                                   },
+                                   {
+                                       "title":  "Is job hunting on Creative Circle worth it?",
+                                       "url":  "https://www.reddit.com/r/graphic_design/comments/1o0v09t/is_job_hunting_on_creative_circle_worth_it/"
+                                   },
+                                   {
+                                       "title":  "I\u0027m considering working with Creative Circle but have heard mixed reviews ...",
+                                       "url":  "https://www.glassdoor.com/Community/creatives/im-considering-working-with-creative-circle-but-have-heard-mixed-reviews-i-usually-charge-100hr-freelancing-which-is"
+                                   },
+                                   {
+                                       "title":  "I recently got contacted by Creative Circle, a staffing agency. Is anyone ...",
+                                       "url":  "https://www.glassdoor.ie/Community/the-water-cooler-lhl9-5/i-recently-got-contacted-by-creative-circle-a-staffing-agency-is-anyone-familiar-with-it-if-so-what-were-your-experiences"
+                                   },
+                                   {
+                                       "title":  "CREATIVE CIRCLE - Updated August 2026 - 40 Reviews",
+                                       "url":  "https://www.yelp.com/biz/creative-circle-new-york-3"
+                                   },
+                                   {
+                                       "title":  "Home | Everforth Creative Circle",
+                                       "url":  "https://www.creativecircle.com/"
+                                   },
+                                   {
+                                       "title":  "Creative Circle Reviews",
+                                       "url":  "https://www.trustpilot.com/review/www.creativecircle.com"
+                                   },
+                                   {
+                                       "title":  "Creative Circle",
+                                       "url":  "https://www.instagram.com/creative.circle/?hl=en"
+                                   },
+                                   {
+                                       "title":  "CreativeCircle Review 2025: Features, Pros, Cons, and ...",
+                                       "url":  "https://www.remotelytalents.com/blog/creativecircle-review-features-pros-cons-top-alternatives"
+                                   },
+                                   {
+                                       "title":  "Creative Circle Reviews 2026: Details, Pricing, \u0026 Features",
+                                       "url":  "https://www.g2.com/products/creative-circle/reviews"
+                                   },
+                                   {
+                                       "title":  "Top Platforms for Hiring International and Remote Tech Talent",
+                                       "url":  "https://builtin.com/articles/platforms-for-hiring-remote-international-talent"
+                                   },
+                                   {
+                                       "title":  "25 best freelance websites to find work in 2026",
+                                       "url":  "https://www.hostinger.com/ca/tutorials/best-freelance-websites/"
+                                   },
+                                   {
+                                       "title":  "Freelance Statistics By Work, Growth, Platform (2026)",
+                                       "url":  "https://scoop.market.us/freelance-statistics/"
+                                   },
+                                   {
+                                       "title":  "27 popular remote work websites for your hiring needs",
+                                       "url":  "https://www.hcamag.com/us/specialization/recruitment/27-popular-remote-work-websites-for-your-hiring-needs/530793"
+                                   },
+                                   {
+                                       "title":  "Create an Online Portfolio with Contra: Showcase Your Work Easily",
+                                       "url":  "https://www.tiktok.com/@ux.edward/video/7205955046624759066"
+                                   },
+                                   {
+                                       "title":  "Contra - The network for creative intelligence.",
+                                       "url":  "https://contra.com/"
+                                   },
+                                   {
+                                       "title":  "How to Land Clients on Contra: The Top 1% Freelancer\u0027s Secret Strategy",
+                                       "url":  "https://www.youtube.com/watch?v=IRrc-Jcak-s\u0026vl=en-US"
+                                   },
+                                   {
+                                       "title":  "Does Contra actually work for freelancers? : r/Upwork - Reddit",
+                                       "url":  "https://www.reddit.com/r/Upwork/comments/1n7znfo/does_contra_actually_work_for_freelancers/"
+                                   },
+                                   {
+                                       "title":  "ï¸ Comment âFreelancerâ if you\u0027d like to read my full article ... - Instagram",
+                                       "url":  "https://www.instagram.com/reel/DbdF3yoo4wj/"
+                                   },
+                                   {
+                                       "title":  "10 Best Contra Alternatives - Twine Blog",
+                                       "url":  "https://www.twine.net/blog/best-contra-alternatives/"
+                                   },
+                                   {
+                                       "title":  "what do you think about the Contra freelance platform? - SlickStack",
+                                       "url":  "https://slickstack.io/forum/topic/what-do-you-think-about-the-contra-freelance-platform"
+                                   },
+                                   {
+                                       "title":  "Contra vs Upwork: Freelancing Platform Comparison - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/ismelfigueroa_after-earning-110k-as-a-top-independent-activity-7414680150879002625-Tjbw"
+                                   },
+                                   {
+                                       "title":  "Contra for Designers: Build Your Portfolio, Find Better Work",
+                                       "url":  "https://www.hackdesign.org/toolkit/contra/"
+                                   },
+                                   {
+                                       "title":  "YunoJuno | Freelancer Management System",
+                                       "url":  "https://www.yunojuno.com/"
+                                   },
+                                   {
+                                       "title":  "Find The Best Creative Freelancers on YunoJuno",
+                                       "url":  "https://www.yunojuno.com/disciplines/creatives"
+                                   },
+                                   {
+                                       "title":  "Choosing a freelancer management system: 7 features that ...",
+                                       "url":  "https://www.yunojuno.com/blogs/freelance-management-systems-7-key-features-to-look-for"
+                                   },
+                                   {
+                                       "title":  "Blog | Hiring and Managing Contractors | Freelancer Tips",
+                                       "url":  "https://www.yunojuno.com/blog/all"
+                                   },
+                                   {
+                                       "title":  "YunoJuno Review With Pricing, Alternatives, and FAQs",
+                                       "url":  "https://www.betterteam.com/uk/yunojuno"
+                                   },
+                                   {
+                                       "title":  "YunoJuno",
+                                       "url":  "https://www.linkedin.com/company/yunojuno"
+                                   },
+                                   {
+                                       "title":  "YunoJuno Reviews 2026: Details, Pricing, \u0026 Features",
+                                       "url":  "https://www.g2.com/products/yunojuno/reviews"
+                                   },
+                                   {
+                                       "title":  "Why using a platform to hire freelancers ...",
+                                       "url":  "https://www.yunojuno.com/blogs/why-using-a-platform-to-hire-freelancers-is-the-best-option-for-your-business"
+                                   },
+                                   {
+                                       "title":  "YunoJuno | Recommended Job Board",
+                                       "url":  "https://portfolio-collective.com/opportunities/recommended-job-boards-yunojuno/"
+                                   },
+                                   {
+                                       "title":  "A guide for building a professional web portfolio for job seekers",
+                                       "url":  "https://www.theseus.fi/handle/10024/748797"
+                                   },
+                                   {
+                                       "title":  "The architecture portfolio guidebook: The essentials you need to succeed",
+                                       "url":  "https://books.google.com/books?hl=en\u0026lr=\u0026id=r729DwAAQBAJ\u0026oi=fnd\u0026pg=PT9\u0026dq=portfolio-first+job+board+UX+best+practices+creative+tech+hiring\u0026ots=bvnZTOFBfK\u0026sig=lFU8t0_l81wAp_At5nnK4-ElPAM"
+                                   },
+                                   {
+                                       "title":  "Data-driven product portfolio process development: Navigating growth and strategic decision-making",
+                                       "url":  "https://aaltodoc.aalto.fi/items/01247336-ae1c-45b4-a23d-aed0c84034ce"
+                                   },
+                                   {
+                                       "title":  "The marketing mix",
+                                       "url":  "https://api.taylorfrancis.com/content/chapters/edit/download?identifierName=doi\u0026identifierValue=10.4324/9781003434214-5\u0026type=chapterpdf"
+                                   },
+                                   {
+                                       "title":  "Tagged extended reality",
+                                       "url":  "https://jitp.commons.gc.cuny.edu/tag/extended-reality/"
+                                   },
+                                   {
+                                       "title":  "Tagged liberal arts",
+                                       "url":  "https://jitp.commons.gc.cuny.edu/tag/liberal-arts/"
+                                   },
+                                   {
+                                       "title":  "Creating illustration portfolio on a digital platform",
+                                       "url":  "https://www.theseus.fi/handle/10024/339085"
+                                   },
+                                   {
+                                       "title":  "Tagged curricular innovation",
+                                       "url":  "https://jitp.commons.gc.cuny.edu/tag/curricular-innovation/"
+                                   },
+                                   {
+                                       "title":  "Tagged project-based learning",
+                                       "url":  "https://jitp.commons.gc.cuny.edu/tag/project-based-learning/"
+                                   },
+                                   {
+                                       "title":  "Hundreds of applications and no response? Studies show ...",
+                                       "url":  "https://www.facebook.com/deutschewellenews/posts/hundreds-of-applications-and-no-response-studies-show-how-common-ghost-jobs-are-/1424740026347974/"
+                                   },
+                                   {
+                                       "title":  "Ghost job postings are rotting the labor market and ruin lives",
+                                       "url":  "https://www.reddit.com/r/recruitinghell/comments/1s29hkg/ghost_job_postings_are_rotting_the_labor_market/"
+                                   },
+                                   {
+                                       "title":  "The prevalence of ghost job postings is deceptive and wastes applicants ...",
+                                       "url":  "https://www.glassdoor.ca/Community/job-hunting-in-tech/the-prevalence-of-ghost-job-postings-is-deceptive-and-wastes-applicants-time-companies-engaging-in-this-practice-should"
+                                   },
+                                   {
+                                       "title":  "Here is what the data actually says about Ghost jobs.",
+                                       "url":  "https://www.reddit.com/r/jobsearchhacks/comments/1rj2cz8/here_is_what_the_data_actually_says_about_ghost/"
+                                   },
+                                   {
+                                       "title":  "âGhostâ Job Postings",
+                                       "url":  "https://www.congress.gov/crs-product/IF12977"
+                                   },
+                                   {
+                                       "title":  "GHOST JOBS",
+                                       "url":  "https://www.columbialawreview.org/content/ghost-jobs/"
+                                   },
+                                   {
+                                       "title":  "Ghost Jobs Are Working Exactly As Designed",
+                                       "url":  "https://medium.com/design-bootcamp/ghost-jobs-are-working-exactly-as-designed-9d2f4179625e"
+                                   },
+                                   {
+                                       "title":  "Ghost Jobs Explained: Why Companies Post Roles They\u0027re ...",
+                                       "url":  "https://www.hrocinc.com/ghost-jobs-explained-why-companies-post-roles-theyre-not-hiring-for/"
+                                   },
+                                   {
+                                       "title":  "Blame platforms and job boards, not just employers",
+                                       "url":  "https://www.linkedin.com/posts/joe-morehead-63491abb_ghostjobs-jobsearch-hiring-activity-7396201395684655104-Z9wd"
+                                   },
+                                   {
+                                       "title":  "Ghost Jobs Explained: Why 1 in 3 Job Listings Are Fake ...",
+                                       "url":  "https://jobstrack.io/blog/ghost-jobs-2026"
+                                   },
+                                   {
+                                       "title":  "AI Hiring Tools Can Yield Racial Bias and Systemic Rejection | Stanford HAI",
+                                       "url":  "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection"
+                                   },
+                                   {
+                                       "title":  "The 7 Best Candidate Screening Software Tools in 2026 - Truffle",
+                                       "url":  "https://www.hiretruffle.com/blog/candidate-screening-tools"
+                                   },
+                                   {
+                                       "title":  "AI Recruiting in 2026: The Definitive Guide - Phenom",
+                                       "url":  "https://www.phenom.com/blog/recruiting-ai-guide"
+                                   },
+                                   {
+                                       "title":  "New research reveals alarming patterns in AI hiring tools. A large ...",
+                                       "url":  "https://www.instagram.com/reel/DY2mNXYj0Aa/?hl=en"
+                                   },
+                                   {
+                                       "title":  "Collaboration among recruiters and artificial intelligence - PMC - NIH",
+                                       "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9516509/"
+                                   },
+                                   {
+                                       "title":  "Top AI Screening Tools Shaping Hiring Practices in 2026",
+                                       "url":  "https://recruiterflow.com/blog/ai-screening-tools/"
+                                   },
+                                   {
+                                       "title":  "A System for Screening Candidates for Recruitment: Comparing Today\u0027s ...",
+                                       "url":  "https://www.careerpuck.com/blog/a-system-for-screening-candidates-for-recruitment"
+                                   },
+                                   {
+                                       "title":  "Best Candidate Screening Software in 2026 (Top Tools) - Juicebox",
+                                       "url":  "https://juicebox.ai/blog/candidate-screening-software"
+                                   },
+                                   {
+                                       "title":  "Automated Candidate Screening: How It Works, Best Tools, and Bias-Safe ...",
+                                       "url":  "https://cadienttalent.com/automated-candidate-screening-how-it-works-best-tools-and-bias-safe-best-practices/"
+                                   },
+                                   {
+                                       "title":  "Katie Insley\u0027s Post - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/katieinsleyemea_workday-faces-collective-action-lawsuit-over-activity-7335609721233584129-uj6_"
+                                   },
+                                   {
+                                       "title":  "Has anyone received a notification to apply for an expert- ...",
+                                       "url":  "https://www.facebook.com/groups/upworkforfreelancing/posts/901598308007882/"
+                                   },
+                                   {
+                                       "title":  "Going full time isn\u0027t a talent test. It\u0027s whether you can handle the ...",
+                                       "url":  "https://www.instagram.com/reel/DbclFOvyQjX/"
+                                   },
+                                   {
+                                       "title":  "Hire the Universe\u0027s best talent on Working Not Working.",
+                                       "url":  "https://www.facebook.com/WnotW/videos/hire-the-universes-best-talent-on-working-not-working/1621572144644886/?locale=ms_MY"
+                                   },
+                                   {
+                                       "title":  "Creative hiring is broken. Here\u0027s what actually works.",
+                                       "url":  "https://creativeartsplatform.substack.com/p/creative-hiring-is-broken-heres-what"
+                                   },
+                                   {
+                                       "title":  "Working Not Working Provides Unique Opportunities to ...",
+                                       "url":  "https://contently.net/2014/08/14/resources/news/working-not-working-provides-unique-opportunities-freelancers/"
+                                   },
+                                   {
+                                       "title":  "How to Post a Job on Dribbble | 5 Easy Steps",
+                                       "url":  "https://recooty.com/blog/how-to-post-a-job-on-dribbble/"
+                                   },
+                                   {
+                                       "title":  "Dribbble Review With Pricing, Alternatives, and FAQs",
+                                       "url":  "https://www.betterteam.com/dribbble"
+                                   },
+                                   {
+                                       "title":  "25 Design Job Boards to Land Your Dream Job in 2026",
+                                       "url":  "https://www.higglo.io/post/25-design-job-boards-to-land-your-dream-job-in-2026"
+                                   },
+                                   {
+                                       "title":  "employer login",
+                                       "url":  "https://dribbble.com/search/employer-login"
+                                   },
+                                   {
+                                       "title":  "Hire the world\u0027s top designers",
+                                       "url":  "https://dribbble.com/hiring"
+                                   },
+                                   {
+                                       "title":  "Best Design Job Boards for Designers in 2026 (UX, ...",
+                                       "url":  "https://www.magier.com/blog/design-job-boards"
+                                   },
+                                   {
+                                       "title":  "Dribbble jobs scraper for design and creative hiring data",
+                                       "url":  "https://www.browse.ai/t/extract-job-details-dribbble"
+                                   },
+                                   {
+                                       "title":  "Dribbble Jobs Review: Premier Hub for Digital Design Talent",
+                                       "url":  "https://www.whatjobs.com/news/dribbble-jobs-review-the-elite-gallery-for-digital-design/"
+                                   },
+                                   {
+                                       "title":  "How to post a job on Dribbble: A guide for employers",
+                                       "url":  "https://resources.workable.com/tutorial/how-to-post-a-job-on-dribbble"
+                                   },
+                                   {
+                                       "title":  "Freelancers actually win on Contra. 100% commission free, a ...",
+                                       "url":  "https://www.instagram.com/reel/DRM_g0ejYH9/?hl=en"
+                                   },
+                                   {
+                                       "title":  "Let\u0027s talk about Contra : r/Upwork",
+                                       "url":  "https://www.reddit.com/r/Upwork/comments/1h54nvj/lets_talk_about_contra/"
+                                   },
+                                   {
+                                       "title":  "Jobbers.io vs Contra: Zero-Commission Platform Showdown",
+                                       "url":  "https://www.jobbers.io/jobbers-io-vs-contra-zero-commission-platform-showdown/"
+                                   },
+                                   {
+                                       "title":  "How Does Contra Company Work?",
+                                       "url":  "https://businessmodelcanvastemplate.com/blogs/how-it-works/contra-how-it-works?srsltid=AfmBOoocoLPk97WdiSPA9OkJvIeU8EBNK2MTC2r5xe5VHm68YGnYEbiq"
+                                   },
+                                   {
+                                       "title":  "Get paid for freelancing commission-free",
+                                       "url":  "https://contra.com/commission-free"
+                                   },
+                                   {
+                                       "title":  "What is Contra? Why it is the need of Freelancers.",
+                                       "url":  "https://medium.com/al-kasib/what-is-contra-why-it-is-the-need-of-freelancers-a3ccdc409af6"
+                                   },
+                                   {
+                                       "title":  "Why I use Contra as a freelancer - its features \u0026 benefits",
+                                       "url":  "https://www.berniceebenezer.com/blog/why-i-use-contra-as-a-freelancer-features-benefits"
+                                   },
+                                   {
+                                       "title":  "Is Contra Legit? A 2026 Review",
+                                       "url":  "https://remote100k.com/blog/is-contra-legit"
+                                   },
+                                   {
+                                       "title":  "Experience with YunoJuno? : r/freelanceuk",
+                                       "url":  "https://www.reddit.com/r/freelanceuk/comments/11ynchd/experience_with_yunojuno/"
+                                   },
+                                   {
+                                       "title":  "Freelancer FAQs | What to Expect When Joining YunoJuno",
+                                       "url":  "https://www.yunojuno.com/blogs/looking-to-join-the-largest-freelance-marketplace-check-out-our-most-asked-questions"
+                                   },
+                                   {
+                                       "title":  "Unfiltered YunoJuno.com Reviews 2025: Straight Facts \u0026 ...",
+                                       "url":  "https://flexiple.com/reviews/yunojuno"
+                                   },
+                                   {
+                                       "title":  "Join YunoJuno\u0027s Freelancer Community",
+                                       "url":  "https://www.yunojuno.com/freelancers"
+                                   },
+                                   {
+                                       "title":  "Jobbers.io vs YunoJuno â UK Contractor Market Compared",
+                                       "url":  "https://www.jobbers.io/jobbers-io-vs-yunojuno-uk-contractor-market-compared/"
+                                   },
+                                   {
+                                       "title":  "YunoJuno Releases 2025 Freelancer Rates Report",
+                                       "url":  "https://www.prnewswire.com/news-releases/yunojuno-releases-2025-freelancer-rates-report-ai-skills-drive-shift-in-contingent-workforce-market-as-average-day-rates-rise-302370478.html"
+                                   },
+                                   {
+                                       "title":  "App review: YunoJuno - MAA1 - Medium",
+                                       "url":  "https://maa1.medium.com/app-review-yunojuno-e495e1465ae7"
+                                   },
+                                   {
+                                       "title":  "Staffing \u0026 Recruiting | Everforth Creative Circle",
+                                       "url":  "https://www.creativecircle.com/staffing-recruiting/"
+                                   },
+                                   {
+                                       "title":  "Contact Us | Everforth Creative Circle",
+                                       "url":  "https://www.creativecircle.com/contact-us/"
+                                   },
+                                   {
+                                       "title":  "Is Creative Circle legit for finding a job? I\u0027ve heard that they may take ...",
+                                       "url":  "https://www.glassdoor.com/Community/creatives/is-creative-circle-legit-for-finding-a-job-ive-heard-that-they-may-take-10-of-your-salary-spill-the-tea-please"
+                                   },
+                                   {
+                                       "title":  "Recruitment Agency Commission Structures Explained - Pin",
+                                       "url":  "https://www.pin.com/blog/recruitment-agency-commission-structures/"
+                                   },
+                                   {
+                                       "title":  "I\u0027m considering working with Creative Circle but h... - Fishbowl",
+                                       "url":  "https://www.fishbowlapp.com/post/im-considering-working-with-creative-circle-but-have-heard-mixed-reviews-i-usually-charge-100hr-freelancing-which-is"
+                                   },
+                                   {
+                                       "title":  "What is Creative Circle\u0027s markup? - Quora",
+                                       "url":  "https://www.quora.com/What-is-Creative-Circles-markup"
+                                   },
+                                   {
+                                       "title":  "The 8 Best Marketing \u0026 Creative Staffing Agencies in 2026",
+                                       "url":  "https://www.4cornerresources.com/blog/the-8-best-marketing-creative-staffing-agencies/"
+                                   },
+                                   {
+                                       "title":  "From Graduation to Rejection: Employer Interpretations of Skills and Readiness in Entry-Level Hiring",
+                                       "url":  "https://www.researchgate.net/profile/Puja-Poudel-2/publication/410699417_From_Graduation_to_Rejection_Employer_Interpretations_of_Skills_and_Readiness_in_Entry-Level_Hiring/links/6a60fea04baba3285428cc45/From-Graduation-to-Rejection-Employer-Interpretations-of-Skills-and-Readiness-in-Entry-Level-Hiring.pdf"
+                                   },
+                                   {
+                                       "title":  "VET and Higher Education Pathways--Do Outcomes Differ for the Same Occupation? Research Report.",
+                                       "url":  "https://eric.ed.gov/?id=ED623391"
+                                   },
+                                   {
+                                       "title":  "Quantum-Inspired AI Metaheuristic Framework For Multi-Objective Optimization In Industrial Production Scheduling",
+                                       "url":  "https://ajisresearch.com/index.php/ajis/article/download/53/51"
+                                   },
+                                   {
+                                       "title":  "Data-driven service composition in enterprise SOA solutions: A Petri net approach",
+                                       "url":  "https://ieeexplore.ieee.org/abstract/document/5340590/"
+                                   },
+                                   {
+                                       "title":  "Capabilities Do You Need: The Case of Two Multinational Companies",
+                                       "url":  "https://www.researchgate.net/profile/Axel-Uhl/publication/272485036_Next-Level_Shared_Service_Centers_Strategy_People_and_Technology/links/576a812008aeefbdacfe4cd0/Next-Level-Shared-Service-Centers-Strategy-People-and-Technology.pdf"
+                                   },
+                                   {
+                                       "title":  "A Series of Case Studies in Financial Reporting",
+                                       "url":  "https://egrove.olemiss.edu/hon_thesis/1268/"
+                                   },
+                                   {
+                                       "title":  "260 Unreal Technical Artist jobs in United States - LinkedIn",
+                                       "url":  "https://www.linkedin.com/jobs/unreal-technical-artist-jobs"
+                                   },
+                                   {
+                                       "title":  "Remote 3D Technical Artist Jobs (NOW HIRING) - ZipRecruiter",
+                                       "url":  "https://www.ziprecruiter.com/Jobs/Remote-3D-Technical-Artist"
+                                   },
+                                   {
+                                       "title":  "Flexible Unreal Engine Artist Remote Jobs - Indeed",
+                                       "url":  "https://www.indeed.com/q-unreal-engine-artist-remote-jobs.html"
+                                   },
+                                   {
+                                       "title":  "Remote 3D Artist Jobs in the US ($77Kâ$161K)",
+                                       "url":  "https://www.remoterocketship.com/us/jobs/3d-artist/"
+                                   },
+                                   {
+                                       "title":  "Technical Artist career suggestions : r/unrealengine - Reddit",
+                                       "url":  "https://www.reddit.com/r/unrealengine/comments/1jjhp4f/technical_artist_career_suggestions/"
+                                   },
+                                   {
+                                       "title":  "UK Based Technical Artist / Unreal Developer - Remote Game Jobs",
+                                       "url":  "https://remotegamejobs.com/jobs/sketchbook-games-uk-based-technical-artist-unreal-developer-remote-job"
+                                   },
+                                   {
+                                       "title":  "3D Character Artist - ArtStation",
+                                       "url":  "https://www.artstation.com/jobs"
+                                   },
+                                   {
+                                       "title":  "Freelance Job Postings - Polycount",
+                                       "url":  "https://polycount.com/categories/freelance-job-postings"
+                                   },
+                                   {
+                                       "title":  "196 Unreal engine artist jobs in United States | Glassdoor",
+                                       "url":  "https://www.glassdoor.com/Job/unreal-engine-artist-jobs-SRCH_KO0,20.htm"
+                                   },
+                                   {
+                                       "title":  "Technical 3D Artist (Unreal Engine / Blender / XR Simulation) Remote ...",
+                                       "url":  "https://ingamejob.com/en/job/technical-3d-artist-unreal-engine-blender-xr-simulation"
+                                   },
+                                   {
+                                       "title":  "Ghost Job Postings: How Many Job Listings Are Fake?",
+                                       "url":  "https://www.reveliolabs.com/news/macro/ghost-job-postings/"
+                                   },
+                                   {
+                                       "title":  "Spotting Ghost Jobs: Tips and Tricks | Adam Broda posted ...",
+                                       "url":  "https://www.linkedin.com/posts/adamrbroda_ghost-jobs-are-the-literal-worst-lets-talk-activity-7408143911925481472-5yjj"
+                                   },
+                                   {
+                                       "title":  "Are ghost job listings common in recruitment agencies?",
+                                       "url":  "https://www.facebook.com/groups/NextUpAsia/posts/10161093962686657/"
+                                   },
+                                   {
+                                       "title":  "Ghost Jobs Economy: 1 in 3 Listings Never Lead to a Hire",
+                                       "url":  "https://www.myperfectresume.com/career-center/careers/basics/ghost-job-economy"
+                                   },
+                                   {
+                                       "title":  "Fake Job Postings and Ghost Jobs: How to Spot and Avoid ...",
+                                       "url":  "https://vidcruiter.com/resources/fake-and-ghost-jobs/"
+                                   },
+                                   {
+                                       "title":  "Ghost Jobs: Why 40% of Companies Post Fake Listings",
+                                       "url":  "https://emilybackes.design/post/ghost-jobs"
+                                   },
+                                   {
+                                       "title":  "Creative hiring has a specific problem: finding a candidate and ...",
+                                       "url":  "https://www.facebook.com/Behance/posts/creative-hiring-has-a-specific-problem-finding-a-candidate-and-knowing-whether-t/1458075726366995/"
+                                   },
+                                   {
+                                       "title":  "Blog :: New Behance Features to Grow Your Creative Career",
+                                       "url":  "https://www.behance.net/blog/max-2025-behance-updates"
+                                   },
+                                   {
+                                       "title":  "Blog :: Introducing Recruiter Pro: Portfolio-First Hiring for Creative ...",
+                                       "url":  "https://www.behance.net/blog/recruiter-pro"
+                                   },
+                                   {
+                                       "title":  "Behance | Today, we\u0027re introducing Recruiter Pro: a purpose-built tool ...",
+                                       "url":  "https://www.instagram.com/p/DayvDHQnfNw/"
+                                   },
+                                   {
+                                       "title":  "Is it okay to apply for a graphic design job with your Behance portfolio?",
+                                       "url":  "https://www.quora.com/Is-it-okay-to-apply-for-a-graphic-design-job-with-your-Behance-portfolio"
+                                   },
+                                   {
+                                       "title":  "Why I don\u0027t recommend Behance for designers - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/shanelemons_designer-behance-portfolio-activity-7358221155234729984-Ap2e"
+                                   },
+                                   {
+                                       "title":  "How to Hire on Behance? - Jobsoid",
+                                       "url":  "https://www.jobsoid.com/how-to-hire-on-behance/amp/"
+                                   },
+                                   {
+                                       "title":  "Behance Jobs Review 2026 - Features, Pricing \u0026 Alternatives",
+                                       "url":  "https://sourcrlab.com/tools/behance-jobs"
+                                   }
+                               ],
+                   "generatedAt":  "2026-08-11T17:21:21.441Z",
+                   "completeness":  "complete"
+               },
+    "balance":  {
+                    "postedCreditsMicrousd":  30000000,
+                    "postedDebitsMicrousd":  22776799,
+                    "activeReservationsMicrousd":  3750000,
+                    "availableMicrousd":  3473201
+                },
+    "next":  null,
+    "error":  null,
+    "skillVersion":  "ee61bded3e6a"
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "id":  "01-uae-platforms",
+        "bytes":  44254,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "7d93b4d1-6e87-40bc-980f-44cf0c95e35f",
+        "status":  "succeeded"
+    },
+    {
+        "id":  "02-global-candidate-ux",
+        "bytes":  18360,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "57a4c89e-8460-4b86-913a-98ab47ed4b73",
+        "status":  "succeeded"
+    },
+    {
+        "id":  "03-creative-tech-platforms",
+        "bytes":  52187,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "dff039e6-582d-4f58-b4b7-035c24c1a019",
+        "status":  "succeeded"
+    },
+    {
+        "id":  "04-map-matching-ai",
+        "bytes":  51501,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "cad25dbe-c4b3-4371-b500-253f37f7d328",
+        "status":  "succeeded"
+    },
+    {
+        "id":  "05-employer-marketplace",
+        "bytes":  50270,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "7f42af2a-7f5b-472c-8e0c-8e9c83713510",
+        "status":  "succeeded"
+    },
+    {
+        "id":  "06-playbook",
+        "bytes":  62104,
+        "ok":  true,
+        "http":  201,
+        "requestId":  "138c599d-0466-4c03-bb1d-d9c644cb5e18",
+        "status":  "succeeded"
+    }
+]

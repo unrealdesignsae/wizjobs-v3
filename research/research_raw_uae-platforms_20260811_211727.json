@@ -1,0 +1,561 @@
+﻿{
+    "requestId":  "0a234ce6-288f-483f-94ad-b2fc5a208b15",
+    "route":  "/v1/research/deep",
+    "capability":  "research.deep",
+    "status":  "succeeded",
+    "replayed":  false,
+    "costFinal":  true,
+    "debitMicrousd":  231056,
+    "output":  {
+                   "answer":  "## UAE/Dubai job-platform competitive brief, 2024â2026\n\n### Market map\n\n| Platform | Positioning / reach | Candidate strengths and UX | Weaknesses / evidence gaps | Employer tools, pricing, mobile |\n|---|---|---|---|---|\n| **Bayt** | Broad MENA incumbent; Bayt describes itself as the Middle Eastâs leading job site. Its LinkedIn profile claims **57M+ professionals** and **60,000 employers**; third-party reporting cites **47M+ CVs** and **40,000+ employers**, so reported scale is inconsistent. [Bayt](https://www.bayt.com/) Â· [Bayt LinkedIn](https://www.linkedin.com/company/bayt.com) Â· [Betterteam](https://www.betterteam.com/bayt-com) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Broad inventory, local/MENA relevance, career resources and virtual job fairs. Profiles are structured for recruiter search; Bayt says recruiters see âstructure, signals, and gaps.â [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) Â· [Bayt profile article](https://www.bayt.com/en/blog/32467/what-recruiters-see-when-they-open-your-bayt.com-profile/) | Generalist discovery can create noisy results for hybrid creative/technology roles. Third-party reviews are poor: **1.8/5 on Sitejabber** from 20+ reviews; anecdotal complaints question candidate outcomes. These are limited, self-selected samples, not verified performance data. [Betterteam](https://www.betterteam.com/bayt-com) Â· [Trustpilot](https://www.trustpilot.com/review/bayt.com) Â· [Reddit](https://www.reddit.com/r/DubaiJobs/comments/1kxz3m4/has_anyone_actually_gotten_a_job_through_baytcom/) | Free plan; Baytâs current pricing page says **3 free job credits**, then **$150/job**; Betterteam reports Basic free, Classic **$157.50**, Premium **$225**, and unlimited job slots **$882**. Employer capabilities include CV search, ATS/candidate management, employer branding, AI screening, video assessments and real-time tracking. [Bayt pricing](https://www.bayt.com/en/employers/pricing/) Â· [Bayt job-posting plans](https://www.bayt.com/en/employers/pricing/job-posting-plans/) Â· [Bayt employers](https://www.bayt.com/en/employers/) Â· [Betterteam](https://www.betterteam.com/bayt-com) Â· [Bayt employer app](https://apps.apple.com/sa/app/bayt-com-for-employers/id1196619524) |\n| **Naukrigulf** | Gulf-focused portal covering UAE and the six Gulf countries; particularly relevant to South Asian and expatriate talent. A vendor article claims **10,000 new resumes/day**. [Naukrigulf](https://www.naukrigulf.com/) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Large Gulf vacancy/resume pool, resume services, job-market updates and salary-related tools; role-specific landing pages support SEO discoveryâfor example, a Dubai âcreative technologistâ page. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) Â· [Naukrigulf creative-technologist search](https://www.naukrigulf.com/creative-technologist-jobs-in-dubai) | Available evidence does not establish application completion, response rates, employer quality, notification quality or app satisfaction. Likely broad and volume-led rather than portfolio-led; this is a positioning inference, not a measured UX result. | Employer pricing is custom in available evidence. Candidate-side features include resume posting/services; specific ATS, assessment, screening and employer analytics are not documented in the supplied evidence. Mobile ratings/reviews were requested but not returned, leaving a material evidence gap. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) Â· [Naukrigulf](https://www.naukrigulf.com/) |\n| **GulfTalent** | Professional/Middle East specialist, historically stronger for experienced white-collar hiring; its own site promotes jobs with **10,000+ top employers**. Third-party reporting alternatively says **9M professionals**, **6M applications**, or a resume database above **10M/60,000**, indicating inconsistent marketing definitions. [GulfTalent](https://www.gulftalent.com/) Â· [GulfTalent app](https://apps.apple.com/ae/app/gulftalent-job-search-app/id1093457564) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) Â· [Betterteam](https://www.betterteam.com/gulftalent) | Strong regional professional brand; salary checker, salary reports, industry news, job alerts and profile-to-market comparison. The app listing advertises job search across Dubai, UAE, Saudi and Qatar and profile comparison with other candidates. [GulfTalent salaries](https://www.gulftalent.com/salaries) Â· [GulfTalent design salaries](https://www.gulftalent.com/salaries/category/design) Â· [GulfTalent app](https://apps.apple.com/ae/app/gulftalent-job-search-app/id1093457564) | Third-party review: **2.4/5 Trustpilot**, with complaints about customer service and difficulty finding/applying; evidence is limited and self-selected. Betterteam says no ATS or candidate-matching tools, while GulfTalentâs current employer page advertises AI-tailored posts, automatic invitations to matching candidates and mass emailâan important version/source disagreement. [Trustpilot](https://www.trustpilot.com/review/gulftalent.com) Â· [Betterteam](https://www.betterteam.com/gulftalent) Â· [GulfTalent recruitment solutions](https://www.gulftalent.com/recruitment-solutions/job-postings) | Employer pricing is quote-based; job posts reportedly run **60 days**. Salary Business subscription starts at **$250**; candidate premium plans shown in the app range from **$34.99/month to $69.99 for six months** in US pricing, with currency variation. Employer tools include resume search, filtering, branding, AI job creation, matching invitations and mass email; exact ATS depth and UAE prices are unclear. [GulfTalent recruitment solutions](https://www.gulftalent.com/recruitment-solutions) Â· [GulfTalent job postings](https://www.gulftalent.com/recruitment-solutions/job-postings) Â· [GulfTalent salary subscription](https://www.gulftalent.com/salaries/subscriptions/business) Â· [GulfTalent app](https://apps.apple.com/om/app/gulftalent-job-search-app/id1093457564) |\n| **LinkedIn UAE** | Network-first professional identity and sourcing platform; GoHire cites **3M+ UAE users**, but no current primary UAE membership figure is supplied. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Best professional graph, identity verification signals, company/founder context, recruiter outreach and passive-candidate discovery. Jobs benefit from network distribution rather than only keyword search. Advanced search and talent analytics are cited as core strengths. [LinkedIn Recruiter](https://business.linkedin.com/hire/recruiter) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Jobs, posts, referrals and recruiter messages coexist in one feed, making intent and freshness difficult to assess. High competition and algorithmic visibility can favor strong network profiles over emerging or portfolio-based talent. No UAE-specific application-completion or response-rate evidence was supplied. | Recruiter Lite offers search and messaging; Recruiter pricing varies by company size/seats. Third-party estimates range from **$3,712â$8,832/year** in 2025 and **$1,680/year Lite to $15,000+/seat Corporate** in 2026, with reported hidden fees; these are not official UAE quotes. LinkedIn also markets AI hiring assistance, job-description generation and matching. Mobile experience is mature by virtue of the main LinkedIn app, but job-specific UAE UX evidence is absent. [Recruiter Lite](https://business.linkedin.com/hire/recruiter-lite) Â· [Recruiter](https://business.linkedin.com/hire/recruiter) Â· [Spendflo](https://www.spendflo.com/blog/a-comprehensive-guide-to-linkedin-recruiter-pricing-costs) Â· [Pin](https://www.pin.com/blog/linkedin-recruiter-pricing-2026/) Â· [LinkedIn AI hiring](https://www.linkedin.com/posts/darikajain_linkedin-just-launched-ai-powered-hiring-activity-7396389202487054336-acMZ) |\n| **Indeed UAE** | Global, high-volume search engine and job board; GoHire cites **250M+ global monthly unique visitors**, not a UAE-specific number. [Indeed UAE](https://ae.indeed.com/) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Simple search/discovery, broad inventory and employer reach; useful for long-tail creative and technology titles. A supplied result shows **1,046 âcreative platformâ** vacancies and another **511 âcreative technologyâ** vacancies, but counts are query-dependent and may include duplicates/adjacent roles. [Indeed creative-platform search](https://ae.indeed.com/q-creative-platform-jobs.html) Â· [Indeed creative-technology search](https://ae.indeed.com/q-creative-technology-jobs.html) | Aggregation and broad matching can produce duplicates, stale/low-context listings and title noise. Portfolio, work authorization, visa, commute and employer-quality context are not differentiated in the supplied evidence. | Employer model is flexible sponsored-job PPC; official pricing starts at **$5/day or $150/month**, with jobs live until paused. A 2026 third-party source reports sponsored CPC of **$0.10â$5+**, $5/day minimum and $25/job floor after July 2025; pricing is market/account dependent. [Indeed pricing](https://www.indeed.com/hire/o/pricing) Â· [Pin](https://www.pin.com/blog/indeed-pricing-2026/) |\n| **Dubizzle Jobs** | UAE classifieds-plus-jobs platform; GoHire reports **5M+ visitors/month** and **2M applications/month**, figures requiring independent validation. [Dubizzle](https://dubizzle.com/) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Strong local consumer reach, especially for operational, service, junior and immediate-hire roles; familiar classifieds UX and free/premium listing model. | Classifieds context can weaken professional trust, employer-brand depth and role taxonomy; poor fit for nuanced senior creative-tech hiring unless WizJobs adds richer proof-of-work and company context. | Free and premium listings; âresume spotlightâ is cited. Detailed ATS, screening, mobile and pricing evidence is not supplied. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) |\n| **Monster Gulf / Foundit** | Regional/global legacy job-board brand. GoHire cites **20M+ registered job seekers**, but the figure is not independently verified in the supplied evidence. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Resume services and HR software; possible useful legacy reach. | Lower visible differentiation in the supplied evidence versus Bayt, GulfTalent, LinkedIn and Indeed; current UAE product traction/mobile UX not established. | Custom pricing; ârobust HR softwareâ and resume services are cited, but detailed tools are not. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) |\n| **Laimoon** | UAE/MENA jobs plus learning/career platform. [Laimoon](https://laimoon.com/) | Direct employer applications and candidate skill tests; GoHire cites **2M+ candidates** and **40,000 jobs**. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Skill tests may help screening, but supplied evidence does not show creative portfolio review, project-based hiring or employer response transparency. | Custom plans; skills testing is the clearest differentiation. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) |\n| **Gulf News Jobs, AngelList/Wellfound, Caterer Global, Edarabia** | Additional channels spanning publisher jobs, startups, hospitality and education. [Gulf News Jobs / list](https://gohire.io/blog/top-12-job-boards-in-the-uae) Â· [Wellfound](https://wellfound.com/) | Useful segment access: Wellfound targets startup hiring and offers free job posting, AI sourcing agents and recruiter support; Caterer Global is relevant to hospitality; Gulf News benefits from publisher trust; Edarabia targets education. [Wellfound](https://wellfound.com/) Â· [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae) | Fragmented audiences and smaller pools than generalists; most lack Dubai-specific creative-tech depth, map discovery and portfolio-native workflows. | Wellfoundâs free posting/AI sourcing is documented; other pricing/tools are not. [Wellfound](https://wellfound.com/) |\n\n### Candidate UX patterns and gaps\n\n- **Dominant interaction:** keyword/title search, filters, alerts, CV/profile upload and one-click or external applications. The evidence does not show a leading UAE platform combining **map discovery, commute intelligence, verified workplace location, portfolio review and structured creative-tech skills**. Platform descriptions emphasize databases, salary tools, alerts and recruiter search instead. [Bayt](https://www.bayt.com/) Â· [Naukrigulf](https://www.naukrigulf.com/) Â· [GulfTalent](https://www.gulftalent.com/) Â· [LinkedIn Recruiter](https://business.linkedin.com/hire/recruiter) Â· [Indeed UAE](https://ae.indeed.com/)\n- **Portfolio gap:** creative roles are represented mostly through generic categories/search terms. GulfTalent has a Design salary category including **Designer, Art Director and Content Creator**, while Indeed and Naukrigulf expose broad âcreative technologyâ searches; neither supplied evidence demonstrates portfolio-first profiles, visual case studies, playable work, reels, Figma/GitHub/Behance integration or assessment of craft. [GulfTalent design salaries](https://www.gulftalent.com/salaries/category/design) Â· [Indeed creative-technology search](https://ae.indeed.com/q-creative-technology-jobs.html) Â· [Naukrigulf creative-technologist search](https://www.naukrigulf.com/creative-technologist-jobs-in-dubai)\n- **Hybrid-role taxonomy gap:** âcreative technologistâ spans UX/UI, motion, 3D, WebGL/Three.js, immersive, gaming, AI, content, brand and engineering. Existing search counts are title/query-driven and likely mix adjacent roles; a dedicated skill graph is absent from the evidence. [Indeed creative-technology search](https://ae.indeed.com/q-creative-technology-jobs.html) Â· [CreativeDevJobs](https://www.creativedevjobs.com/jobs/creative-technologist)\n- **Trust gap:** UAE job seekers face fake interviews, fake recruiters, ghost jobs and requests for payment; Bayt publishes scam-warning guidance, while regional reporting describes recruitment fraud as a growing problem. Verification, listing freshness, recruiter identity, salary transparency and âno payment requiredâ guarantees are defensible opportunities. [Bayt scam guidance](https://www.bayt.com/en/blog/32245/how-to-know-if-a-job-posting-is-fake/) Â· [Fast Company Middle East](https://fastcompanyme.com/work-life/navigating-the-new-job-market-landscape-recruitment-fraud-ghost-jobs-and-fake-offers/) Â· [TalentMate](https://www.talentmate.com/articles/how-to-avoid-job-scams-when-searching-for-jobs-in-uae)\n- **Feedback-loop gap:** available reviews mention difficulty applying, weak customer service and uncertain outcomes, but platforms do not visibly compete on employer response SLAs, application-stage transparency, rejection reasons or verified placement outcomes. [Betterteam GulfTalent](https://www.betterteam.com/gulftalent) Â· [Trustpilot GulfTalent](https://www.trustpilot.com/review/gulftalent.com) Â· [Betterteam Bayt](https://www.betterteam.com/bayt-com)\n- **Mobile evidence:** GulfTalent has a dedicated iOS job-search app; Bayt has a dedicated employer app. Naukrigulf app-review evidence was requested but not returned; comparable UAE candidate UX, app ratings, performance and application completion are therefore unverified. [GulfTalent app](https://apps.apple.com/ae/app/gulftalent-job-search-app/id1093457564) Â· [Bayt employer app](https://apps.apple.com/sa/app/bayt-com-for-employers/id1196619524)\n\n### Employer UX, pricing and positioning\n\n- **Bayt:** most transparent self-serve benchmark in the evidence: free entry, approximately **$150â$157.50 per post**, premium promotion and unlimited-slot options; strong CV database and candidate-management stack. Its weakness is breadth/noise and no clearly documented social distribution or distinctive creative evaluation. [Bayt pricing](https://www.bayt.com/en/employers/pricing/job-posting-plans/) Â· [Betterteam](https://www.betterteam.com/bayt-com)\n- **GulfTalent:** consultative, premium-professional positioning; quote-based pricing, 60-day posts, salary intelligence, branding and increasingly AI-assisted matching. Opaque pricing and conflicting third-party descriptions of ATS/matching create purchase uncertainty. [GulfTalent recruitment solutions](https://www.gulftalent.com/recruitment-solutions) Â· [GulfTalent job postings](https://www.gulftalent.com/recruitment-solutions/job-postings) Â· [Betterteam](https://www.betterteam.com/gulftalent)\n- **LinkedIn:** strongest sourcing/network product but highest likely cost and complexity; pricing is seat/company-specific, and public estimates are inconsistent. Best for passive senior talent and employer brand; weaker as a focused, low-cost local job board. [LinkedIn Recruiter](https://business.linkedin.com/hire/recruiter) Â· [Spendflo](https://www.spendflo.com/blog/a-comprehensive-guide-to-linkedin-recruiter-pricing-costs) Â· [Pin](https://www.pin.com/blog/linkedin-recruiter-pricing-2026/)\n- **Indeed:** performance-marketing/PPC positioning, attractive for volume and measurable acquisition; less differentiated for curated, portfolio-based hiring. [Indeed pricing](https://www.indeed.com/hire/o/pricing)\n- **Naukrigulf, Dubizzle, Monster Gulf, Laimoon:** generally custom, free/premium or undocumented pricing in the supplied evidence; their differentiation is audience reach, classifieds/locality, legacy resume access or testingânot creative-tech workflow depth. [GoHire](https://gohire.io/blog/top-12-job-boards-in-the-uae)\n\n### Opportunity space WizJobs could own\n\n1. **âDubai creative-tech jobs, on a mapâ:** map/list split view; verified office/event locations; Metro, driving and commute-time filters; hybrid/remote radius; neighborhood intelligence for Dubai Media City, d3, DIFC, Downtown, JLT, Al Quoz and Abu Dhabi equivalents. Existing evidence identifies Dubai-focused creative/technology demand but no competing map-native product. [Dubai Media City](https://dmc.ae/) Â· [CreativeDevJobs](https://www.creativedevjobs.com/jobs/creative-technologist)\n2. **Portfolio-native candidate profiles:** visual case studies, reels, Figma/Behance/Dribbble/GitHub links, tools, role contribution, measurable outcomes, language, availability and visa/work-authorization status.\n3. **Hybrid taxonomy and matching:** normalize titles into skill clustersâUX/product design, creative coding, WebGL/Three.js, motion/3D, immersive/XR, gaming, AI creative, content technology, experiential/live events and design engineering.\n4. **Trust as a product feature:** employer-domain verification, trade-license/company checks where feasible, recruiter identity, salary-range requirement, listing freshness/date, application destination disclosure, scam reporting and ânever pay to applyâ education.\n5. **Better employer workflow:** lightweight employer website with structured role templates, portfolio shortlist boards, rubric-based review, async video/reel requests, skill-tag matching, team collaboration, candidate consent controls and ATS export/API.\n6. **Transparent pricing:** free employer profile and limited posts; affordable paid listings; subscription for portfolio search; optional verified/sponsored map placement; no opaque enterprise-only quote barrier. Baytâs public ~$150 post benchmark and LinkedInâs expensive seat model create room for a transparent middle tier. [Bayt job-posting plans](https://www.bayt.com/en/employers/pricing/job-posting-plans/) Â· [LinkedIn Recruiter Lite](https://business.linkedin.com/hire/recruiter-lite)\n7. **Outcome and responsiveness layer:** employer response-time badges, application-stage updates, âactively hiringâ proof, interview-to-offer analytics and verified hiresâdirectly addressing uncertainty reflected in available reviews. [Betterteam GulfTalent](https://www.betterteam.com/gulftalent) Â· [Betterteam Bayt](https://www.betterteam.com/bayt-com)\n8. **Mobile-first discovery:** fast map browsing, swipeable visual portfolios, saved neighborhoods/commutes, WhatsApp/email alerts, low-friction apply and offline-friendly job saving. The supplied evidence confirms dedicated apps for GulfTalent and Bayt employers, but does not establish a superior mobile creative-job experience. [GulfTalent app](https://apps.apple.com/ae/app/gulftalent-job-search-app/id1093457564) Â· [Bayt employer app](https://apps.apple.com/sa/app/bayt-com-for-employers/id1196619524)",
+                   "sources":  [
+                                   {
+                                       "title":  "GulfTalent: Jobs in Dubai and Middle East",
+                                       "url":  "https://www.gulftalent.com/"
+                                   },
+                                   {
+                                       "title":  "What job search platforms are used in Dubai and UAE?",
+                                       "url":  "https://www.facebook.com/groups/277824461031656/posts/997253725755389/"
+                                   },
+                                   {
+                                       "title":  "Are job portals in UAE like Bayt or GulfTalent effective for job seekers?",
+                                       "url":  "https://nbyula.com/q/are-job-portals-in-uae-like-bayt-or-gulftalent-effective-for-job-seekers"
+                                   },
+                                   {
+                                       "title":  "Best Job Portals in UAE Ranked (2025 Edition)  Stop ...",
+                                       "url":  "https://www.instagram.com/reel/DR_ksdbD9DS/?hl=en"
+                                   },
+                                   {
+                                       "title":  "Best platforms for job applications in Dubai",
+                                       "url":  "https://www.reddit.com/r/DubaiJobs/comments/1mjw7bb/what_is_the_best_websiteplatform_for_job/"
+                                   },
+                                   {
+                                       "title":  "GulfTalent - Job Search - App Store - Apple",
+                                       "url":  "https://apps.apple.com/ae/app/gulftalent-job-search-app/id1093457564"
+                                   },
+                                   {
+                                       "title":  "Naukrigulf: Jobs in Gulf - Jobs in Middle East - Job Search ...",
+                                       "url":  "https://www.naukrigulf.com/"
+                                   },
+                                   {
+                                       "title":  "Bayt.com: The Middle East\u0027s Leading Job Site",
+                                       "url":  "https://www.bayt.com/"
+                                   },
+                                   {
+                                       "title":  "Top 12 Job Boards in the UAE",
+                                       "url":  "https://gohire.io/blog/top-12-job-boards-in-the-uae"
+                                   },
+                                   {
+                                       "title":  "What are some good websites for job finding in UAE?",
+                                       "url":  "https://www.quora.com/What-are-some-good-websites-for-job-finding-in-UAE"
+                                   },
+                                   {
+                                       "title":  "Read Customer Service Reviews of gulftalent.com",
+                                       "url":  "https://www.trustpilot.com/review/gulftalent.com"
+                                   },
+                                   {
+                                       "title":  "GulfTalent Review With Pricing, Alternatives, and FAQs",
+                                       "url":  "https://www.betterteam.com/gulftalent"
+                                   },
+                                   {
+                                       "title":  "I got my first UAE ð¦ðª job through Naukrigulf in 2018. Apart ...",
+                                       "url":  "https://www.facebook.com/KindPaThy/posts/i-got-my-first-uae-job-through-naukrigulf-in-2018-apart-from-naukri-gulf-talent-/1277190254437063/"
+                                   },
+                                   {
+                                       "title":  "Has anyone ever found real jobs from Bayt the Middle East ...",
+                                       "url":  "https://www.quora.com/Has-anyone-ever-found-real-jobs-from-Bayt-the-Middle-East-job-portal"
+                                   },
+                                   {
+                                       "title":  "Job Posting websites other than Bayt or LinkedIn? : r/UAE",
+                                       "url":  "https://www.reddit.com/r/UAE/comments/uvtc2s/job_posting_websites_other_than_bayt_or_linkedin/"
+                                   },
+                                   {
+                                       "title":  "10 Best Gulftalent Alternatives (2026)",
+                                       "url":  "https://www.qureos.com/tools-comparison/best-gulftalent-alternatives"
+                                   },
+                                   {
+                                       "title":  "A Gulf Region Job Portal - Flippa Listing",
+                                       "url":  "https://www.linkedin.com/pulse/website-review-searchgulftalentcom-gulf-zlozc"
+                                   },
+                                   {
+                                       "title":  "UAE\u0027s post-pandemic hiring recovery among worldâs strongest",
+                                       "url":  "https://www.arnnewscentre.ae/en/news/uae/uaes-post-pandemic-hiring-recovery-among-worlds-strongest/"
+                                   },
+                                   {
+                                       "title":  "Portugal Job Outlook: Skill Shortages, Salaries \u0026 Job Trends for Indian Professionals",
+                                       "url":  "https://www.y-axis.com/job-outlook/portugal/"
+                                   },
+                                   {
+                                       "title":  "Transportation trends 2025â2026: Modernizing Americaâs transportation infrastructure",
+                                       "url":  "https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/transportation-trends.html"
+                                   },
+                                   {
+                                       "title":  "60+ social media statistics marketers need to know in 2026",
+                                       "url":  "https://blog.hootsuite.com/social-media-statistics/"
+                                   },
+                                   {
+                                       "title":  "Majority of Indian professionals plan to switch jobs in 2026, many feel unprepared: LinkedIn",
+                                       "url":  "https://m.economictimes.com/jobs/hr-policies-trends/majority-of-indian-professionals-plan-to-switch-jobs-in-2026-many-feel-unprepared-linkedin/articleshow/126410508.cms"
+                                   },
+                                   {
+                                       "title":  "25 best freelance websites to find work in 2026",
+                                       "url":  "https://www.hostinger.com/tutorials/best-freelance-websites/"
+                                   },
+                                   {
+                                       "title":  "The best time to post on LinkedIn [2025 data]",
+                                       "url":  "https://blog.hootsuite.com/best-time-to-post-on-linkedin/"
+                                   },
+                                   {
+                                       "title":  "Top 10 Effective Job Hunting Strategies for United Arab Emirates Tech Professionals",
+                                       "url":  "https://www.nucamp.co/blog/coding-bootcamp-united-arab-emirates-are-top-10-effective-job-hunting-strategies-for-united-arab-emirates-tech-professionals"
+                                   },
+                                   {
+                                       "title":  "UAE job market alert: AI skills now influence who gets shortlisted",
+                                       "url":  "https://www.khaleejtimes.com/uae/job-market-2026-ai-skills-hiring"
+                                   },
+                                   {
+                                       "title":  "From UAE to Kerala: Why Gulf professionals are returning in record numbers",
+                                       "url":  "https://gulfnews.com/business/markets/from-uae-to-kerala-why-gulf-professionals-are-returning-in-record-numbers-1.500251193"
+                                   },
+                                   {
+                                       "title":  "Design. Film. Music. Gaming. UX. Fashion Tech. Animation ...",
+                                       "url":  "https://www.instagram.com/p/DVtO1GRFAYd/"
+                                   },
+                                   {
+                                       "title":  "Unbox your curiosity with hands-on experience and ...",
+                                       "url":  "https://www.instagram.com/reel/DXElP7ZjjgX/"
+                                   },
+                                   {
+                                       "title":  "Top Career Opportunities in UI/UX Design in 2026",
+                                       "url":  "https://www.collegementor.com/blogs/top-career-opportunities-in-ui-ux-design"
+                                   },
+                                   {
+                                       "title":  "UX Design Jobs 2026 | How to Land Roles",
+                                       "url":  "https://www.mediabistro.com/be-inspired/advice-from-the-pros/the-new-playbook-for-landing-ux-design-jobs-in-a-saturated-market/"
+                                   },
+                                   {
+                                       "title":  "2026 Design Job Market Trends: Middle UX Roles ...",
+                                       "url":  "https://www.linkedin.com/posts/rajeevsubramanian_everyone-is-winding-down-for-the-holidays-activity-7408869423304052736-q0P4"
+                                   },
+                                   {
+                                       "title":  "Top 20 Design Job Boards in 2026",
+                                       "url":  "https://adplist.org/blog/top-20-design-job-boards-in-2024"
+                                   },
+                                   {
+                                       "title":  "Interaction and Experience Design is a rapidly evolving field at ...",
+                                       "url":  "https://www.instagram.com/reel/DaDpEPzzfbc/"
+                                   },
+                                   {
+                                       "title":  "Mapping Your Career Path: Opportunities in the ...",
+                                       "url":  "https://www.techead.com/mapping-your-career-path-opportunities-in-the-intersection-of-creativity-and-technology-jobs/"
+                                   },
+                                   {
+                                       "title":  "10 Niche IT Job Boards Recruiters Use in 2026",
+                                       "url":  "https://www.glozo.com/blog/niche-it-job-boards-recruiters-2025"
+                                   },
+                                   {
+                                       "title":  "Check salaries in the Middle East - Dubai",
+                                       "url":  "https://www.gulftalent.com/salaries"
+                                   },
+                                   {
+                                       "title":  "Marketing and Creative Salaries and Salary Trends",
+                                       "url":  "https://www.roberthalf.com/us/en/insights/salary-guide/marketing-and-creative"
+                                   },
+                                   {
+                                       "title":  "Saudi Arabia Salary Guide 2025: Stay ahead in hiring",
+                                       "url":  "https://www.linkedin.com/posts/hays_saudi-arabias-hiring-market-is-thriving-activity-7315596051049066496-J0Qv"
+                                   },
+                                   {
+                                       "title":  "Creative Technologist Salary in United Arab Emirates (2026)",
+                                       "url":  "https://www.erieri.com/salary/job/creative-technologist/united-arab-emirates"
+                                   },
+                                   {
+                                       "title":  "GulfTalent.com Business Development Salaries in United ...",
+                                       "url":  "https://www.glassdoor.com/Salary/GulfTalent-com-Business-Development-United-Arab-Emirates-Salaries-EJI_IE618547.0,14_KO15,35_IL.36,56_IN6.htm"
+                                   },
+                                   {
+                                       "title":  "Salaries for Job Titles in Design",
+                                       "url":  "https://www.gulftalent.com/salaries/category/design"
+                                   },
+                                   {
+                                       "title":  "UAE JOBS: New data has revealed which sectors ...",
+                                       "url":  "https://www.facebook.com/ArabianBusiness/posts/uae-jobs-new-data-has-revealed-which-sectors-are-leading-hiring-growth-as-the-co/1584479949708104/"
+                                   },
+                                   {
+                                       "title":  "GulfTalent Pricing, Reviews \u0026 Product Overview",
+                                       "url":  "https://zoftwarehub.com/products/gulftalent/overview"
+                                   },
+                                   {
+                                       "title":  "Qatar Tech Salary Guide 2025: Insights and Trends",
+                                       "url":  "https://www.linkedin.com/posts/isabel-koorts_talent-connect-group-salaryguideqatar-activity-7313179931457335296-qgdW"
+                                   },
+                                   {
+                                       "title":  "Pricing | Recruitment Solutions - Bayt.com for Employers",
+                                       "url":  "https://www.bayt.com/en/employers/pricing/"
+                                   },
+                                   {
+                                       "title":  "Pricing | Job Posting Plans - Bayt.com for Employers",
+                                       "url":  "https://www.bayt.com/en/employers/pricing/job-posting-plans/"
+                                   },
+                                   {
+                                       "title":  "What It Actually Costs to Build a Job Portal Like Bayt in 2026",
+                                       "url":  "https://www.apptunix.com/blog/cost-to-build-a-job-portal-like-bayt/"
+                                   },
+                                   {
+                                       "title":  "Indeed Pricing | Job Posting Cost at Indeed",
+                                       "url":  "https://www.indeed.com/hire/o/pricing"
+                                   },
+                                   {
+                                       "title":  "Post a Job - Bayt.com for Employers",
+                                       "url":  "https://www.bayt.com/en/employers/post-a-job/"
+                                   },
+                                   {
+                                       "title":  "Indeed Pricing 2026: Plans, Sponsored Jobs \u0026 Costs - Pin",
+                                       "url":  "https://www.pin.com/blog/indeed-pricing/"
+                                   },
+                                   {
+                                       "title":  "Bayt.com for Employers - App Store - Apple",
+                                       "url":  "https://apps.apple.com/sa/app/bayt-com-for-employers/id1196619524"
+                                   },
+                                   {
+                                       "title":  ".Bayt.com Review With Pricing, Alternatives, and FAQs",
+                                       "url":  "https://www.betterteam.com/bayt-com"
+                                   },
+                                   {
+                                       "title":  "Bayt.com for Employers",
+                                       "url":  "https://www.bayt.com/en/employers/"
+                                   },
+                                   {
+                                       "title":  "What Your Bayt.com Job Alerts Say About the MENA ...",
+                                       "url":  "https://www.linkedin.com/pulse/what-your-baytcom-job-alerts-say-mena-market-right-now-bayt-com-530yf"
+                                   },
+                                   {
+                                       "title":  "UAE Classifieds and Job Portals Market",
+                                       "url":  "https://www.kenresearch.com/uae-classifieds-and-job-portals-market"
+                                   },
+                                   {
+                                       "title":  "Bayt.com",
+                                       "url":  "https://www.linkedin.com/company/bayt.com"
+                                   },
+                                   {
+                                       "title":  "LinkedIn\u0027s UAE Economic Graph Report 2026, prepared in ...",
+                                       "url":  "https://www.facebook.com/EmiratesNews/posts/linkedins-uae-economic-graph-report-2026-prepared-in-partnership-with-the-minist/1080597594625392/"
+                                   },
+                                   {
+                                       "title":  "UAE jobs: Which sectors are leading hiring growth? New ...",
+                                       "url":  "https://www.instagram.com/p/Db33WTAiHzL/"
+                                   },
+                                   {
+                                       "title":  "UAE leads global job market with 48% hiring outlook ...",
+                                       "url":  "https://www.linkedin.com/posts/smooth-professional_uaejobs-hiringtrends-careergrowth-activity-7374379861252943872-xUDE"
+                                   },
+                                   {
+                                       "title":  "UAE Job Search Strategies for 2025 | Misbah Azhar posted ...",
+                                       "url":  "https://www.linkedin.com/posts/misbah-azhar-1b3aa01a5_uaejobs2025-jobsearchtips-careeradvice-activity-7384174931451908098-pJCN"
+                                   },
+                                   {
+                                       "title":  "SAVE \u0026 SHARE THIS NOW.. Comment below your target ...",
+                                       "url":  "https://www.instagram.com/reel/DQy3izIj0wO/?hl=en"
+                                   },
+                                   {
+                                       "title":  "UAE Job Seekers: Be Cautious of Fake Interviews - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/rajiv-rana-magar-71ab4a26b_job-seekers-in-the-uae-please-be-careful-activity-7409312099530637312-XkcA"
+                                   },
+                                   {
+                                       "title":  "How to identify genuine job interviews in UAE? - Facebook",
+                                       "url":  "https://www.facebook.com/groups/dbexpats/posts/1908333159889399/"
+                                   },
+                                   {
+                                       "title":  "Anyone else dealing with likely âfraudulentâ candidates when hiring ...",
+                                       "url":  "https://www.reddit.com/r/ExperiencedDevs/comments/1kxz3mi/anyone_else_dealing_with_likely_fraudulent/"
+                                   },
+                                   {
+                                       "title":  "No proper interview questions They don\u0027t ask about your experience or ...",
+                                       "url":  "https://www.instagram.com/reel/DTK6HITE9du/"
+                                   },
+                                   {
+                                       "title":  "Recruitment fraud, ghost jobs and fake offers - Fast Company Middle East",
+                                       "url":  "https://fastcompanyme.com/work-life/navigating-the-new-job-market-landscape-recruitment-fraud-ghost-jobs-and-fake-offers/"
+                                   },
+                                   {
+                                       "title":  "Dubai job scam alert: Talent Shunts - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/tony-k-m-41365631a_why-me-another-day-another-scammer-remember-activity-7339515276461281280-pO_d"
+                                   },
+                                   {
+                                       "title":  "How to spot Job Scams and Fake Recruiters - YouTube",
+                                       "url":  "https://www.youtube.com/watch?v=6X6R1UvfUEE"
+                                   },
+                                   {
+                                       "title":  "UAE Job Scam Checker: 9 Red Flags Before You Send Your CV (2026)",
+                                       "url":  "https://resumevera.com/blogs/uae-job-scam-checker-fake-recruiters-ats-scam"
+                                   },
+                                   {
+                                       "title":  "How to Avoid Job Scams When Searching for Jobs in UAE",
+                                       "url":  "https://www.talentmate.com/articles/how-to-avoid-job-scams-when-searching-for-jobs-in-uae"
+                                   },
+                                   {
+                                       "title":  "A high-paying UAE job offer isn\u0027t always what it seems. Here\u0027s how to ...",
+                                       "url":  "https://www.instagram.com/p/Db0EK-yjIQv/"
+                                   },
+                                   {
+                                       "title":  "MCG Talent",
+                                       "url":  "http://www.mcgtalent.io/"
+                                   },
+                                   {
+                                       "title":  "Silicon Valley Associates Recruitment (Dubai)- IT Recruitment Agency",
+                                       "url":  "https://svarecruitment.com/"
+                                   },
+                                   {
+                                       "title":  "NADIA Training Institute (NADIA Global)",
+                                       "url":  "https://www.nadiaglobal.com/"
+                                   },
+                                   {
+                                       "title":  "Talents Hub",
+                                       "url":  "http://www.talentshub.me/"
+                                   },
+                                   {
+                                       "title":  "Creative Technology - Dubai",
+                                       "url":  "http://www.ctme.co/"
+                                   },
+                                   {
+                                       "title":  "Creative Technology LLC",
+                                       "url":  "https://www.creativetechnologyllc.com/"
+                                   },
+                                   {
+                                       "title":  "Dubai Media City by TECOM Group",
+                                       "url":  "https://dmc.ae/"
+                                   },
+                                   {
+                                       "title":  "Creative HR Consultancy FZE LLC",
+                                       "url":  "https://www.creativehrc.com/"
+                                   },
+                                   {
+                                       "title":  "Creative Zone",
+                                       "url":  "https://www.creativezone.ae/"
+                                   },
+                                   {
+                                       "title":  "Recruiting Solutions for Employers",
+                                       "url":  "https://www.gulftalent.com/recruitment-solutions"
+                                   },
+                                   {
+                                       "title":  "GulfTalent - Job Search App",
+                                       "url":  "https://apps.apple.com/om/app/gulftalent-job-search-app/id1093457564"
+                                   },
+                                   {
+                                       "title":  "Recruiting Solutions - Post A Job",
+                                       "url":  "https://www.gulftalent.com/recruitment-solutions/job-postings"
+                                   },
+                                   {
+                                       "title":  "What Does It Cost to Post a Job on a Job Board?",
+                                       "url":  "https://dishertalent.com/blog/cost-to-post-a-job/"
+                                   },
+                                   {
+                                       "title":  "Salaries Subscription - Business",
+                                       "url":  "https://www.gulftalent.com/salaries/subscriptions/business"
+                                   },
+                                   {
+                                       "title":  "Bayt.com",
+                                       "url":  "https://www.facebook.com/Baytcom/posts/we-hear-you-and-we-take-authenticity-seriously-every-job-posted-on-baytcom-goes-/1343498444483183/"
+                                   },
+                                   {
+                                       "title":  "How to Know If a Job Posting Is Fake",
+                                       "url":  "https://www.bayt.com/en/blog/32245/how-to-know-if-a-job-posting-is-fake/"
+                                   },
+                                   {
+                                       "title":  "Read Customer Service Reviews of bayt.com",
+                                       "url":  "https://www.trustpilot.com/review/bayt.com"
+                                   },
+                                   {
+                                       "title":  "Bayt.com Jobs - Job Search App - Ratings \u0026 Reviews",
+                                       "url":  "https://apps.apple.com/kw/app/bayt-com-jobs-job-search-app/id510893233?see-all=reviews"
+                                   },
+                                   {
+                                       "title":  "What Recruiters See When They Open Your Bayt.com Profile",
+                                       "url":  "https://www.bayt.com/en/blog/32467/what-recruiters-see-when-they-open-your-bayt-com-profile/"
+                                   },
+                                   {
+                                       "title":  "Candidate evaluation just got smarter",
+                                       "url":  "https://www.linkedin.com/pulse/candidate-evaluation-just-got-smarter-bayt-com-fgokf"
+                                   },
+                                   {
+                                       "title":  "Spot 2025 Job Scams To Stay Safe",
+                                       "url":  "https://burnettspecialists.com/blog/how-to-spot-job-scams-in-2025-protecting-candidates-from-recruitment-fraud/"
+                                   },
+                                   {
+                                       "title":  "Has anyone actually gotten a job through Bayt.com?",
+                                       "url":  "https://www.reddit.com/r/DubaiJobs/comments/1k3hkv4/has_anyone_actually_gotten_a_job_through_baytcom/"
+                                   },
+                                   {
+                                       "title":  "Fake Job Postings and Ghost Jobs: How to Spot and Avoid ...",
+                                       "url":  "https://vidcruiter.com/resources/fake-and-ghost-jobs/"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter + Hiring Assistant",
+                                       "url":  "https://business.linkedin.com/hire/recruiter"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter Lite | Candidate Search Tool",
+                                       "url":  "https://business.linkedin.com/hire/recruiter-lite"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter Pricing (2025): Full Breakdown of Plans - Spendflo",
+                                       "url":  "https://www.spendflo.com/blog/a-comprehensive-guide-to-linkedin-recruiter-pricing-is-it-worth-the-investment"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter Pricing 2026: Full Cost Breakdown - Pin",
+                                       "url":  "https://www.pin.com/blog/linkedin-recruiter-pricing-2026/"
+                                   },
+                                   {
+                                       "title":  "LinkedIn launches AI-powered hiring tools, changing recruitment forever",
+                                       "url":  "https://www.linkedin.com/posts/darikajain_linkedin-just-launched-ai-powered-hiring-activity-7396389202487054336-acMZ"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter Pricing: Full Cost Breakdown",
+                                       "url":  "https://www.hyperclapper.com/blog-posts/linkedin-recruiter-pricing-cost-breakdown"
+                                   },
+                                   {
+                                       "title":  "The 2025 Ultimate Guide to LinkedIn Recruiter - HiPeople",
+                                       "url":  "https://www.hipeople.io/blog/linkedin-recruiter"
+                                   },
+                                   {
+                                       "title":  "Which LinkedIn Plan is Suitable for a Recruiter? A 2026 Guide - Kondo",
+                                       "url":  "https://www.trykondo.com/blog/linkedin-recruiter-guide"
+                                   },
+                                   {
+                                       "title":  "LinkedIn Recruiter Lite: Features, Pricing \u0026 Guide (2026) - Juicebox",
+                                       "url":  "https://juicebox.ai/blog/linkedin-recruiter-lite"
+                                   },
+                                   {
+                                       "title":  "Free vs. paid hiring tools on LinkedIn for recruiters",
+                                       "url":  "https://business.linkedin.com/hire/resources/hiring-tools/free-vs-paid-hiring-tools-on-linkedin"
+                                   },
+                                   {
+                                       "title":  "Best job boards for Creative and Android and UI/UX ...",
+                                       "url":  "https://jobboardsearch.com/creative-jobs+job-boards-with-android-jobs+job-boards-with-ui-ux-jobs+jobs-in-united-arab-emirates"
+                                   },
+                                   {
+                                       "title":  "Mediabistro: Media \u0026 Creative Jobs | Social, Design ...",
+                                       "url":  "https://www.mediabistro.com/"
+                                   },
+                                   {
+                                       "title":  "Careers at Creative Technology",
+                                       "url":  "https://ct-group.com/me/careers/"
+                                   },
+                                   {
+                                       "title":  "Design Jobs Board",
+                                       "url":  "https://www.designjobsboard.com/"
+                                   },
+                                   {
+                                       "title":  "JobBoard.io â Job Boards made simple.",
+                                       "url":  "https://jobboard.io/"
+                                   },
+                                   {
+                                       "title":  "Creative platform jobs",
+                                       "url":  "https://ae.indeed.com/q-creative-platform-jobs.html"
+                                   },
+                                   {
+                                       "title":  "Best Job Boards to Find \u0026 Attract Top Talent in 2026",
+                                       "url":  "https://www.remotepass.com/blog/best-job-boards-to-find-attract-top-talent-in-2025"
+                                   },
+                                   {
+                                       "title":  "17 Unique Job Boards You Should Know",
+                                       "url":  "https://creative.artisantalent.com/unique-job-boards"
+                                   },
+                                   {
+                                       "title":  "High-Demand Jobs in Kuwait for Skilled Professionals",
+                                       "url":  "https://www.y-axis.com/visa/work/kuwait/most-in-demand-occupations/"
+                                   },
+                                   {
+                                       "title":  "Can Indian Students Work Part-Time While Studying in the UAE?",
+                                       "url":  "https://www.y-axis.com/blog/can-indian-students-work-part-time-while-studying-in-uae/"
+                                   },
+                                   {
+                                       "title":  "GulfTalent - Job Search App",
+                                       "url":  "https://apps.apple.com/is/app/gulftalent-job-search-app/id1093457564"
+                                   },
+                                   {
+                                       "title":  "naukrigulf.com vs gulftalent.com Traffic Comparison",
+                                       "url":  "https://www.similarweb.com/website/naukrigulf.com/vs/gulftalent.com/"
+                                   },
+                                   {
+                                       "title":  "Top 10 Best Job Posting Websites in the Middle East for 2025",
+                                       "url":  "https://blog.9cv9.com/top-10-best-job-posting-websites-in-the-middle-east-for-2025/"
+                                   },
+                                   {
+                                       "title":  "500+ Creative Technology Jobs, Employment 22 July 2026",
+                                       "url":  "https://ae.indeed.com/q-creative-technology-jobs.html"
+                                   },
+                                   {
+                                       "title":  "Creative Technologist Salary in Dubai, United Arab Emirates",
+                                       "url":  "https://www.salaryexpert.com/salary/job/creative-technologist/united-arab-emirates/dubai"
+                                   },
+                                   {
+                                       "title":  "$77k-$125k Creative Uae In Dubai Jobs Hiring Now Jun 26",
+                                       "url":  "https://www.ziprecruiter.com/Jobs/Creative-Uae-In-Dubai"
+                                   },
+                                   {
+                                       "title":  "36 creative code tech Jobs in Dubai, July 2026",
+                                       "url":  "https://www.glassdoor.com/Job/dubai-creative-code-tech-jobs-SRCH_IL.0,5_IC2204498_KO6,24.htm"
+                                   },
+                                   {
+                                       "title":  "Creative Technologist Jobs in Dubai - 639 Vacancies Aug ...",
+                                       "url":  "https://www.naukrigulf.com/creative-technologist-jobs-in-dubai"
+                                   },
+                                   {
+                                       "title":  "Creative Technologist Jobs (with Salaries) - Aug 2026",
+                                       "url":  "https://my.jobstreet.com/creative-technologist-jobs"
+                                   },
+                                   {
+                                       "title":  "Creative Technologist Jobs | WebGL, Three.js \u0026 Interactive",
+                                       "url":  "https://www.creativedevjobs.com/jobs/creative-technologist"
+                                   },
+                                   {
+                                       "title":  "Get access to 100000+ unique monthly job seekers",
+                                       "url":  "https://thehub.io/startups/join"
+                                   },
+                                   {
+                                       "title":  "Find the best niche job boards for Startups jobs",
+                                       "url":  "https://jobboardsearch.com/startup-jobs"
+                                   },
+                                   {
+                                       "title":  "Startup Jobs â Developer, designer, marketing, sales jobs ...",
+                                       "url":  "https://startup.jobs/"
+                                   },
+                                   {
+                                       "title":  "Built In: Job Search \u0026 Company Research",
+                                       "url":  "https://builtin.com/"
+                                   },
+                                   {
+                                       "title":  "Alternative protein career portal",
+                                       "url":  "https://gfi.org/vocation/"
+                                   },
+                                   {
+                                       "title":  "Seriously though, why miss out on the best opportunities? ...",
+                                       "url":  "https://www.instagram.com/reel/DQxInn8iuBr/"
+                                   },
+                                   {
+                                       "title":  "Wellfound: Startup Jobs \u0026 AI Recruiting Platform",
+                                       "url":  "https://wellfound.com/"
+                                   },
+                                   {
+                                       "title":  "Untapped: Tech Job Search and Recruiting Platform",
+                                       "url":  "https://www.untapped.io/"
+                                   },
+                                   {
+                                       "title":  "Climatebase | Climate Jobs, Careers, Fellowship ...",
+                                       "url":  "https://climatebase.org/"
+                                   }
+                               ],
+                   "generatedAt":  "2026-08-11T17:18:16.355Z",
+                   "completeness":  "complete"
+               },
+    "balance":  {
+                    "postedCreditsMicrousd":  30000000,
+                    "postedDebitsMicrousd":  22176794,
+                    "activeReservationsMicrousd":  0,
+                    "availableMicrousd":  7823206
+                },
+    "next":  null,
+    "error":  null,
+    "skillVersion":  "ee61bded3e6a"
+}

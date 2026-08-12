@@ -1,0 +1,601 @@
+﻿{
+    "requestId":  "638235a7-adba-45ba-92a0-4264ee9c392f",
+    "route":  "/v1/research/deep",
+    "capability":  "research.deep",
+    "status":  "succeeded",
+    "replayed":  false,
+    "costFinal":  true,
+    "debitMicrousd":  204974,
+    "output":  {
+                   "answer":  "# WizJobs product excellence playbook\n\n## Strategic thesis\n\n- **Do not compete on job volume.** LinkedIn and Bayt already own broad professional identity and regional reach; Bayt claims **58M job seekers and 60,000 employers**. WizJobs should win a narrow wedge: **Dubai creative-tech roles where portfolio quality, practical skills, work mode, commute, visa status, and employer responsiveness matter more than rÃ©sumÃ© keywords**.  \n  Source: https://play.google.com/store/apps/details?id=com.bayt\u0026hl=en_US\n- **The core promise:** âFind the right Dubai creative-tech opportunityâor the right verified creative-tech hireâin minutes, with evidence, transparency, and low coordination effort.â\n- **Market rationale:** UAE tech demand is reportedly growing faster than supply: Quantalent reports **30% demand growth versus 8% local supply growth in 2025â26**, with **80â85% of Dubai tech hires sourced internationally**; its placement-based figures should be validated independently before use in investor claims.  \n  Source: https://www.quantalent.ai/resources/tech-hiring-trends-uae-2026\n- AI is not itself a moat: AI is increasingly present across sourcing, screening, interviews, scheduling, and matching. WizJobs must differentiate through **trusted local data, portfolio evidence, map/commute context, and closed-loop hiring outcomes**, not a generic chatbot.  \n  Source: https://www.ibm.com/think/topics/ai-in-recruitment  \n  Source: https://www.unite.ai/top-ai-recruiting-software-platforms/\n\n## Table stakes versus differentiators\n\n| Area | Table stakes: required to be credible | Differentiator: reason to switch |\n|---|---|---|\n| Candidate identity | Fast profile creation; rÃ©sumÃ© import; LinkedIn/portfolio links; privacy controls; saved jobs; alerts; application history | **Creative-tech proof profile:** structured skills plus case studies, role/contribution, tools, outcomes, live demos, AI usage, availability, salary range, visa/relocation status, and work-mode preference |\n| Employer posting | Structured job creation; salary, contract type, location, work mode, requirements, application flow; company verification | **High-signal brief builder:** AI converts a vague brief into outcomes, must-have versus trainable skills, portfolio evidence requested, interview rubric, salary sanity check, and realistic commute/relocation scope |\n| Discovery | Keyword search, filters, recommendations, responsive mobile experience | **Dubai talent map:** roles, companies, studios, agencies, accelerators, and talent clusters with commute timeânot just distanceâby car and public transport; map and list remain synchronized |\n| Matching | Keyword/semantic relevance and alerts | **Explainable fit:** âmatched becauseâ evidence across skills, portfolio, seniority, salary, commute, visa, and work mode; show gaps and how to close them |\n| AI companion | RÃ©sumÃ© help, job recommendations, interview practice, basic Q\u0026A | **Action-oriented career/recruiting copilot:** candidate coaching and applications; employer sourcing, shortlist explanation, outreach drafts, scheduling, follow-up, and funnel diagnosisâwith human approval and auditability |\n| Trust | Spam reporting, moderation, account security | **Verified opportunity and responsiveness layer:** employer identity, job freshness, salary disclosure, recruiter authenticity, response-time badge, application status commitments, and candidate work-ownership verification |\n| Hiring workflow | Messaging, shortlist, interview scheduling, status updates | **Creative audition workflow:** brief-based paid trial or structured work sample, rubric, portfolio comparison, consented feedback, and no speculative unpaid work by default |\n| Local relevance | Dubai/UAE location and salary currency | Visa/relocation pathways, free-zone/company context, Arabic/English support where useful, UAE work norms, and international-talent matching |\n| Employer brand | Company page and basic job branding | **Proof-led employer profile:** actual projects, team composition, tools, work mode, salary bands, hiring velocity, candidate testimonials, and verified workplace claims |\n\n## Candidate-side must-wins\n\n1. **High-signal profile in under 10 minutes**\n   - Import rÃ©sumÃ©, LinkedIn, Behance, Dribbble, personal site, GitHub, or showreel.\n   - AI extracts skills but requires candidate confirmation; distinguish **claimed**, **demonstrated**, and **verified** skills.\n   - Preserve creative work context: problem, role, constraints, contribution, measurable result, and collaboration.\n   - This is critical because Behance and Dribbble are strong discovery/showcase destinations but are not necessarily complete hiring workflows.  \n     Sources: https://www.behance.net/  \n     https://dribbble.com/\n\n2. **Transparent, useful discovery**\n   - Default cards should show salary/range, employment type, work mode, exact area, commute time, visa/relocation support, freshness, employer verification, and expected response time.\n   - Salary visibility deserves priority: a cited job-search UX review reports **67% of job seekers actively look for salary information**. Validate this locally.  \n     Source: https://traveltime.com/blog/job-portals-top-10-search-ux-examples\n   - Map is a decision tool, not decoration: support commute-time isochrones, transport mode, hybrid-day assumptions, and cluster exploration. Commute-time search reduces the need to cross-check Google Maps and can avoid rejecting roles that are farther by distance but easier to reach.  \n     Source: https://traveltime.com/blog/job-portals-top-10-search-ux-examples\n\n3. **Low-friction, high-quality application**\n   - One reusable profile; role-specific evidence selection; one-click apply only where the employer has committed to reviewing applications.\n   - Let candidates answer âwhy this role?â with AI assistance while preserving their voice.\n   - Show exactly what gets shared and allow withdrawal/deletion.\n\n4. **AI companion that improves outcomes, not screen time**\n   - Recommend a small set of high-fit roles rather than an infinite feed.\n   - Explain fit, identify missing evidence, tailor a portfolio narrative, rehearse interviews, and suggest a realistic salary/commute trade-off.\n   - Never fabricate experience, auto-apply indiscriminately, or hide uncertainty.\n   - Track acceptance/edit rates and downstream interview outcomes, not chatbot sessions.\n\n5. **Trust and control**\n   - Flag suspicious employers, requests for money, unrealistic offers, rÃ©sumÃ© harvesting, and unpaid speculative work.\n   - Bayt itself publishes guidance on fake Gulf job offers, demonstrating that authenticity is a category-wide problem rather than a niche concern.  \n     Source: https://www.bayt.com/en/blog/32245/how-to-know-if-a-job-posting-is-fake/\n   - FTC guidance recommends independently contacting companies through known legitimate channels when recruiters may be impersonated. WizJobs should operationalize this through domain, company, recruiter, and posting verification.  \n     Source: https://consumer.ftc.gov/consumer-alerts/2023/08/job-scams\n\n## Employer-side must-wins\n\n1. **Create a complete, credible brief quickly**\n   - Require salary, location, work mode, contract, seniority, start date, visa support, portfolio requirements, decision process, and response SLA.\n   - AI should expose contradictory requirementsâfor example, senior capability, junior salary, and full-time onsite expectationsâbefore publication.\n\n2. **Reach scarce and international talent**\n   - Build curated pools around Dubaiâs creative-tech clusters: product/design, UX/UI, motion and 3D, gaming, spatial/AR/VR, creative engineering, AI-enabled content, frontend, data visualization, and marketing technology.\n   - Support local, relocating, and remote UAE-time-zone candidates. Quantalent reports that **70% of senior Dubai tech hires come from international relocation** and that companies without international sourcing may leave senior roles open **90â120 days**; treat these as directional, placement-based claims requiring validation.  \n     Source: https://www.quantalent.ai/resources/tech-hiring-trends-uae-2026\n\n3. **Shortlist on evidence rather than keyword volume**\n   - Rank by demonstrated work, relevant outcomes, collaboration, availability, compensation fit, commute, and visaânot school pedigree or rÃ©sumÃ© similarity alone.\n   - Show a candidate comparison matrix with citations to portfolio evidence and confidence levels.\n   - Permit recruiter override, record reasons, and audit disparate outcomes; research identifies algorithmic discrimination as a material risk in AI-enabled recruitment.  \n     Source: https://www.nature.com/articles/s41599-023-02079-x\n\n4. **Reduce coordination and time-to-hire**\n   - AI-assisted sourcing, outreach, screening questions, scheduling, reminders, structured interviews, and status updates.\n   - Candidate and employer should see the same hiring stages and next action.\n   - Industry reporting identifies time-to-hire, funnel conversion, offer acceptance, source-to-hire conversion, and cost per hire as core recruiting metrics; WizJobs should instrument all of them from launch.  \n     Source: https://www.seekout.com/blog/recruiting-metrics-2026\n   - One 2026 benchmark compilation reports **41 days average time-to-hire**, up from 33 days, but source quality and role mix should be checked.  \n     Source: https://www.pin.com/blog/recruitment-funnel-benchmarks/\n\n5. **Make employer responsiveness a product feature**\n   - Enforce or publicly display response commitments: application acknowledgment, review decision, interview feedback, and closure.\n   - Reward employers that respond and down-rank stale or silent postings.\n   - This creates a defensible trust dataset that large boards generally do not expose transparently.\n\n6. **Offer a better creative assessment**\n   - Use paid, time-boxed, role-relevant work samples with consent, ownership terms, evaluation rubric, and accessibility accommodations.\n   - Avoid AI-only ranking and avoid unpaid production work disguised as assessment.\n\n## Sequencing\n\n### First 90 days: establish liquidity, trust, and the narrow wedge\n\n**Weeks 0â3: validate the wedge before UI polish**\n- Interview at least **20 candidates, 15 hiring managers/recruiters, and 10 creative-tech operators** across agencies, startups, studios, product companies, and free-zone businesses.\n- Select **2â3 role clusters** and **2â3 Dubai geographies** where WizJobs can create density; do not launch as a generic UAE board.\n- Manually recruit and verify the first employers and candidates.\n- Define the canonical taxonomy: skills, seniority, portfolio evidence, contract, work mode, commute, visa, salary, and availability.\n- Establish baseline competitor tests: time to find five relevant jobs, percentage with salary/location/freshness, application effort, employer shortlist time, and response rate across LinkedIn, Bayt, and creative boards.\n\n**Days alli 31â60: ship the minimum trusted marketplace**\n- Candidate proof profile and portfolio ingestion.\n- Employer brief builder with mandatory transparency fields.\n- Verified job/company/recruiter badges; freshness and response-SLA labels.\n- Search/list first; add map for a small, accurate inventory with commute-time filters.\n- Candidate AI companion v1: profile improvement, fit explanation, job shortlist, application tailoring.\n- Employer AI companion v1: brief quality, candidate search, shortlist explanation, outreach drafts.\n- Human moderation and concierge matching to overcome the two-sided cold start; marketplace research stresses that early liquidity requires deliberate sequencing and density, not simply feature completeness.  \n  Sources: https://aaltodoc.aalto.fi/items/4be3eb43-fc70-431f-9ee8-54a2d2cbcaf1  \n  https://www.kenaninstitute.unc.edu/wp-content/uploads/2018/05/Beyond-the-chicken-and-egg-Ott-1.pdf\n\n**Days 61â90: prove repeated value**\n- Launch structured creative work samples and interview rubrics with design partners.\n- Add candidate alerts, employer saved searches, messaging, scheduling, and status tracking.\n- Run weekly supply-demand operations: recruit candidates for live roles and roles for high-quality candidate clusters.\n- A/B test map-first versus list-first discovery; retain map only where it improves qualified discovery or commute decisions.\n- Gate growth on verified liquidity, not registrations.\n\n### By six months: turn the wedge into a defensible system\n\n- Expand only into adjacent creative-tech clusters after the initial cluster has repeat hires.\n- Add multimodal portfolio analysis: images, video, code, prototypes, and case-study text; require candidate confirmation and preserve source links.\n- Build talent-market intelligence: skill scarcity, salary bands, commute availability, response rates, and time-to-fill by role.\n- Add structured interview kits, collaborative scorecards, reference checks, offer workflow, and onboarding handoff.\n- Add relocation/visa workflow and international sourcing campaigns, subject to UAE legal/compliance review.\n- Introduce employer subscriptions or success-based pricing only after proving qualified shortlists and hires; avoid monetizing visibility in ways that degrade trust.\n- Create a proprietary **match-quality and responsiveness graph** from verified outcomes, not merely clicks.\n- Publish an anonymized Dubai creative-tech index once sample sizes are sufficient; this can become the authority layer competitors lack.\n\n## Definition of âbestâ\n\nUse a **qualified-hire north-star**, not MAU, impressions, or chatbot usage:\n\n\u003e **Qualified match rate:** percentage of employer shortlists that produce a mutually confirmed interview or work sample, and percentage of those processes producing an accepted offer or paid engagement within a defined period.\n\nTrack four linked scorecards:\n\n**Candidate value**\n- Median time from onboarding to first relevant opportunity.\n- Search-to-qualified-application rate.\n- Application completion rate and repeat application rate.\n- Interview rate per application.\n- Candidate-reported match quality and trust.\n- Percentage of active profiles with at least one verified/evidenced project.\n- Commute-filter usage and reduction in irrelevant job views.\n- 30/90-day candidate retention and offer acceptance.\n\n**Employer value**\n- Brief completion rate and time to publish.\n- Qualified applicants per roleânot raw applications.\n- Time from publish to first qualified shortlist.\n- Shortlist-to-interview, interview-to-offer, and offer-acceptance rates.\n- Time-to-fill and cost per qualified candidate/hire.\n- Employer repeat-posting and subscription renewal.\n- Response-SLA adherence and candidate satisfaction.\n\n**Marketplace liquidity**\n- Weekly active candidates and employers in the launch wedge.\n- **Role-level fill rate:** roles receiving at least three qualified candidates within seven days.\n- Median time to first qualified match.\n- Search-to-contact and contact-to-response rates.\n- Supply-demand ratio by role, seniority, location, salary, and work mode.\n- Percentage of active listings verified, fresh, salary-transparent, and responsive.\n- Concentration risk: share of activity from the top employers/candidates.\n\n**Trust and AI quality**\n- Fake/spam reports per 1,000 listings; confirmed fraud rate.\n- Stale-listing rate and employer removal/expiry compliance.\n- Candidate consent, correction, deletion, and appeal rates.\n- AI recommendation acceptance/edit rate.\n- Match precision at top 5/10, interview uplift versus non-AI baseline, and false-positive/false-negative rates.\n- Selection-rate and interview-rate disparities across protected or proxy attributes; do not use sensitive characteristics for ranking.\n- Human override frequency and override outcome quality.\n\n### Suggested internal six-month targets\n\nSet these only after the 90-day baseline; use them as decision gates rather than public benchmarks:\n\n- **â¥70%** of active roles contain salary, work mode, location, seniority, and response SLA.\n- **â¥90%** of active listings verified and automatically expired or reconfirmed when stale.\n- **â¥50%** of launch-wedge roles receive three qualified candidates within seven days.\n- **â¥25%** employer shortlist-to-interview conversion.\n- **â¥2Ã** improvement in qualified-application rate versus the baseline workflow.\n- **â¤14 days** median time from role publication to first qualified shortlist.\n- **â¥30%** 90-day repeat usage among activated candidates and **â¥40%** repeat posting among activated employers.\n- Zero tolerance for monetized fake listings; confirmed fraud and serious privacy incidents are launch blockers.\n\n## Principal risks and mitigations\n\n- **Cold start / empty map:** launch city-and-role pods; concierge-match supply and demand; seed verified inventory; never show a visually rich map with low-quality listings.\n- **Map novelty without hiring value:** measure qualified actions and commute decisions; make list view equally strong; map only wins if it improves discovery, fit, or conversion.\n- **AI hallucination, bias, and over-automation:** retrieval from supplied evidence, confidence labels, candidate confirmation, explainability, audit logs, human approval, bias testing, and appeal.\n- **Portfolio plagiarism or AI-generated work:** provenance fields, links, live walkthroughs, structured work samples, and clear distinction between AI-assisted and independently produced work.\n- **Fake jobs, recruiter spam, and data harvesting:** business-domain verification, recruiter identity checks, manual review for risk signals, rate limits, reporting, rapid takedown, and visible employer responsiveness.\n- **Low-quality employer demand:** require compensation and process transparency; score employers on response behavior; penalize ghosting and stale postings.\n- **Overly broad positioning:** focus initially on a few creative-tech categories and Dubai clusters; expand only after repeat hiring is demonstrated.\n- **Privacy and UAE compliance:** explicit consent for rÃ©sumÃ©/portfolio processing, data minimization, deletion/export, access controls, documented AI decisioning, and legal review of employment, visa, and cross-border data flows.\n- **Metric gaming:** optimize for interviews, accepted offers, paid engagements, retention, and candidate trustânot applications, clicks, map interactions, or chatbot sessions.",
+                   "sources":  [
+                                   {
+                                       "title":  "We\u0027ve officially launched Next Gen Talent Acquisition, powered by ...",
+                                       "url":  "https://www.instagram.com/reel/DQeENugioSU/"
+                                   },
+                                   {
+                                       "title":  "Here\u0027s everything shaking up the AI world this week. Discover Top GCC ...",
+                                       "url":  "https://www.instagram.com/p/DQ6yaSbAZrw/?hl=en"
+                                   },
+                                   {
+                                       "title":  "AI hiring is changing. Recruiters aren\u0027t just looking for technical ... - Instagram",
+                                       "url":  "https://www.instagram.com/reel/DbKctaRofs-/"
+                                   },
+                                   {
+                                       "title":  "Careers | Working to build the Future of Technology | HERE",
+                                       "url":  "https://www.here.com/about/careers"
+                                   },
+                                   {
+                                       "title":  "Careers - Social Discovery Group",
+                                       "url":  "https://socialdiscoverygroup.com/vacancies"
+                                   },
+                                   {
+                                       "title":  "Radancy | The Talent Acquisition Platform powered by Agentic AI",
+                                       "url":  "https://www.radancy.com/"
+                                   },
+                                   {
+                                       "title":  "Placer.ai is hiring! We\u0027re looking for top-tier talent to join our ... - Instagram",
+                                       "url":  "https://www.instagram.com/reel/DWP3LtYAPbU/"
+                                   },
+                                   {
+                                       "title":  "Aleena Ayaz | Global Remote Talent Partner | US, UK, UAE, APAC",
+                                       "url":  "https://pk.linkedin.com/in/aleena-ayaz"
+                                   },
+                                   {
+                                       "title":  "Eightfold AI | AI Native Talent Intelligence Platform",
+                                       "url":  "https://eightfold.ai/"
+                                   },
+                                   {
+                                       "title":  "Careers at Match Group",
+                                       "url":  "https://join.matchgroupcareers.com/careers"
+                                   },
+                                   {
+                                       "title":  "The Verification Economy: How AI\u0027s Trust Crisis Creates a $300 Billion Market",
+                                       "url":  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6580618"
+                                   },
+                                   {
+                                       "title":  "The Headless Firm: How AI Reshapes Enterprise Boundaries",
+                                       "url":  "https://arxiv.org/abs/2602.21401"
+                                   },
+                                   {
+                                       "title":  "Digitized: industry transformation and disruption through entrepreneurship and innovation",
+                                       "url":  "https://books.google.com/books?hl=en\u0026lr=\u0026id=-XqFDwAAQBAJ\u0026oi=fnd\u0026pg=PT7\u0026dq=two-sided+marketplace+network+effects+job+platform+must-win+features+employer+hiring+metrics\u0026ots=XdhtC7fNNL\u0026sig=xPwdmSIQ4b5ju6K7lLeAfVLXQx8"
+                                   },
+                                   {
+                                       "title":  "AI Circular Financing and the Coming Shakeout: Vendor Funding, Round-Tripping, and Hyperscaler Power in the Data-Center Boom",
+                                       "url":  "https://www.researchgate.net/profile/Douglas-Youvan/publication/399553337_AI_Circular_Financing_and_the_Coming_Shakeout_Vendor_Funding_Round-Tripping_and_Hyperscaler_Power_in_the_Data-Center_Boom/links/695ef5a50c98040d4828ef2a/AI-Circular-Financing-and-the-Coming-Shakeout-Vendor-Funding-Round-Tripping-and-Hyperscaler-Power-in-the-Data-Center-Boom.pdf"
+                                   },
+                                   {
+                                       "title":  "Strategic Alliance Mediation-Creating Value from Difference and Discord in Global Busines",
+                                       "url":  "https://access.heinonline.com/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ejlr2\u0026section=45"
+                                   },
+                                   {
+                                       "title":  "Economics at the FCC, 2016â2017: Auction designs for spectrum repurposing and universal service subsidies",
+                                       "url":  "https://link.springer.com/article/10.1007/s11151-017-9597-5"
+                                   },
+                                   {
+                                       "title":  "A framework for 5G and 6G market design",
+                                       "url":  "https://liberalforum.eu/wp-content/uploads/2022/06/Europes-Future-Connected_ELF-Study_Techno-Politics_vol.2-2.pdf#page=31"
+                                   },
+                                   {
+                                       "title":  "Legal \u0026 Financial Conditions for Tourism M\u0026A Deals in Less Developed European Mediterranean Countries",
+                                       "url":  "https://netlibrary.aau.at/obvuklhs/content/titleinfo/6787386/full.pdf"
+                                   },
+                                   {
+                                       "title":  "50â Views",
+                                       "url":  "https://www.files.ethz.ch/isn/140364/ASPJ_Vol%2026-No%201-Jan-Feb-2012.pdf"
+                                   },
+                                   {
+                                       "title":  "Tech Hiring Trends UAE 2026 â What Employers Must Know",
+                                       "url":  "https://www.quantalent.ai/resources/tech-hiring-trends-uae-2026"
+                                   },
+                                   {
+                                       "title":  "UniXperts | Study Abroad on Instagram: \"Artificial Intelligence ...",
+                                       "url":  "https://www.instagram.com/reel/Dap8klEFAax/"
+                                   },
+                                   {
+                                       "title":  "Gartner Forecasts MENA IT Spending to Reach $169 ...",
+                                       "url":  "https://www.gartner.com/en/newsroom/press-releases/2025-08-04-gartner-forecasts-mena-it-spending-to-reach-169-billion-us-dollars-in-2026"
+                                   },
+                                   {
+                                       "title":  "Innovations Group",
+                                       "url":  "https://www.facebook.com/Innovationsgroup/posts/in-this-article-ravi-jethwani-ceo-innovations-group-reveals-the-key-industries-t/1539499834887791/"
+                                   },
+                                   {
+                                       "title":  "UAE workforce to grow 12.1% by 2030, driven by tech ...",
+                                       "url":  "https://www.linkedin.com/posts/garethelmettouri_uae-workforce-set-to-grow-121-by-2030-activity-7408741037122408448-Z6KV"
+                                   },
+                                   {
+                                       "title":  "UNVEILING THE FUTURE OF TECH CAREERS IN DUBAI",
+                                       "url":  "https://www.charterhouseme.ae/blog/2024/06/unveiling-the-future-of-tech-careers-in-dubai-emerging-trends-and-in-demand-skills"
+                                   },
+                                   {
+                                       "title":  "ððð \u0026 ððð ðð¢ð«ð¢ð§ð  ðð«ðð§ðð¬ ð¢ð§ 2026 ...",
+                                       "url":  "https://www.instagram.com/p/DX80ghJjt7i/"
+                                   },
+                                   {
+                                       "title":  "UAE Tech Talent Shortage: Why IT Staffing \u0026 Outsourcing ...",
+                                       "url":  "https://www.adecco.com/en-ae/resources/article/Future-of-Technology-Depends-on-the-Talent-We-Build-Today"
+                                   },
+                                   {
+                                       "title":  "The New Growth Equation for Tech Services",
+                                       "url":  "https://www.bain.com/insights/new-growth-equation-for-tech-services/"
+                                   },
+                                   {
+                                       "title":  "Big Ideas 2026: Part 1",
+                                       "url":  "https://a16z.com/newsletter/big-ideas-2026-part-1/"
+                                   },
+                                   {
+                                       "title":  "Top AI recruiting tools and software of 2026",
+                                       "url":  "https://www.techtarget.com/searchhrsoftware/tip/Top-AI-recruiting-tools-and-software-of-2022"
+                                   },
+                                   {
+                                       "title":  "AI-Powered Career Mapping Platform for Job Seekers and ...",
+                                       "url":  "https://inoxoft.com/casestudy/career-mapper-platform/"
+                                   },
+                                   {
+                                       "title":  "Location Data, Personalisation \u0026 Job Search UX | Blog",
+                                       "url":  "https://traveltime.com/blog/job-portals-top-10-search-ux-examples"
+                                   },
+                                   {
+                                       "title":  "Building a new way to discover jobs around you on a map ...",
+                                       "url":  "https://www.reddit.com/r/jobsearchhacks/comments/1pp7827/building_a_new_way_to_discover_jobs_around_you_on/"
+                                   },
+                                   {
+                                       "title":  "NotFound Jobs Upgrades: Smarter Job Search for Designers",
+                                       "url":  "https://www.linkedin.com/posts/orbit28_ux-ui-uxui-activity-7401287054258552832-7MGa"
+                                   },
+                                   {
+                                       "title":  "UX Research Case Study: AI-based Job Portal",
+                                       "url":  "https://medium.com/@nurishantika/ux-research-ai-based-job-portal-fd0af582f3f3"
+                                   },
+                                   {
+                                       "title":  "WorkOnward",
+                                       "url":  "https://solve.mit.edu/solutions/102300"
+                                   },
+                                   {
+                                       "title":  "AI Career Map: Discover Your Ideal Career Path",
+                                       "url":  "https://www.kickresume.com/en/ai-career-map/"
+                                   },
+                                   {
+                                       "title":  "Finding AI Talent Using Location Intelligence",
+                                       "url":  "https://www.esri.com/about/newsroom/publications/wherenext/where-the-ai-jobs-are"
+                                   },
+                                   {
+                                       "title":  "Startup hiring through firmâdriven search: Evidence from Venture for America",
+                                       "url":  "https://sms.onlinelibrary.wiley.com/doi/abs/10.1002/smj.3710"
+                                   },
+                                   {
+                                       "title":  "On-Ramps to Good Jobs: The Benefits for Employers",
+                                       "url":  "https://media4.manhattan-institute.org/sites/default/files/on-ramps-to-good-jobs-benefits-for-employers.pdf"
+                                   },
+                                   {
+                                       "title":  "Integrating Textual Features with Survival Analysis for Predicting Employee Turnover",
+                                       "url":  "https://www.mdpi.com/2076-328X/16/2/174"
+                                   },
+                                   {
+                                       "title":  "90 Day Trial Employment Periods-Employers\u0027 Experiences",
+                                       "url":  "https://ojs.victoria.ac.nz/LEW/article/view/1724"
+                                   },
+                                   {
+                                       "title":  "Familiar strangers: Evidence from referral-based hiring experiments in India",
+                                       "url":  "https://kartiksrivastava94.github.io/pages/Srivastava_JobReferrals.pdf"
+                                   },
+                                   {
+                                       "title":  "Churning of human resources: A proposal for a theoretical-methodological model",
+                                       "url":  "https://www.scielo.br/j/ram/a/5qttPwDJfkCXW9tL5X4T6nj/?lang=en"
+                                   },
+                                   {
+                                       "title":  "Improving Employee Retention with Machine Learning for Proactive Turnover Risk Detection and Strategic Interventions",
+                                       "url":  "https://assets-eu.researchsquare.com/files/rs-8378596/v1_covered_82fc1eaf-d317-4460-a477-b50a3f957b42.pdf"
+                                   },
+                                   {
+                                       "title":  "Beyond DiscreteâTime Hazard Regression: Bayesian Regularization for Dynamic Churn Modeling",
+                                       "url":  "https://onlinelibrary.wiley.com/doi/abs/10.1002/joom.70027"
+                                   },
+                                   {
+                                       "title":  "Employee churn prediction",
+                                       "url":  "https://www.sciencedirect.com/science/article/pii/S0957417410007621"
+                                   },
+                                   {
+                                       "title":  "Predicting Employee Turnover in SME\u0027s: a Data-Driven Approach for Workplace Retention",
+                                       "url":  "https://search.proquest.com/openview/4265728289c8195f5d06ed1f0c43a892/1?pq-origsite=gscholar\u0026cbl=2026366\u0026diss=y"
+                                   },
+                                   {
+                                       "title":  "Bayt.com: The Middle East\u0027s Leading Job Site",
+                                       "url":  "https://www.bayt.com/"
+                                   },
+                                   {
+                                       "title":  "Read Customer Service Reviews of bayt.com",
+                                       "url":  "https://www.trustpilot.com/review/bayt.com"
+                                   },
+                                   {
+                                       "title":  "Has anyone actually gotten a job through Bayt.com?",
+                                       "url":  "https://www.reddit.com/r/DubaiJobs/comments/1k3hkv4/has_anyone_actually_gotten_a_job_through_baytcom/"
+                                   },
+                                   {
+                                       "title":  "Bayt.com Jobs - Job Search App - Ratings \u0026 Reviews",
+                                       "url":  "https://apps.apple.com/kw/app/bayt-com-jobs-job-search-app/id510893233?see-all=reviews"
+                                   },
+                                   {
+                                       "title":  "Bayt.com",
+                                       "url":  "https://www.facebook.com/Baytcom/posts/we-hear-you-and-we-take-authenticity-seriously-every-job-posted-on-baytcom-goes-/1343498444483183/"
+                                   },
+                                   {
+                                       "title":  "Has anyone ever found real jobs from Bayt the Middle East ...",
+                                       "url":  "https://www.quora.com/Has-anyone-ever-found-real-jobs-from-Bayt-the-Middle-East-job-portal"
+                                   },
+                                   {
+                                       "title":  "Bayt.com: AI Job Search MENA - Apps on Google Play",
+                                       "url":  "https://play.google.com/store/apps/details?id=com.bayt\u0026hl=en_US"
+                                   },
+                                   {
+                                       "title":  "How to Know If a Job Posting Is Fake",
+                                       "url":  "https://www.bayt.com/en/blog/32245/how-to-know-if-a-job-posting-is-fake/"
+                                   },
+                                   {
+                                       "title":  "Employee Reviews about Pay and benefits - Bayt.com",
+                                       "url":  "https://ae.indeed.com/cmp/Bayt.com/reviews?ftopic=paybenefits"
+                                   },
+                                   {
+                                       "title":  "Global Resources - UAE Free Zones",
+                                       "url":  "http://www.uaefreezones.com/"
+                                   },
+                                   {
+                                       "title":  "Dubai Internet City by TECOM Group",
+                                       "url":  "https://dic.ae/"
+                                   },
+                                   {
+                                       "title":  "GulfTalent",
+                                       "url":  "https://www.gulftalent.com/"
+                                   },
+                                   {
+                                       "title":  "Creative Media Solutions fz llc",
+                                       "url":  "http://www.cmsgulf.tv/"
+                                   },
+                                   {
+                                       "title":  "Product Prioritization Frameworks",
+                                       "url":  "https://www.productboard.com/glossary/product-prioritization-frameworks/"
+                                   },
+                                   {
+                                       "title":  "How to structure your roadmap with table stakes ...",
+                                       "url":  "https://www.linkedin.com/posts/leahtharin_productledgrowth-productmanagement-activity-7379527224066002944-TUkb"
+                                   },
+                                   {
+                                       "title":  "Feature Prioritization Matrix for Product Teams - still valid in ...",
+                                       "url":  "https://userpilot.com/blog/feature-prioritization-matrix/"
+                                   },
+                                   {
+                                       "title":  "Prioritization frameworks",
+                                       "url":  "https://www.atlassian.com/agile/product-management/prioritization-framework"
+                                   },
+                                   {
+                                       "title":  "The Ultimate Guide to Product Management Prioritization ...",
+                                       "url":  "https://www.productplan.com/learn/product-management-frameworks"
+                                   },
+                                   {
+                                       "title":  "9 Prioritization Frameworks \u0026 Which to Use in 2025",
+                                       "url":  "https://productschool.com/blog/product-fundamentals/ultimate-guide-product-prioritization"
+                                   },
+                                   {
+                                       "title":  "The 2026 guide to product prioritization + the best ...",
+                                       "url":  "https://canny.io/blog/product-prioritization-frameworks/"
+                                   },
+                                   {
+                                       "title":  "9 product prioritization frameworks for product managers",
+                                       "url":  "https://www.tempo.io/guides/product-prioritization-techniques-product-managers"
+                                   },
+                                   {
+                                       "title":  "PRIORITIZATION FRAMEWORKS for your product | Make ...",
+                                       "url":  "https://www.youtube.com/watch?v=nDVK8f9YSmM"
+                                   },
+                                   {
+                                       "title":  "2026 Salary Guide | Creative, Marketing, Design \u0026 Technology",
+                                       "url":  "https://aquent.com/lp/salary-guide"
+                                   },
+                                   {
+                                       "title":  "2026 UX Salary Report: Regional Trends and Insights - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/rolandvb_ux-researcher-salary-report-2026-user-interviews-activity-7429463962641051648-Bc9z"
+                                   },
+                                   {
+                                       "title":  "UX Designer Salary Guide 2026: Pay by Level \u0026 Location - KORE1",
+                                       "url":  "https://www.kore1.com/ux-designer-salary-guide/"
+                                   },
+                                   {
+                                       "title":  "UX Designer Salary (Updated for 2026) - Robert Half",
+                                       "url":  "https://www.roberthalf.com/us/en/job-details/ux-designer"
+                                   },
+                                   {
+                                       "title":  "Content Design Salary Report 2026 - UX WRITING HUB",
+                                       "url":  "https://uxwritinghub.com/content-design-salary-report-2026/"
+                                   },
+                                   {
+                                       "title":  "2026 UI \u0026 UX Design Salary Guide - Digital Waffle",
+                                       "url":  "https://www.digitalwaffle.co/salary-guides/ux-design-salaries"
+                                   },
+                                   {
+                                       "title":  "Remote Designer Salary Guide | LATAM, MENA \u0026 SEA - Simera",
+                                       "url":  "https://simera.io/blog/remote-designer-salary-guide-latam-mena-sea-2025"
+                                   },
+                                   {
+                                       "title":  "Are your skills ready for the future? 62% of tech professionals think AI ...",
+                                       "url":  "https://www.instagram.com/reel/DZrSAHbo-ah/"
+                                   },
+                                   {
+                                       "title":  "2026 IT Tech Salary Guide - Motion Recruitment",
+                                       "url":  "https://motionrecruitment.com/it-salary"
+                                   },
+                                   {
+                                       "title":  "Creative Industries Census 2026 | Major Players",
+                                       "url":  "https://www.majorplayers.co/us/the-creative-industries-census"
+                                   },
+                                   {
+                                       "title":  "Is the Middle East Job site, Bayt.com, a fraud?",
+                                       "url":  "https://www.quora.com/Is-the-Middle-East-Job-site-Bayt-com-a-fraud"
+                                   },
+                                   {
+                                       "title":  "BEWARE OF THAT TEXT MESSAGE OFFERING ...",
+                                       "url":  "https://www.facebook.com/LoriFullbrightNewsOn6/posts/beware-of-that-text-message-offering-you-a-job-its-a-scamhow-the-scam-works-the-/1554609109356535/"
+                                   },
+                                   {
+                                       "title":  "Unfortunately there\u0027s a new scam on this site targeting job ...",
+                                       "url":  "https://www.linkedin.com/posts/abrownresumewriter_unfortunately-theres-a-new-scam-on-this-activity-7276393096878157824-GWRF"
+                                   },
+                                   {
+                                       "title":  "Read Customer Service Reviews of gulftalent.com",
+                                       "url":  "https://www.trustpilot.com/review/gulftalent.com"
+                                   },
+                                   {
+                                       "title":  "Fake job vacancies are harvesting your data. Please read ...",
+                                       "url":  "https://www.reddit.com/r/recruitinghell/comments/160yaxi/fake_job_vacancies_are_harvesting_your_data/"
+                                   },
+                                   {
+                                       "title":  "Scammers impersonate well-known companies, recruit for ...",
+                                       "url":  "https://consumer.ftc.gov/consumer-alerts/2023/08/scammers-impersonate-well-known-companies-recruit-fake-jobs-linkedin-other-job-platforms"
+                                   },
+                                   {
+                                       "title":  "Is this a fake recruiter? Six employment scam red flags",
+                                       "url":  "https://www.airswift.com/blog/recruitment-scam-red-flags"
+                                   },
+                                   {
+                                       "title":  "Top 10 Effective Job Hunting Strategies for United Arab Emirates Tech Professionals",
+                                       "url":  "https://www.nucamp.co/blog/coding-bootcamp-united-arab-emirates-are-top-10-effective-job-hunting-strategies-for-united-arab-emirates-tech-professionals"
+                                   },
+                                   {
+                                       "title":  "Extra Skills Engineering Students Now Need to Get a Job",
+                                       "url":  "https://al-fanarmedia.org/2025/08/extra-skills-engineering-students-now-need-to-get-a-job/"
+                                   },
+                                   {
+                                       "title":  "Can location-based augmented reality support cultural-heritage experience in real-world settings? Age-related engagement patterns and a field-basedÂ â¦",
+                                       "url":  "https://www.mdpi.com/2227-9709/13/1/12"
+                                   },
+                                   {
+                                       "title":  "Co-Creating Reassurance Journey Maps to Foster Engagement in Remote Patient Monitoring for Post-Operative Cancer Care",
+                                       "url":  "https://dl.acm.org/doi/abs/10.1145/3706598.3714134"
+                                   },
+                                   {
+                                       "title":  "Designing Successful Digital Map Interfaces: The Role of Usability, Gamification, and Personalization",
+                                       "url":  "https://epub.fh-joanneum.at/obvfhjhs/content/titleinfo/12731491/full.pdf"
+                                   },
+                                   {
+                                       "title":  "Enhancing spatial cognition in online virtual museum environments: integrating game-based navigation strategies for improved user experience",
+                                       "url":  "https://www.mdpi.com/2076-3417/14/10/4163"
+                                   },
+                                   {
+                                       "title":  "Measuring and managing customer engagement value through the customer journey",
+                                       "url":  "https://link.springer.com/chapter/10.1007/978-3-319-61985-9_3"
+                                   },
+                                   {
+                                       "title":  "Predicting cartographic symbol location with eye-tracking data and machine learning approach",
+                                       "url":  "https://www.mdpi.com/1995-8692/18/4/35"
+                                   },
+                                   {
+                                       "title":  "Harnessing digital marketing analytics for knowledge-driven digital transformation in the hospitality industry",
+                                       "url":  "https://www.mdpi.com/2078-2489/16/10/868"
+                                   },
+                                   {
+                                       "title":  "VISUALIZATION OF A MOBILE INTERACTIVE ROUTE MAP: Creating a mobile app\u0027s User Interface",
+                                       "url":  "https://www.theseus.fi/handle/10024/345088"
+                                   },
+                                   {
+                                       "title":  "Roots \u0026 Migrants: A user-centered story map application for teaching and learning historical population dynamics in the United States",
+                                       "url":  "https://par.nsf.gov/biblio/10627760"
+                                   },
+                                   {
+                                       "title":  "Enhancing user experience through machine learning-based personalized recommendation systems: Behavior data-driven UI design",
+                                       "url":  "https://www.techrxiv.org/doi/abs/10.36227/techrxiv.173337559.97825928"
+                                   },
+                                   {
+                                       "title":  "Political text messages could get more effective and annoying. Blame AI",
+                                       "url":  "https://www.npr.org/2026/07/12/nx-s1-5867763/ai-artificial-intelligence-data-texts-bots-voters-campaigns"
+                                   },
+                                   {
+                                       "title":  "Talent acquisition transformed: Using AI to match the speed of modern work",
+                                       "url":  "https://www.chieftalentofficer.co/2025/11/18/talent-acquisition-transformed-using-ai-to-match-the-speed-of-modern-work/"
+                                   },
+                                   {
+                                       "title":  "The State of AI in the Enterprise - 2026 AI report",
+                                       "url":  "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html"
+                                   },
+                                   {
+                                       "title":  "10 Best AI Recruiting Software Platforms (August 2026)",
+                                       "url":  "https://www.unite.ai/ai-recruiting-tools/"
+                                   },
+                                   {
+                                       "title":  "AI in Recruiting",
+                                       "url":  "https://www.ibm.com/think/topics/ai-in-recruitment"
+                                   },
+                                   {
+                                       "title":  "ManpowerGroup Returns to VivaTech to Power the Shift from AI Ambition to Workforce Reality",
+                                       "url":  "https://www.finansavisen.no/borsmeldinger/2026/06/15/3062e9f4-629c-55a3-a8e0-5a89c329b098/manpowergroup-returns-to-vivatech-to-power-the-shift-from-ai-ambition-to-workforce-reality"
+                                   },
+                                   {
+                                       "title":  "How To Make Money With AI: 19 Ideas (2026)",
+                                       "url":  "https://www.shopify.com/in/blog/how-to-make-money-using-ai"
+                                   },
+                                   {
+                                       "title":  "The AI Recruitment Takeover: Redefining Hiring In The Digital Age",
+                                       "url":  "https://www.forbes.com/sites/keithferrazzi/2025/03/27/the-ai-recruitment-takeover-redefining-hiring-in-the-digital-age/"
+                                   },
+                                   {
+                                       "title":  "Ethics and discrimination in artificial intelligence-enabled recruitment practices",
+                                       "url":  "https://www.nature.com/articles/s41599-023-02079-x"
+                                   },
+                                   {
+                                       "title":  "Solving chicken and egg dilemma in online platform startup: Value proposition in focus",
+                                       "url":  "https://aaltodoc.aalto.fi/items/4bbc43a9-fc70-431f-9ee8-54a2d2cbcaf1"
+                                   },
+                                   {
+                                       "title":  "An end-to-end, stage-wise life-cycle framework for mitigating algorithmic bias in two-sided marketplaces",
+                                       "url":  "https://www.researchgate.net/profile/Nihar-Patel-25/publication/400088292_An_End-To-End_Stage-Wise_Life-Cycle_Framework_for_Mitigating_Algorithmic_Bias_in_Two-Sided_Marketplaces/links/69785fbf44a19e6791021c8d/An-End-To-End-Stage-Wise-Life-Cycle-Framework-for-Mitigating-Algorithmic-Bias-in-Two-Sided-Marketplaces.pdf"
+                                   },
+                                   {
+                                       "title":  "Beyond the chicken and egg: Strategy formation in two-sided marketplace ventures",
+                                       "url":  "https://www.kenaninstitute.unc.edu/wp-content/uploads/2018/05/Beyond-the-Chicken-and-Egg-Ott-1.pdf"
+                                   },
+                                   {
+                                       "title":  "A guide to marketplaces",
+                                       "url":  "https://assets.super.so/4be3ebcb-8297-48e6-ae28-f803be8f7fa9/files/916d365b-32ef-44a7-86f2-69311bf1f849.pdf"
+                                   },
+                                   {
+                                       "title":  "A product-led monetization model for an AI cofounder accelerator: a case study of Solvearn",
+                                       "url":  "https://lutpub.lut.fi/handle/10024/172327"
+                                   },
+                                   {
+                                       "title":  "Design tensions in a two-sided marketplace for reusable digital therapeutics software components: a qualitative interview study",
+                                       "url":  "https://www.medrxiv.org/content/10.64898/2026.07.17.26358332.abstract"
+                                   },
+                                   {
+                                       "title":  "Layr and the Market for Short-Term Artist Studio Access",
+                                       "url":  "https://search.proquest.com/openview/696f75b232c4fc1001c9c4722adea734/1?pq-origsite=gscholar\u0026cbl=2026366\u0026diss=y"
+                                   },
+                                   {
+                                       "title":  "Case study of a bootstrapped startup: why a technically mature product may still fail to scale",
+                                       "url":  "https://lutpub.lut.fi/handle/10024/171402"
+                                   },
+                                   {
+                                       "title":  "Recruitment Funnel Benchmarks 2026: Conversion Rates by ...",
+                                       "url":  "https://www.pin.com/blog/recruitment-funnel-benchmarks/"
+                                   },
+                                   {
+                                       "title":  "Cost per hire guide: formula, benchmarks, FAQs - Truffle",
+                                       "url":  "https://www.hiretruffle.com/blog/cost-per-hire"
+                                   },
+                                   {
+                                       "title":  "Recruitment Funnel Metrics: A Complete Breakdown",
+                                       "url":  "https://rentarecruiter.com/recruitment-funnel-metrics-complete-breakdown/"
+                                   },
+                                   {
+                                       "title":  "Why Recruiting Metrics Matter in 2026: The Cheat Sheet for ...",
+                                       "url":  "https://www.seekout.com/blog/recruiting-metrics-2026/"
+                                   },
+                                   {
+                                       "title":  "Cost to Hire in 2026: Formula, Benchmarks \u0026 How ...",
+                                       "url":  "https://www.turahire.com/blog/cost-to-hire"
+                                   },
+                                   {
+                                       "title":  "Hiring Funnel Conversion Benchmarks for 2026 Teams - Navero",
+                                       "url":  "https://www.navero.me/blog/recruiting-funnel-metrics"
+                                   },
+                                   {
+                                       "title":  "Recruitment Funnel Metrics",
+                                       "url":  "https://www.linkedin.com/top-content/recruitment-hr/talent-acquisition-metrics/recruitment-funnel-metrics/"
+                                   },
+                                   {
+                                       "title":  "Hiring Funnel Conversion Rates: 2026 Benchmarks and ...",
+                                       "url":  "https://hrpanda.co/blog/hiring-funnel-conversion-benchmarks"
+                                   },
+                                   {
+                                       "title":  "Cost per hire: formula, benchmarks \u0026 how to calculate it ...",
+                                       "url":  "https://recruitee.com/blog/cost-per-hire"
+                                   },
+                                   {
+                                       "title":  "Behance: Showcase, Discover, and Hire Creatives",
+                                       "url":  "https://www.behance.net/"
+                                   },
+                                   {
+                                       "title":  "Dribbble - Discover the World\u0027s Top Designers \u0026 Creative Professionals",
+                                       "url":  "https://dribbble.com/"
+                                   },
+                                   {
+                                       "title":  "Why I don\u0027t recommend Behance for designers - LinkedIn",
+                                       "url":  "https://www.linkedin.com/posts/shanelemons_designer-behance-portfolio-activity-7358221155234729984-Ap2e"
+                                   },
+                                   {
+                                       "title":  "Join over 62 million creatives who are building their careers on #Behance ...",
+                                       "url":  "https://www.instagram.com/reel/DNlMEdaOY8p/?hl=en"
+                                   },
+                                   {
+                                       "title":  "Does hiring designers through Dribbble or Behance work? - Quora",
+                                       "url":  "https://www.quora.com/Does-hiring-designers-through-Dribbble-or-Behance-work"
+                                   },
+                                   {
+                                       "title":  "Best Portfolio Platforms for Creatives: Top Picks for 2025 | Skillshare Blog",
+                                       "url":  "https://www.skillshare.com/en/blog/top-portfolio-platforms-for-creatives/?srsltid=AfmBOopa-VWLueNX7fca0ep4ohHa6X8XfWk0XuxP6EQkjXZFwCc53neS"
+                                   },
+                                   {
+                                       "title":  "How important is having a behance or dribble to being hired? - Reddit",
+                                       "url":  "https://www.reddit.com/r/graphic_design/comments/83bh5j/how_important_is_having_a_behance_or_dribble_to/"
+                                   },
+                                   {
+                                       "title":  "Why use personal portfolios instead of Behance? - Facebook",
+                                       "url":  "https://www.facebook.com/groups/2788777944712613/posts/4469883683268689/"
+                                   },
+                                   {
+                                       "title":  "Find Creative Jobs :: Behance",
+                                       "url":  "https://www.behance.net/joblist"
+                                   },
+                                   {
+                                       "title":  "Behance vs Dribbble: Which Platform is Better for Getting a Design Job in ...",
+                                       "url":  "https://www.junoschool.org/article/behance-vs-dribbble-for-jobs-india/"
+                                   },
+                                   {
+                                       "title":  "How to Stand Out in Dubai\u0027s Competitive Job Market in 2025",
+                                       "url":  "https://mena.weareaspire.com/blog/2025/05/how-to-stand-out-in-dubais-competitive-job-market-in-2025"
+                                   },
+                                   {
+                                       "title":  "Strategy Analyst jobs in Dubai",
+                                       "url":  "https://ae.indeed.com/q-strategy-analyst-l-dubai-jobs.html"
+                                   },
+                                   {
+                                       "title":  "Dubai Job Market 2026: Changes and Opportunities",
+                                       "url":  "https://www.linkedin.com/posts/faizalamresume_dubaijobs-uaejobs-dubaijobmarket-activity-7435582150621556736-kv7X"
+                                   },
+                                   {
+                                       "title":  "43 Market intelligence analyst jobs in United Arab Emirates",
+                                       "url":  "https://www.glassdoor.com/Job/united-arab-emirates-market-intelligence-analyst-jobs-SRCH_IL.0,20_IN6_KO21,48.htm"
+                                   },
+                                   {
+                                       "title":  "Business Analyst | Strategy \u0026 Transformation | Dubai | 2026",
+                                       "url":  "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/business-analyst-strategy-transformation-dubai-2026-21174"
+                                   },
+                                   {
+                                       "title":  "Page 4 - 389 Competitive Analysis Jobs in Dubai",
+                                       "url":  "https://www.founditgulf.com/search/competitive-analysis-jobs-in-dubai-4"
+                                   },
+                                   {
+                                       "title":  "Strategy Analyst jobs in Dubai (18)",
+                                       "url":  "https://www.efinancialcareers-canada.com/jobs/Strategy-Analyst/in-Dubai-Dubai-United-Arab-Emirates"
+                                   },
+                                   {
+                                       "title":  "Market Mapping Solutions for Talent \u0026 Hiring Strategy UAE",
+                                       "url":  "https://www.tgcc.ae/market-mapping.html"
+                                   },
+                                   {
+                                       "title":  "Senior Product Analyst - Competitive Intelligence - Wise.jobs",
+                                       "url":  "https://wise.jobs/job/senior-product-analyst-competitive-intelligence-in-london-jid-3481"
+                                   }
+                               ],
+                   "generatedAt":  "2026-08-11T17:21:29.144Z",
+                   "completeness":  "complete"
+               },
+    "balance":  {
+                    "postedCreditsMicrousd":  30000000,
+                    "postedDebitsMicrousd":  23178543,
+                    "activeReservationsMicrousd":  0,
+                    "availableMicrousd":  6821457
+                },
+    "next":  null,
+    "error":  null,
+    "skillVersion":  "ee61bded3e6a"
+}

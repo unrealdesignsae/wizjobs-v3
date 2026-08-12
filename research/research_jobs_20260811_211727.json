@@ -1,0 +1,38 @@
+﻿[
+    {
+        "query":  "What are the leading Dubai and UAE job platforms in 2024-2026 (Bayt, Naukrigulf, GulfTalent, LinkedIn UAE, and others)? Compare their strengths, weaknesses, candidate UX, employer tools, mobile experience, pricing/positioning, and gaps for creative-technology talent.",
+        "context":  "Research for WizJobs, a Dubai-focused creative-tech job platform with map discovery and an upcoming employer website.",
+        "instructions":  "Return a competitive teardown with named products, concrete feature/UX notes, citations, and opportunity gaps WizJobs could own.",
+        "id":  "uae-platforms"
+    },
+    {
+        "query":  "What do best-in-class global candidate job-search products do well in 2024-2026 (LinkedIn, Indeed, Wellfound/AngelList, Otta or Welcome to the Jungle, Handshake, RippleMatch, and similar)? Focus on discovery, matching explainability, application tracking, messaging, personalization, and onboarding UX patterns worth copying or avoiding.",
+        "context":  "WizJobs is a candidate-first prototype with daily matches, applications workspace, messages, and saved roles.",
+        "instructions":  "Comparative UX/product patterns with evidence. Call out what separates category leaders from clones.",
+        "id":  "global-candidate"
+    },
+    {
+        "query":  "How do creative, design, 3D, and tech talent platforms win candidates and employers (Behance Jobs, ArtStation Jobs, Dribbble, Creative Circle, Arc.dev, Contra, Working Not Working, YunoJuno, and similar)? What portfolio-first and craft-first UX patterns matter most?",
+        "context":  "WizJobs targets creative-technology professionals (3D, Unreal, technical art, visualization) in Dubai.",
+        "instructions":  "Identify must-have niche differentiators vs generic job boards. Include employer hiring-side patterns where relevant.",
+        "id":  "creative-tech"
+    },
+    {
+        "query":  "What product and UX evidence exists for map-based local job discovery, explainable AI job matching, and AI job-search companions/coaches in career products? Which approaches build trust and retention, and which feel gimmicky?",
+        "context":  "WizJobs has a Dubai map Explore experience, match percentages, and a character companion named Wizy.",
+        "instructions":  "Best practices, anti-patterns, and recommendations for making map + explainable matches + companion a real moat.",
+        "id":  "map-ai-companion"
+    },
+    {
+        "query":  "What makes an excellent employer-side job platform or recruiting website in 2025-2026? Cover job posting UX, candidate pipeline/ATS-lite, employer branding, sourcing creative/tech talent, pricing models for two-sided marketplaces, and how top products keep recruiters coming back.",
+        "context":  "WizJobs will have an employer website in addition to the candidate app. Early-stage two-sided marketplace.",
+        "instructions":  "Playbook for employer MVP vs later features. Cite products and patterns. Flag chicken-and-egg risks and mitigations.",
+        "id":  "employer-side"
+    },
+    {
+        "query":  "For a new two-sided job marketplace focused on Dubai creative-tech talent, with map discovery and an AI companion, what strategic product bets would make it clearly better than LinkedIn, Bayt, and niche creative boards? Include candidate-side and employer-side must-wins, sequencing, and measurable definition of best.",
+        "context":  "Synthesize a product excellence playbook for WizJobs before UI fixes begin.",
+        "instructions":  "Prioritized playbook: 90-day / 6-month bets, table-stakes vs differentiators, risks, and success metrics. Evidence-backed.",
+        "id":  "best-in-class-playbook"
+    }
+]

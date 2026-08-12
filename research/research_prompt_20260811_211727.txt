@@ -1,0 +1,17 @@
+﻿WizJobs competitive + product excellence research (2024-2026)
+
+Product context:
+- Candidate-first job platform prototype for creative-technology professionals, Dubai-focused
+- Features: map-based local discovery, explainable daily matches, applications workspace, recruiter messaging, saved roles, Wizy AI companion
+- Planned: employer website / employer side as well (two-sided marketplace)
+- Goal: what similar apps do well and what would make WizJobs the best
+
+Competitor mix:
+1) Dubai/UAE job apps (Bayt, Naukrigulf, GulfTalent, LinkedIn local, etc.)
+2) Global candidate products (LinkedIn, Indeed, Wellfound/AngelList, Otta/Welcome to the Jungle, Handshake, etc.)
+3) Creative/design/tech talent platforms (Behance Jobs, ArtStation Jobs, Creative Circle, Arc.dev, Contra, Dribbble, etc.)
+
+Depth needed: summary + competitive teardown + product playbook + comparative UX/product recommendations
+Focus: candidate UX & discovery, differentiation vs giants, creative-tech/Dubai niche, AI companion moat, AND employer-side excellence
+
+Deliverable: evidence-backed recommendations for making WizJobs best-in-class on both candidate and employer sides.
