@@ -9,8 +9,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const SRC = join(ROOT, 'src');
 
+const CONTRACT = join(ROOT, 'DESIGN.md');
+
 const FONT_STACK = "'plus jakarta sans','segoe ui',system-ui,-apple-system,sans-serif";
-const ALLOWED_FONT_VALUES = new Set(['var(--wj-font)', 'var(--font-sans)', 'inherit', FONT_STACK]);
+const ALLOWED_FONT_VALUES = new Set(['var(--wj-font)', 'inherit', FONT_STACK]);
 const MIN_FONT_PX = 12;
 const MIN_TARGET_PX = 44;
 
@@ -39,6 +41,37 @@ const violations = [];
 function report(file, line, rule, message) {
   violations.push({ file, line, rule, message });
 }
+
+function normalizeValue(value) {
+  const v = value.trim().toLowerCase().replace(/\s*,\s*/g, ',').replace(/\s+/g, ' ');
+  const shortHex = v.match(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/);
+  return shortHex ? `#${shortHex[1]}${shortHex[1]}${shortHex[2]}${shortHex[2]}${shortHex[3]}${shortHex[3]}` : v;
+}
+
+// DESIGN.md is the token registry. Every name it mentions is permitted, and
+// every name it gives a value is pinned to that value. Without this, satisfying
+// the color rule is as easy as inventing `--wj-canvas-grey: #eff2f4` and
+// pointing the old background at it.
+function readContractTokens() {
+  const text = readFileSync(CONTRACT, 'utf8');
+  const names = new Set((text.match(/--wj-[\w-]+/g) || []));
+  const values = new Map();
+
+  for (const row of text.split('\n')) {
+    if (!row.trim().startsWith('|')) continue;
+    const cells = row.split('|').slice(1, -1).map((c) => c.trim());
+    const tokenIndex = cells.findIndex((c) => /^`--wj-[\w-]+`$/.test(c));
+    if (tokenIndex === -1 || tokenIndex + 1 >= cells.length) continue;
+    const token = cells[tokenIndex].replace(/`/g, '');
+    const raw = cells[tokenIndex + 1].replace(/`/g, '').trim();
+    if (!/^(#[0-9a-fA-F]{3,8}|rgba?\(|-?\d)/.test(raw)) continue;
+    values.set(token, normalizeValue(raw));
+  }
+
+  return { names, values };
+}
+
+const CONTRACT_TOKENS = readContractTokens();
 
 function walk(dir) {
   const out = [];
@@ -157,7 +190,20 @@ function lintCss(file, text) {
   for (const decl of parseCss(text)) {
     const { prop, value, line, selector, atRules } = decl;
     const inFontFace = atRules.some((a) => a.toLowerCase().startsWith('@font-face'));
-    const isTokenDefinition = prop.startsWith('--') && /(^|[\s,>+~])?:root\b/.test(selector);
+    const isRoot = /(^|[\s,>+~])?:root\b/.test(selector);
+    const isThemeRoot = THEME_ROOT.test(selector.trim());
+    const isTokenDefinition = prop.startsWith('--') && isRoot;
+
+    if (prop.startsWith('--') && (isRoot || isThemeRoot)) {
+      if (!CONTRACT_TOKENS.names.has(prop)) {
+        report(file, line, 'token-unknown', `\`${prop}\` is not defined in DESIGN.md; add it to the contract or use an existing token`);
+      } else if (isRoot && !value.includes('var(')) {
+        const expected = CONTRACT_TOKENS.values.get(prop);
+        if (expected && normalizeValue(value) !== expected) {
+          report(file, line, 'token-value', `\`${prop}\` is ${normalizeValue(value)} but DESIGN.md pins it to ${expected}`);
+        }
+      }
+    }
 
     if (GRADIENT.test(value)) {
       report(file, line, 'gradient', `\`${prop}\` uses a gradient; DESIGN.md forbids gradients`);

@@ -185,8 +185,18 @@ A resting card uses a hairline border or `--wj-shadow-sm`, not both plus a fill.
 
 ## Motion
 
-- Direct interactions: 150–250ms. Entrances: 360–500ms. Stagger between siblings: 100–140ms.
-- Ease-out for entrances and direct responses: `cubic-bezier(0.22, 1, 0.36, 1)`. Ease-in-out for elements already on screen: `cubic-bezier(0.77, 0, 0.175, 1)`.
+Motion is tokenized so timing stays consistent across routes:
+
+| Role | Token | Value |
+| --- | --- | --- |
+| Direct response | `--wj-duration-quick` | `200ms` |
+| Entrance | `--wj-duration-enter` | `420ms` |
+| Stagger step | `--wj-stagger` | `120ms` |
+| Entrance and direct curve | `--wj-ease-out` | `cubic-bezier(0.22, 1, 0.36, 1)` |
+| On-screen curve | `--wj-ease-in-out` | `cubic-bezier(0.77, 0, 0.175, 1)` |
+
+- Direct interactions: 150–250ms. Entrances: 360–500ms. Stagger between siblings: 100–140ms. The tokens above sit mid-range; a value outside these ranges needs a reason.
+- Ease-out for entrances and direct responses, ease-in-out for elements already on screen. Use the tokens rather than repeating the curve.
 - Animate `transform` and `opacity` only. Always name the transitioned properties.
 - Entrances fade from 0 with `translateY(10–14px)`. Content stays interactive throughout.
 - Explore reveals in spatial order: summary, left discovery cards, map, then map controls and result rail. The map fades in gently; no zoom spectacle.

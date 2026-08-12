@@ -20,6 +20,16 @@ It prints `file:line rule message` for every violation, a per-rule summary, and 
 | `ease-in` | `ease-in` appears as a timing function (`ease-in-out` is fine) | Use the ease-out curve for entrances |
 | `target-size` | An interactive selector declares `height`, `min-height`, `width`, or `min-width` below 44px | Grow the control, or grow its padding and the declared box with it |
 | `dark-token` | A `--wj-dark-*` token is read outside the `html[data-theme="dark"]` root block | Read the neutral token instead. The dark ramp is remapped once so one edit reaches both themes |
+| `token-unknown` | A custom property is defined at `:root` that DESIGN.md never mentions | Use an existing token, or add the new one to the contract first |
+| `token-value` | A `:root` token holds a value different from the one DESIGN.md pins it to | Change the value, or change the contract deliberately |
+
+## DESIGN.md is the token registry
+
+`token-unknown` and `token-value` read the token tables straight out of `DESIGN.md`: every `--wj-*` name it mentions is permitted, and every name it gives a value is pinned to that value.
+
+This closes the obvious way to satisfy `color-literal` without changing the design. Faced with a `#eff2f4` page background, the cheapest escape is to define `--wj-canvas-grey: #eff2f4` at `:root` and point the background at it — fully tokenized, zero color literals, and the canvas is still grey. Pinning the registry to the contract means that invented token fails, and `--wj-canvas` has to be the white the contract says it is.
+
+It also catches drift that is otherwise invisible: `--wj-muted` is currently defined twice, in two places, with two different values.
 
 ## How the CSS is read
 
