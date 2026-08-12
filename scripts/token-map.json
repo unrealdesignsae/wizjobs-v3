@@ -1,0 +1,2228 @@
+{
+  "#ffffff": {
+    "uses": 229,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#455ff6": {
+    "uses": 56,
+    "fg": "--wj-blue",
+    "bg": "--wj-blue",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#f7f9ff": {
+    "uses": 11,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#eef1ff": {
+    "uses": 9,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#24345f": {
+    "uses": 9,
+    "fg": "--wj-dark-raised",
+    "bg": "--wj-dark-raised",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(69,95,246,.12)": {
+    "uses": 7,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.12"
+  },
+  "#22ae72": {
+    "uses": 6,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "#101a38": {
+    "uses": 6,
+    "fg": "--wj-dark-surface",
+    "bg": "--wj-dark-surface",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#edf1fb": {
+    "uses": 5,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 96%"
+  },
+  "#f7f8ff": {
+    "uses": 5,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(255,255,255,.96)": {
+    "uses": 5,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 100%"
+  },
+  "#1e2b54": {
+    "uses": 5,
+    "fg": "--wj-dark-raised",
+    "bg": "--wj-dark-raised",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#aebaff": {
+    "uses": 4,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 84%"
+  },
+  "#8ca1ff": {
+    "uses": 4,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 77%"
+  },
+  "#cdd5fc": {
+    "uses": 4,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "#4e587f": {
+    "uses": 4,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 40%"
+  },
+  "#cfd7ff": {
+    "uses": 4,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 91%"
+  },
+  "rgba(69,95,246,.22)": {
+    "uses": 4,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.22"
+  },
+  "#e6eaf3": {
+    "uses": 4,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#d8e0ff": {
+    "uses": 4,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "rgba(69,95,246,.18)": {
+    "uses": 4,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.18"
+  },
+  "#dce3ff": {
+    "uses": 4,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 93%"
+  },
+  "#cdd5ff": {
+    "uses": 3,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "rgba(69,95,246,.17)": {
+    "uses": 3,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.17"
+  },
+  "rgba(69,95,246,.1)": {
+    "uses": 3,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.1"
+  },
+  "#f4f6fb": {
+    "uses": 3,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 97%"
+  },
+  "#141a3c": {
+    "uses": 3,
+    "fg": "--wj-navy",
+    "bg": "--wj-navy",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#dce3f4": {
+    "uses": 3,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#fbfcff": {
+    "uses": 3,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 99%"
+  },
+  "rgba(255,255,255,.82)": {
+    "uses": 3,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#f8f9ff": {
+    "uses": 3,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(69,95,246,.15)": {
+    "uses": 3,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.15"
+  },
+  "#071431": {
+    "uses": 3,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-canvas",
+    "source": "classified",
+    "why": "deepest 11%"
+  },
+  "#eaf0ff": {
+    "uses": 3,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 96%"
+  },
+  "#9eacff": {
+    "uses": 2,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 81%"
+  },
+  "#91a3ff": {
+    "uses": 2,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 78%"
+  },
+  "#e8f8f1": {
+    "uses": 2,
+    "fg": "--wj-success-soft",
+    "bg": "--wj-success-soft",
+    "source": "classified",
+    "why": "pale green"
+  },
+  "#e4e8f6": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 93%"
+  },
+  "#667099": {
+    "uses": 2,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 50%"
+  },
+  "rgba(69,95,246,0.32)": {
+    "uses": 2,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(31,48,112,0.06)": {
+    "uses": 2,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.06"
+  },
+  "#dce5ff": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 93%"
+  },
+  "rgba(20,26,60,0.18)": {
+    "uses": 2,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "#121d38": {
+    "uses": 2,
+    "fg": "--wj-dark-surface",
+    "bg": "--wj-dark-surface",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#3a4d7b": {
+    "uses": 2,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 35%"
+  },
+  "#c4cdea": {
+    "uses": 2,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 84%"
+  },
+  "#aab7ff": {
+    "uses": 2,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 83%"
+  },
+  "rgba(43,56,133,.2)": {
+    "uses": 2,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.2"
+  },
+  "#e7ebf6": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#f6f8ff": {
+    "uses": 2,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(255,255,255,.2)": {
+    "uses": 2,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.2"
+  },
+  "rgba(255,255,255,.15)": {
+    "uses": 2,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.15"
+  },
+  "rgba(69,95,246,.32)": {
+    "uses": 2,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(255,255,255,.16)": {
+    "uses": 2,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.16"
+  },
+  "rgba(7,20,49,.88)": {
+    "uses": 2,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.88"
+  },
+  "rgba(0,0,0,.22)": {
+    "uses": 2,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.22"
+  },
+  "rgba(0,0,0,.2)": {
+    "uses": 2,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.2"
+  },
+  "#344575": {
+    "uses": 2,
+    "fg": "--wj-dark-hairline-strong",
+    "bg": "--wj-dark-hairline-strong",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(255,255,255,.72)": {
+    "uses": 2,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.72"
+  },
+  "#7582cf": {
+    "uses": 2,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 64%"
+  },
+  "#d7dfff": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "#f8f1df": {
+    "uses": 2,
+    "fg": "--wj-warning-soft",
+    "bg": "--wj-warning-soft",
+    "source": "classified",
+    "why": "pale amber"
+  },
+  "#2946d8": {
+    "uses": 2,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#24a56a": {
+    "uses": 2,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "#dfe6ff": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#cbd3e8": {
+    "uses": 2,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 85%"
+  },
+  "#18264a": {
+    "uses": 2,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 19%"
+  },
+  "#dfeaff": {
+    "uses": 2,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#5f78ff": {
+    "uses": 2,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 69%"
+  },
+  "#2949e8": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#edf1ff": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#0b163f": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 15%"
+  },
+  "#5c688e": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 46%"
+  },
+  "#8791af": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 61%"
+  },
+  "#dce3f6": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#ff9f43": {
+    "uses": 1,
+    "fg": "--wj-warning",
+    "bg": "--wj-warning",
+    "source": "classified",
+    "why": "amber"
+  },
+  "#f5f7fc": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 97%"
+  },
+  "rgba(37,54,126,.06)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.06"
+  },
+  "#e8ecf8": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#b8c4ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(37,54,126,.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "rgba(69,95,246,.26)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.26"
+  },
+  "rgba(37,54,126,.05)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.05"
+  },
+  "#e05454": {
+    "uses": 1,
+    "fg": "--wj-danger",
+    "bg": "--wj-danger",
+    "source": "classified",
+    "why": "red"
+  },
+  "rgba(37,54,126,.055)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.055"
+  },
+  "#e9edf8": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#8fa2ff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 78%"
+  },
+  "#6680fb": {
+    "uses": 1,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 69%"
+  },
+  "#8da0fc": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 77%"
+  },
+  "#b6c2fd": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 85%"
+  },
+  "#d2d9ff": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#e8ecff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 95%"
+  },
+  "#42bfca": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "teal, off-palette"
+  },
+  "#dfe5f7": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "#fff3e7": {
+    "uses": 1,
+    "fg": "--wj-warning-soft",
+    "bg": "--wj-warning-soft",
+    "source": "classified",
+    "why": "pale amber"
+  },
+  "rgba(11,22,63,.34)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.34"
+  },
+  "rgba(11,22,63,.22)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.22"
+  },
+  "#bfe5d5": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "rgba(11,22,63,.16)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.16"
+  },
+  "#334bd8": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#168b63": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "rgba(31,48,112,0.08)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.08"
+  },
+  "rgba(69,95,246,0.16)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.16"
+  },
+  "rgba(69,95,246,0.14)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.14"
+  },
+  "#c7cff7": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 87%"
+  },
+  "#485174": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 37%"
+  },
+  "#9aa4c9": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 70%"
+  },
+  "#ef5b68": {
+    "uses": 1,
+    "fg": "--wj-danger",
+    "bg": "--wj-danger",
+    "source": "classified",
+    "why": "red"
+  },
+  "#4f587e": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 40%"
+  },
+  "rgba(69,95,246,0.24)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.24"
+  },
+  "rgba(255,255,255,0.94)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.94"
+  },
+  "rgba(31,48,112,0.14)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.14"
+  },
+  "rgba(31,48,112,0.18)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "#b9c4fa": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 85%"
+  },
+  "rgba(31,48,112,0.11)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.11"
+  },
+  "#22a06b": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "#3049dc": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#11845b": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "rgba(20,26,60,0.06)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.06"
+  },
+  "rgba(69,95,246,0.12)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.12"
+  },
+  "rgba(37,54,126,0.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "rgba(20,26,60,0.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "#333c63": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 29%"
+  },
+  "rgba(20,26,60,0.14)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.14"
+  },
+  "#c0c8df": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 81%"
+  },
+  "#d8dded": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 89%"
+  },
+  "rgba(20,26,60,0.42)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.42"
+  },
+  "rgba(20,26,60,0.24)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.24"
+  },
+  "rgba(3,8,24,0.76)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.76"
+  },
+  "#30436f": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 31%"
+  },
+  "#c9d2ee": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "#1a2747": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 19%"
+  },
+  "#344873": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 33%"
+  },
+  "#1a2849": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 19%"
+  },
+  "#9ca8ca": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 70%"
+  },
+  "#e9edff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 96%"
+  },
+  "#182542": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 18%"
+  },
+  "#b8c3ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(69,95,246,0.22)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.22"
+  },
+  "rgba(20,26,60,0.1)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.1"
+  },
+  "#cbd3fb": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 89%"
+  },
+  "rgba(53,73,153,.22)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.22"
+  },
+  "rgba(53,73,153,.3)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.3"
+  },
+  "rgba(40,53,121,.15)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.15"
+  },
+  "#313b82": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "classified",
+    "why": "pressed blue 35%"
+  },
+  "#dde4fb": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 93%"
+  },
+  "rgba(29,42,112,.25)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.25"
+  },
+  "rgba(255,255,255,.14)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.14"
+  },
+  "#65f2d1": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "rgba(101,242,209,.18)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "#424a78": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 36%"
+  },
+  "#d9e0ff": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 93%"
+  },
+  "#dfe3ef": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 91%"
+  },
+  "#333a72": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 32%"
+  },
+  "rgba(6,14,43,.14)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.14"
+  },
+  "#f8faff": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 99%"
+  },
+  "#dfe5f5": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "rgba(40,54,126,.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "#182051": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 21%"
+  },
+  "rgba(69,95,246,.25)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.25"
+  },
+  "#737b9f": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 54%"
+  },
+  "#151a36": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 15%"
+  },
+  "#737b99": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 53%"
+  },
+  "rgba(52,65,130,.06)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.06"
+  },
+  "#20284e": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 22%"
+  },
+  "#6f7798": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 52%"
+  },
+  "#9096ae": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 62%"
+  },
+  "#566086": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 43%"
+  },
+  "#dfe4f1": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 91%"
+  },
+  "#e3e7f2": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "#9dabff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 81%"
+  },
+  "rgba(54,67,137,.1)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.1"
+  },
+  "#26337d": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "classified",
+    "why": "pressed blue 32%"
+  },
+  "#6d83ff": {
+    "uses": 1,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 71%"
+  },
+  "#69718e": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 48%"
+  },
+  "#9298ad": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 63%"
+  },
+  "#8b92a9": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 60%"
+  },
+  "#111832": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-canvas",
+    "source": "classified",
+    "why": "deepest 13%"
+  },
+  "rgba(8,14,38,.1)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.1"
+  },
+  "rgba(8,14,38,.32)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.32"
+  },
+  "rgba(17,24,55,.82)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.82"
+  },
+  "#91a5ff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 78%"
+  },
+  "#aab3d4": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 75%"
+  },
+  "#2f3e9d": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 40%"
+  },
+  "rgba(86,111,255,.35)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.35"
+  },
+  "rgba(70,91,220,.15)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.15"
+  },
+  "rgba(70,91,220,0)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0"
+  },
+  "rgba(132,151,255,.18)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.18"
+  },
+  "rgba(5,10,35,.35)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.35"
+  },
+  "#7f93ff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 75%"
+  },
+  "rgba(3,8,27,.28)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.28"
+  },
+  "#151b3c": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 16%"
+  },
+  "#737a91": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 51%"
+  },
+  "#5866bf": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 55%"
+  },
+  "#dce1ef": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "#384064": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 31%"
+  },
+  "#f7f9fe": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 98%"
+  },
+  "#161c40": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 17%"
+  },
+  "#dfe4f2": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#e0e5f1": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "rgba(53,65,122,.09)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.09"
+  },
+  "#7d849d": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 55%"
+  },
+  "#8d93a9": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 61%"
+  },
+  "#f2f4fb": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 97%"
+  },
+  "#445078": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 37%"
+  },
+  "#e1e6f2": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "#7e859e": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 56%"
+  },
+  "#9aa0b4": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 65%"
+  },
+  "#858ca4": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 58%"
+  },
+  "#f7f9fd": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 98%"
+  },
+  "#e2e6f0": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#9ca2b5": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 66%"
+  },
+  "#dfe4ef": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 91%"
+  },
+  "rgba(4,13,45,.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "rgba(255,255,255,.5)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.5"
+  },
+  "rgba(7,20,49,.75)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.75"
+  },
+  "#c8d1ef": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(255,255,255,.18)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.18"
+  },
+  "rgba(0,0,0,.15)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.15"
+  },
+  "#bac8ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "#b4bfdf": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 79%"
+  },
+  "rgba(255,255,255,.25)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.25"
+  },
+  "rgba(0,0,0,.12)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.12"
+  },
+  "#aebadd": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 77%"
+  },
+  "rgba(0,0,0,.28)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.28"
+  },
+  "rgba(255,255,255,.97)": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 100%"
+  },
+  "#8590b2": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 61%"
+  },
+  "rgba(7,16,40,.42)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.42"
+  },
+  "rgba(7,16,40,.32)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.32"
+  },
+  "rgba(3,9,25,.7)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.7"
+  },
+  "#1d2b50": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 21%"
+  },
+  "#dfe5ff": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 94%"
+  },
+  "#aeb9da": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 77%"
+  },
+  "#26345c": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 25%"
+  },
+  "#6676cf": {
+    "uses": 1,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 61%"
+  },
+  "#cbd5ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "#f4f7ff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 98%"
+  },
+  "#f3f6ff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 98%"
+  },
+  "rgba(255,255,255,.9)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.9"
+  },
+  "#7b88d8": {
+    "uses": 1,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 66%"
+  },
+  "rgba(69,95,246,.72)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.72"
+  },
+  "rgba(69,95,246,.08)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.08"
+  },
+  "#9eaeff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 81%"
+  },
+  "rgba(69,95,246,.14)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.14"
+  },
+  "rgba(255,255,255,.86)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.86"
+  },
+  "rgba(69,95,246,.16)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.16"
+  },
+  "#b9c4ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(69,95,246,.13)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.13"
+  },
+  "rgba(255,255,255,.76)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.76"
+  },
+  "#edf2ff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 96%"
+  },
+  "rgba(69,95,246,.24)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.24"
+  },
+  "rgba(34,47,118,.2)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.2"
+  },
+  "#b7c2ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(40,53,133,.22)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.22"
+  },
+  "#d3dcff": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#fcf7eb": {
+    "uses": 1,
+    "fg": "--wj-warning-soft",
+    "bg": "--wj-warning-soft",
+    "source": "classified",
+    "why": "pale amber"
+  },
+  "#f5ebda": {
+    "uses": 1,
+    "fg": "--wj-warning-soft",
+    "bg": "--wj-warning-soft",
+    "source": "classified",
+    "why": "pale amber"
+  },
+  "#fdfdfd": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 99%"
+  },
+  "#e1e6f4": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "rgba(255,255,255,.78)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.78"
+  },
+  "rgba(255,255,255,.94)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.94"
+  },
+  "#263fc9": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "#147347": {
+    "uses": 1,
+    "fg": "--wj-success",
+    "bg": "--wj-success",
+    "source": "classified",
+    "why": "green"
+  },
+  "rgba(49,61,125,.16)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.16"
+  },
+  "rgba(21,32,91,.16)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.16"
+  },
+  "#4f5a83": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 41%"
+  },
+  "#f7f8fd": {
+    "uses": 1,
+    "fg": "--wj-on-brand",
+    "bg": "--wj-surface",
+    "source": "classified",
+    "why": "near white 98%"
+  },
+  "#7c86ad": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 58%"
+  },
+  "#dce2f5": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 91%"
+  },
+  "#65719d": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 51%"
+  },
+  "#ccd5ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "#cad4ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "#c4ceff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 88%"
+  },
+  "rgba(43,56,133,.18)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "rgba(69,95,246,.09)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.09"
+  },
+  "rgba(45,59,129,.16)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.16"
+  },
+  "rgba(255,255,255,.13)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.13"
+  },
+  "#8790ad": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 60%"
+  },
+  "#dce2f4": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 91%"
+  },
+  "rgba(34,46,108,.18)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "#b8c3f9": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 85%"
+  },
+  "rgba(16,24,65,.58)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.58"
+  },
+  "rgba(69,95,246,.28)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.28"
+  },
+  "#cbd4ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 90%"
+  },
+  "rgba(21,31,89,.28)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.28"
+  },
+  "#e7ebff": {
+    "uses": 1,
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "classified",
+    "why": "tint 95%"
+  },
+  "#c9d2ff": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 89%"
+  },
+  "rgba(35,48,121,.2)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.2"
+  },
+  "rgba(52,66,137,.18)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.18"
+  },
+  "rgba(52,66,137,.25)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.25"
+  },
+  "rgba(69,95,246,.3)": {
+    "uses": 1,
+    "fg": "--wj-focus",
+    "bg": "--wj-focus",
+    "source": "classified",
+    "why": "blue alpha 0.3"
+  },
+  "rgba(45,59,129,.1)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.1"
+  },
+  "rgba(45,59,129,.14)": {
+    "uses": 1,
+    "fg": "--wj-shadow-md",
+    "bg": "--wj-shadow-md",
+    "source": "classified",
+    "why": "dark alpha 0.14"
+  },
+  "rgba(255,255,255,.1)": {
+    "uses": 1,
+    "fg": "--wj-on-brand-muted",
+    "bg": "--wj-on-brand-muted",
+    "source": "classified",
+    "why": "white alpha 0.1"
+  },
+  "#f5f7ff": {
+    "uses": 1,
+    "fg": "--wj-dark-ink",
+    "bg": "--wj-dark-ink",
+    "source": "pinned",
+    "why": "read from the code"
+  },
+  "rgba(0,0,0,.38)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.38"
+  },
+  "#cbd3ea": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "rgba(18,29,56,.94)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.94"
+  },
+  "#aeb9d3": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 75%"
+  },
+  "rgba(8,18,45,.76)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.76"
+  },
+  "rgba(8,18,45,.86)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.86"
+  },
+  "rgba(8,18,45,.88)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.88"
+  },
+  "#142244": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 17%"
+  },
+  "#304676": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 33%"
+  },
+  "#e0e5f5": {
+    "uses": 1,
+    "fg": "--wj-blue-soft",
+    "bg": "--wj-blue-soft",
+    "source": "classified",
+    "why": "soft 92%"
+  },
+  "rgba(31,48,112,.06)": {
+    "uses": 1,
+    "fg": "--wj-shadow-sm",
+    "bg": "--wj-shadow-sm",
+    "source": "classified",
+    "why": "dark alpha 0.06"
+  },
+  "rgba(4,9,22,.78)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.78"
+  },
+  "#243567": {
+    "uses": 1,
+    "fg": "--wj-body",
+    "bg": "--wj-body",
+    "source": "classified",
+    "why": "body 27%"
+  },
+  "#223158": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 24%"
+  },
+  "#9fb0ff": {
+    "uses": 1,
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "classified",
+    "why": "hairline strong 81%"
+  },
+  "#15213e": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 16%"
+  },
+  "#8894b8": {
+    "uses": 1,
+    "fg": "--wj-muted",
+    "bg": "--wj-muted",
+    "source": "classified",
+    "why": "muted 63%"
+  },
+  "#d7d9de": {
+    "uses": 1,
+    "fg": "--wj-hairline",
+    "bg": "--wj-hairline",
+    "source": "classified",
+    "why": "hairline 86%"
+  },
+  "#13204a": {
+    "uses": 1,
+    "fg": "--wj-navy",
+    "bg": "--wj-dark-raised",
+    "source": "classified",
+    "why": "deep 18%"
+  },
+  "rgba(0,0,0,.5)": {
+    "uses": 1,
+    "fg": "--wj-scrim",
+    "bg": "--wj-scrim",
+    "source": "classified",
+    "why": "dark alpha 0.5"
+  },
+  "#2c4076": {
+    "uses": 1,
+    "fg": "--wj-blue-press",
+    "bg": "--wj-blue-press",
+    "source": "classified",
+    "why": "pressed blue 32%"
+  },
+  "#6f85ff": {
+    "uses": 1,
+    "fg": "--wj-dark-blue",
+    "bg": "--wj-dark-blue",
+    "source": "classified",
+    "why": "lifted blue 72%"
+  },
+  "rgba(45,59,129,.15)": {
+    "uses": 1,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "classified",
+    "why": "dark alpha 0.15"
+  }
+}
