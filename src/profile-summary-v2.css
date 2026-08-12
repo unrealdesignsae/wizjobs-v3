@@ -13,7 +13,7 @@
   min-height: calc(100dvh - 72px);
   color: var(--pv2-navy);
   background: var(--pv2-canvas);
-  font-family: Roboto, Arial, sans-serif;
+  font-family: var(--wj-font);
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;

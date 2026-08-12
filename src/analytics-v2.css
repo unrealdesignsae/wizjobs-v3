@@ -1,23 +1,4 @@
-@font-face{
-  font-family:Roboto;
-  src:url('/assets/fonts/01f0c602c274ea55-s.p.woff2') format('woff2');
-  font-weight:400;
-  font-display:swap;
-}
-
-@font-face{
-  font-family:Roboto;
-  src:url('/assets/fonts/1e41be92c43b3255-s.p.woff2') format('woff2');
-  font-weight:500;
-  font-display:swap;
-}
-
-@font-face{
-  font-family:Roboto;
-  src:url('/assets/fonts/350b852752f8489d-s.p.woff2') format('woff2');
-  font-weight:700;
-  font-display:swap;
-}
+/* The Plus Jakarta Sans @font-face declarations live once in styles.css. */
 
 .av2-page{
   --av2-blue:#455ff6;
@@ -41,7 +22,7 @@
   overflow:clip;
   background:#f5f7fc;
   color:var(--av2-navy);
-  font-family:Roboto,Arial,sans-serif;
+  font-family:var(--wj-font);
   font-synthesis:none;
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing:antialiased;

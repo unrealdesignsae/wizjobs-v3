@@ -14,7 +14,7 @@
   padding: 22px;
   color: var(--home-v2-navy);
   background: var(--home-v2-canvas);
-  font-family: Roboto, Arial, sans-serif;
+  font-family: var(--wj-font);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
