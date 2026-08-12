@@ -11,26 +11,30 @@ This file is the authoritative contract. `design-system/wizjobs/MASTER.md` carri
 3. **Restrained** — a single accent color does all the persuading. No gradients, no dark panels, no decorative flourishes, no second accent hue.
 4. **Conversational** — soft radii, pill controls, roomy targets, and calm motion. The interface should feel approachable rather than administrative.
 
+
+
 ## Color
 
 Three brand colors only: **WizJobs blue**, **white**, and **deep navy**. Everything else is a low-saturation navy-tinted neutral derived from them.
 
-| Role | Token | Value | Usage |
-| --- | --- | --- | --- |
-| Brand blue | `--wj-blue` | `#455FF6` | Primary buttons, selected states, links, focus ring, match emphasis |
-| Blue pressed | `--wj-blue-press` | `#3348D8` | Active/pressed state of blue controls only |
-| Blue soft | `--wj-blue-soft` | `#EEF1FF` | Selected chips, subtle highlight fills |
-| Blue tint | `--wj-blue-tint` | `#F6F8FF` | Large quiet fills, hover rows |
-| Ink | `--wj-navy` | `#141A3C` | Headings and primary text |
-| Body | `--wj-body` | `#3C4468` | Body copy |
-| Muted | `--wj-muted` | `#5F678C` | Secondary metadata, ≥14px only |
-| Hairline | `--wj-hairline` | `#E6E9F2` | Dividers, card outlines |
-| Hairline strong | `--wj-hairline-strong` | `#D3D9EA` | Input borders, emphasized separation |
-| Canvas | `--wj-canvas` | `#FFFFFF` | Page background |
-| Surface soft | `--wj-surface-soft` | `#F6F7FB` | Grouped sections, map panel backdrop |
-| Surface card | `--wj-surface` | `#FFFFFF` | Cards and sheets |
-| Danger | `--wj-danger` | `#DC2626` | Destructive feedback only |
-| Success | `--wj-success` | `#0F766E` | Positive status only |
+
+| Role            | Token                  | Value     | Usage                                                               |
+| --------------- | ---------------------- | --------- | ------------------------------------------------------------------- |
+| Brand blue      | `--wj-blue`            | `#455FF6` | Primary buttons, selected states, links, focus ring, match emphasis |
+| Blue pressed    | `--wj-blue-press`      | `#3348D8` | Active/pressed state of blue controls only                          |
+| Blue soft       | `--wj-blue-soft`       | `#EEF1FF` | Selected chips, subtle highlight fills                              |
+| Blue tint       | `--wj-blue-tint`       | `#F6F8FF` | Large quiet fills, hover rows                                       |
+| Ink             | `--wj-navy`            | `#141A3C` | Headings and primary text                                           |
+| Body            | `--wj-body`            | `#3C4468` | Body copy                                                           |
+| Muted           | `--wj-muted`           | `#5F678C` | Secondary metadata, ≥14px only                                      |
+| Hairline        | `--wj-hairline`        | `#E6E9F2` | Dividers, card outlines                                             |
+| Hairline strong | `--wj-hairline-strong` | `#D3D9EA` | Input borders, emphasized separation                                |
+| Canvas          | `--wj-canvas`          | `#FFFFFF` | Page background                                                     |
+| Surface soft    | `--wj-surface-soft`    | `#F6F7FB` | Grouped sections, map panel backdrop                                |
+| Surface card    | `--wj-surface`         | `#FFFFFF` | Cards and sheets                                                    |
+| Danger          | `--wj-danger`          | `#DC2626` | Destructive feedback only                                           |
+| Success         | `--wj-success`         | `#0F766E` | Positive status only                                                |
+
 
 Rules:
 
@@ -72,17 +76,19 @@ Every color in `src/**` must be one of these tokens. Raw hex and `rgb()` literal
 
 Weights stay modest. Airbnb trusts whitespace and photography over typographic muscle, so headings sit at 600 far more often than 700.
 
-| Token | Size | Weight | Line height | Usage |
-| --- | --- | --- | --- | --- |
-| `--wj-type-display` | 32px | 700 | 1.15 | One per page at most |
-| `--wj-type-h1` | 26px | 700 | 1.2 | Page title |
-| `--wj-type-h2` | 22px | 600 | 1.25 | Section heading |
-| `--wj-type-h3` | 18px | 600 | 1.3 | Card group heading |
-| `--wj-type-title` | 16px | 600 | 1.35 | Card title, control label |
-| `--wj-type-body` | 16px | 400 | 1.5 | Default body copy |
-| `--wj-type-body-sm` | 14px | 400 | 1.45 | Dense rows, secondary copy |
-| `--wj-type-caption` | 13px | 500 | 1.4 | Metadata, timestamps |
-| `--wj-type-micro` | 12px | 600 | 1.3 | Badges and pills only |
+
+| Token               | Size | Weight | Line height | Usage                      |
+| ------------------- | ---- | ------ | ----------- | -------------------------- |
+| `--wj-type-display` | 32px | 700    | 1.15        | One per page at most       |
+| `--wj-type-h1`      | 26px | 700    | 1.2         | Page title                 |
+| `--wj-type-h2`      | 22px | 600    | 1.25        | Section heading            |
+| `--wj-type-h3`      | 18px | 600    | 1.3         | Card group heading         |
+| `--wj-type-title`   | 16px | 600    | 1.35        | Card title, control label  |
+| `--wj-type-body`    | 16px | 400    | 1.5         | Default body copy          |
+| `--wj-type-body-sm` | 14px | 400    | 1.45        | Dense rows, secondary copy |
+| `--wj-type-caption` | 13px | 500    | 1.4         | Metadata, timestamps       |
+| `--wj-type-micro`   | 12px | 600    | 1.3         | Badges and pills only      |
+
 
 Rules:
 
@@ -135,6 +141,8 @@ A resting card uses a hairline border or `--wj-shadow-sm`, not both plus a fill.
 - Decorative hover movement is gated behind `@media (hover: hover) and (pointer: fine)`.
 - Press feedback may use `transform: scale(0.97)` for 100–160ms and must not shift layout.
 
+
+
 ## Motion
 
 - Direct interactions: 150–250ms. Entrances: 360–500ms. Stagger between siblings: 100–140ms.
@@ -171,16 +179,20 @@ Forbidden: `transition: all`, `ease-in` as an entrance curve, bounce or overshoo
 - The bottom result rail holds several small horizontal cards reflecting the current map viewport, synchronized both ways with marker selection.
 - Map controls, search, account thumbnail, result rail, and Wizy never overlap or clip at any supported width.
 
+
+
 ## Wizy
 
 Wizy's character, proportions, badge, animation clips, and behavior are **locked and out of scope for visual refactors**. See `design-system/wizjobs/MASTER.md`. Only Wizy's surrounding chrome — chat panel surface, typography, and focus states — adopts the tokens in this file.
 
 > Known contradiction to resolve before any Wizy work: this contract previously stated the body is the only chat toggle with no separate icon, while `src/components/WizyPet.jsx` and `src/styles.css` ship a separate `.wizzy-chat-icon` control. The implementation is currently the source of truth. Do not change either side without an explicit decision.
 
+
+
 ## Forbidden
 
 - Any color outside the token table, including raw hex or `rgb()` literals in component styles
-- Gradients of any kind, and large dark or navy filled panels
+- Decorative gradients — `linear-gradient`, `radial-gradient`, and their repeating forms — and large dark or navy filled panels. A `conic-gradient` with hard stops is permitted **only** to render data such as a progress ring or gauge, using one brand color against a neutral track.
 - A dark map basemap
 - Type below 12px, a second font family, or synthesized weights
 - Emoji as interface icons, or a second icon family
@@ -188,15 +200,19 @@ Wizy's character, proportions, badge, animation clips, and behavior are **locked
 - Invisible focus, sub-44px targets, or layout-shifting hover
 - Applicant portraits as company or map markers
 
+
+
 ## Verification
 
 Machine-checked by `node scripts/design-lint.mjs`, which must report zero violations:
 
 - [ ] No color literals outside the `:root` token block
-- [ ] No gradients
+- [ ] No decorative gradients
 - [ ] Single font family, no font-size below 12px
 - [ ] No `transition: all` and no `ease-in` entrance curves
 - [ ] No declared interactive height or width below 44px
+
+The target-size rule reads declared dimensions and cannot see padding, so a deliberately small visual control with a large hit area — a checkbox, a radio — will still be reported. That is a prompt to confirm the hit area, not licence to relax the rule.
 
 Verified by hand at 375, 768, 1024, and 1440px on every route:
 
