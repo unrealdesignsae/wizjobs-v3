@@ -224,8 +224,8 @@ Forbidden: `transition: all`, `ease-in` as an entrance curve, bounce or overshoo
 
 - The Hub stays under Jobs beside Analytics and keeps Explore, Applications, Messages, and Saved. Language is candidate-side throughout; no employer applicant-management framing.
 - Explore keeps its asymmetric varied-size discovery composition on the left and the curved white-to-map transition.
-- **The map is light.** Use a low-saturation light basemap (CARTO Positron or equivalent). A dark or navy map surface is forbidden.
-- Markers are white pills with `--wj-radius-pill`, `--wj-shadow-sm`, an abstract company mark, and the match figure in navy. The selected marker inverts to blue fill with white text. Never use applicant portraits as markers.
+- **The map is light.** A dark or navy map surface is forbidden, in both themes. Already satisfied: the app loads CARTO `light_all` and keeps it when the theme switches to dark.
+- Markers are white pills with `--wj-radius-pill`, `--wj-shadow-sm`, an abstract company mark, and the match figure in navy. The selected marker inverts to blue fill with white text. Never use applicant portraits as markers. Largely satisfied: `.company-map-marker` is a white circle with navy figures. It sits at 38px, below the 44px target.
 - The bottom result rail holds several small horizontal cards reflecting the current map viewport, synchronized both ways with marker selection.
 - Map controls, search, account thumbnail, result rail, and Wizy never overlap or clip at any supported width.
 
@@ -235,7 +235,9 @@ Forbidden: `transition: all`, `ease-in` as an entrance curve, bounce or overshoo
 
 Wizy's character, proportions, badge, animation clips, and behavior are **locked and out of scope for visual refactors**. See `design-system/wizjobs/MASTER.md`. Only Wizy's surrounding chrome — chat panel surface, typography, and focus states — adopts the tokens in this file.
 
-> Known contradiction to resolve before any Wizy work: this contract previously stated the body is the only chat toggle with no separate icon, while `src/components/WizyPet.jsx` and `src/styles.css` ship a separate `.wizzy-chat-icon` control. The implementation is currently the source of truth. Do not change either side without an explicit decision.
+**Wizy's body is the only chat toggle.** There is no separate chat icon control. Verified against the running app: `WizyPet` renders a single `.wizzy-character-button` wrapping the character, labelled Open / Close / Restore Wizy chat depending on state.
+
+An earlier reading of this file recorded a contradiction with a `.wizzy-chat-icon` control. That control exists only in `WizyCoach`, a duplicate Wizy component in `src/App.jsx` that is defined and never rendered, plus its orphaned CSS in `src/styles.css`. Both are dead code and should be deleted rather than reconciled. Until they are, do not use them as a reference for how Wizy behaves.
 
 
 
