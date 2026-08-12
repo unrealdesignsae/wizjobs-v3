@@ -52,6 +52,10 @@ const PINNED = {
   '#cdd5fc': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   '#cfd7ff': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   '#cdd5ff': { fg: '--wj-blue-soft', bg: '--wj-blue-soft' },
+  // Near-white card fills and pale explore chrome — not blue-soft wash.
+  '#fbfcff': { fg: '--wj-surface', bg: '--wj-surface' },
+  '#eaf0ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
+  '#d8e0ff': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   // Secondary text on light chrome.
   '#7582cf': { fg: '--wj-muted', bg: '--wj-muted' },
   '#4e587f': { fg: '--wj-muted', bg: '--wj-muted' },

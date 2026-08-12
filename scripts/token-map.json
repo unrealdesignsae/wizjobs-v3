@@ -118,13 +118,6 @@
     "source": "pinned",
     "why": "read from the code"
   },
-  "rgba(69,95,246,.22)": {
-    "uses": 4,
-    "fg": "--wj-shadow-lg",
-    "bg": "--wj-shadow-lg",
-    "source": "pinned",
-    "why": "read from the code"
-  },
   "#e6eaf3": {
     "uses": 4,
     "fg": "--wj-hairline",
@@ -134,10 +127,10 @@
   },
   "#d8e0ff": {
     "uses": 4,
-    "fg": "--wj-blue-soft",
-    "bg": "--wj-blue-soft",
-    "source": "classified",
-    "why": "soft blue 92%"
+    "fg": "--wj-hairline-strong",
+    "bg": "--wj-hairline-strong",
+    "source": "pinned",
+    "why": "read from the code"
   },
   "rgba(69,95,246,.18)": {
     "uses": 4,
@@ -197,10 +190,10 @@
   },
   "#fbfcff": {
     "uses": 3,
-    "fg": "--wj-blue-soft",
-    "bg": "--wj-blue-soft",
-    "source": "classified",
-    "why": "soft blue 99%"
+    "fg": "--wj-surface",
+    "bg": "--wj-surface",
+    "source": "pinned",
+    "why": "read from the code"
   },
   "rgba(69,95,246,.15)": {
     "uses": 3,
@@ -216,12 +209,19 @@
     "source": "classified",
     "why": "deepest 11%"
   },
+  "rgba(69,95,246,.22)": {
+    "uses": 3,
+    "fg": "--wj-shadow-lg",
+    "bg": "--wj-shadow-lg",
+    "source": "pinned",
+    "why": "read from the code"
+  },
   "#eaf0ff": {
     "uses": 3,
-    "fg": "--wj-blue-soft",
-    "bg": "--wj-blue-soft",
-    "source": "classified",
-    "why": "soft blue 96%"
+    "fg": "--wj-blue-tint",
+    "bg": "--wj-blue-tint",
+    "source": "pinned",
+    "why": "read from the code"
   },
   "#9eacff": {
     "uses": 2,
