@@ -49,7 +49,9 @@ can only lose its second rule once the first reads `var(--wj-surface)`. Deleting
 
 The workable sequence:
 
-1. **Token foundation.** Correct the `:root` block to match `DESIGN.md` exactly — fix the duplicated `--wj-muted`, set `--wj-surface` to white, add the missing tokens, name the dark ramp as the contract does — and add the single `html[data-theme='dark']` remap block. Clears `token-unknown` and `token-value`. Nothing is deleted yet.
+1. ~~**Token foundation.**~~ **Done.** One canonical `:root` registry matching `DESIGN.md`, replacing three competing blocks that redefined `--wj-blue`, `--wj-text`, `--wj-muted`, `--wj-border` and `--wj-white` with different values. Legacy names renamed onto the registry across all files. `token-unknown` and `token-value` are zero.
+
+   **The `html[data-theme='dark']` remap block lands last, not here.** Adding it before components read tokens breaks dark mode outright: tokenized and un-tokenized rules disagree, and text renders dark-on-dark. Verified by doing it and watching the dashboard go blank. Dark mode is still driven by the component-level overrides at the bottom of `styles.css` until step 2 finishes, at which point the remap replaces them. The block is commented in place in `src/styles.css` where it belongs.
 2. **Per-stylesheet colour migration.** For each file, point light rules at tokens and delete the dark override that becomes redundant. Clears `color-literal` and `dark-token` together. Start with `hub-v2-polish.css` (27) to establish the pattern, then `home-v2.css`, `profile-summary-v2.css`, `analytics-v2.css`, and `styles.css` last.
 3. **Gradients** (8). Mostly skeleton shimmers, which become an opacity pulse. `conic-gradient` is exempt; it draws the profile gauge.
 4. **Type scale** (234). Everything below 12px moves up to the nearest step in the contract's scale. These are real: 9px labels ship today.
