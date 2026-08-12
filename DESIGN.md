@@ -32,8 +32,15 @@ Three brand colors only: **WizJobs blue**, **white**, and **deep navy**. Everyth
 | Canvas          | `--wj-canvas`          | `#FFFFFF` | Page background                                                     |
 | Surface soft    | `--wj-surface-soft`    | `#F6F7FB` | Grouped sections, map panel backdrop                                |
 | Surface card    | `--wj-surface`         | `#FFFFFF` | Cards and sheets                                                    |
+| On brand        | `--wj-on-brand`        | `#FFFFFF` | Label and icon color on a blue or navy fill                         |
+| On brand muted  | `--wj-on-brand-muted`  | `rgba(255, 255, 255, 0.82)` | Secondary copy on a blue or navy fill             |
 | Danger          | `--wj-danger`          | `#DC2626` | Destructive feedback only                                           |
+| Danger soft     | `--wj-danger-soft`     | `#FEECEC` | Quiet fill behind danger status text                                |
 | Success         | `--wj-success`         | `#0F766E` | Positive status only                                                |
+| Success soft    | `--wj-success-soft`    | `#E6F5F0` | Quiet fill behind success status text                               |
+| Warning         | `--wj-warning`         | `#B45309` | Attention and pending status only                                   |
+| Warning soft    | `--wj-warning-soft`    | `#FDF3E7` | Quiet fill behind warning status text                               |
+| Scrim           | `--wj-scrim`           | `rgba(20, 26, 60, 0.42)` | Backdrop behind modals, sheets, and drawers          |
 
 
 Rules:
@@ -42,7 +49,10 @@ Rules:
 - Blue is a voltage, not a wash. On any given screen it should appear in a small number of deliberate places: the primary action, the selected state, and the single most important metric.
 - Deep navy is text and icon color. In the light theme it is never a large filled panel, never a map surface, never a section background.
 - Editorial photography and company artwork may be colorful. Live text, labels, badges, and controls sit on solid surfaces, never on busy imagery.
-- Status colors carry an icon or label; color alone never communicates state.
+- Status colors carry an icon or label; color alone never communicates state. Status text pairs with its `-soft` fill, never with a saturated background.
+- White on a blue or navy fill is `--wj-on-brand`, not `--wj-surface`. They are both `#FFFFFF`; one is a foreground role and one is a background role, and collapsing them makes the dark theme impossible to reason about.
+
+The status and on-brand tokens were added from evidence rather than invented. An audit of `src/**` (`node scripts/audit-colors.mjs`) found **318 distinct color literals** against this table's tokens. Most collapse cleanly, but three roles were genuinely unnamed and so had no legal target: white text on a brand fill, an attention/pending status distinct from danger, and quiet fills behind status text. A modal scrim was in the same position. Adding them is the difference between a contract the UI can actually satisfy and one it has to cheat.
 
 ```css
 :root {
@@ -58,8 +68,15 @@ Rules:
   --wj-canvas: #ffffff;
   --wj-surface: #ffffff;
   --wj-surface-soft: #f6f7fb;
+  --wj-on-brand: #ffffff;
+  --wj-on-brand-muted: rgba(255, 255, 255, 0.82);
   --wj-danger: #dc2626;
+  --wj-danger-soft: #feecec;
   --wj-success: #0f766e;
+  --wj-success-soft: #e6f5f0;
+  --wj-warning: #b45309;
+  --wj-warning-soft: #fdf3e7;
+  --wj-scrim: rgba(20, 26, 60, 0.42);
   --wj-focus: rgba(69, 95, 246, 0.32);
 }
 ```

@@ -264,8 +264,15 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
   --wj-canvas:#ffffff;
   --wj-surface:#ffffff;
   --wj-surface-soft:#f6f7fb;
+  --wj-on-brand:#ffffff;
+  --wj-on-brand-muted:rgba(255, 255, 255, 0.82);
   --wj-danger:#dc2626;
+  --wj-danger-soft:#feecec;
   --wj-success:#0f766e;
+  --wj-success-soft:#e6f5f0;
+  --wj-warning:#b45309;
+  --wj-warning-soft:#fdf3e7;
+  --wj-scrim:rgba(20, 26, 60, 0.42);
   --wj-focus:rgba(69, 95, 246, 0.32);
 
   --wj-dark-canvas:#0b1226;
