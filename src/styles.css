@@ -231,7 +231,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 .job-avatar{overflow:hidden;background:#455ff6;box-shadow:none}
 .job-avatar img{width:100%;height:100%;display:block;object-fit:cover}
 .jobs-map-panel:after{background:rgba(6,14,43,.14)}
-.map-radius{background:rgba(69,95,246,.22)}
+.map-radius{background:var(--wj-blue-soft)}
 .jobs-summary-row>div,.map-job-copy>div span,.selected-job-tags span,.conversation-person button{background:#eef1ff}
 .jobs-hub-mark,.jobs-search-row>button,.map-job-card>button.saved,.selected-job-top>button.saved,.conversation-panel form button,.message-company{background:#455ff6}
 @media(prefers-reduced-motion:reduce){.wizzy-frame.active{animation:none!important}.wizzy-chat{animation:none}}
