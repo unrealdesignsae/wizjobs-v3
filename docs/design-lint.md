@@ -19,6 +19,7 @@ It prints `file:line rule message` for every violation, a per-rule summary, and 
 | `transition-all` | `transition` shorthand or longhand containing `all` | Name the transitioned properties |
 | `ease-in` | `ease-in` appears as a timing function (`ease-in-out` is fine) | Use the ease-out curve for entrances |
 | `target-size` | An interactive selector declares `height`, `min-height`, `width`, or `min-width` below 44px | Grow the control, or grow its padding and the declared box with it |
+| `dark-token` | A `--wj-dark-*` token is read outside the `html[data-theme="dark"]` root block | Read the neutral token instead. The dark ramp is remapped once so one edit reaches both themes |
 
 ## How the CSS is read
 

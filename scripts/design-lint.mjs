@@ -27,6 +27,9 @@ const GRADIENT = /\b(?:linear|radial|repeating-linear|repeating-radial)-gradient
 const EASE_IN = /\bease-in\b(?!-out)/i;
 const PX_VALUE = /(-?\d*\.?\d+)px/g;
 
+const DARK_TOKEN = /var\(\s*--wj-dark-[\w-]+/i;
+const THEME_ROOT = /^html\[data-theme=['"]?dark['"]?\]$/i;
+
 const TARGET_PROPS = new Set(['height', 'min-height', 'width', 'min-width']);
 const INTERACTIVE_ELEMENTS = /^(?:button|a|input|select|textarea|summary)(?:[.:#[]|$)/i;
 const INTERACTIVE_CLASS = /\b(?:btn|button|chip|pill|control|tab|toggle|switch|checkbox|radio|link)\b/i;
@@ -186,6 +189,12 @@ function lintCss(file, text) {
 
     if (EASE_IN.test(value)) {
       report(file, line, 'ease-in', '`ease-in` is not an approved curve; use the ease-out or ease-in-out token');
+    }
+
+    // The dark ramp is remapped once at the theme root; components read the
+    // neutral tokens so a single edit reaches both themes.
+    if (DARK_TOKEN.test(value) && !THEME_ROOT.test(selector.trim())) {
+      report(file, line, 'dark-token', `\`${prop}\` reads a --wj-dark-* token outside the theme root; read the remapped token instead`);
     }
 
     if (TARGET_PROPS.has(prop) && isInteractiveSelector(selector)) {

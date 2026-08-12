@@ -38,9 +38,9 @@ Three brand colors only: **WizJobs blue**, **white**, and **deep navy**. Everyth
 
 Rules:
 
-- The page canvas is **white**, not tinted. Grouping comes from `--wj-surface-soft` blocks and hairlines, not from a colored page background.
+- The page canvas is **white**, not tinted, in the light theme. Grouping comes from `--wj-surface-soft` blocks and hairlines, not from a colored page background.
 - Blue is a voltage, not a wash. On any given screen it should appear in a small number of deliberate places: the primary action, the selected state, and the single most important metric.
-- Deep navy is text and icon color. It is never a large filled panel, never a map surface, never a section background.
+- Deep navy is text and icon color. In the light theme it is never a large filled panel, never a map surface, never a section background.
 - Editorial photography and company artwork may be colorful. Live text, labels, badges, and controls sit on solid surfaces, never on busy imagery.
 - Status colors carry an icon or label; color alone never communicates state.
 
@@ -65,6 +65,46 @@ Rules:
 ```
 
 Every color in `src/**` must be one of these tokens. Raw hex and `rgb()` literals outside the `:root` token block are contract violations.
+
+## Themes
+
+**Light is the canonical theme.** Every rule in this document describes the light theme unless it says otherwise, and any screenshot, review, or approval defaults to light.
+
+WizJobs also ships a dark theme, applied as `html[data-theme="dark"]` and toggled from the header. It is a supported product feature, not a deviation to be removed. It is a *derived* ramp: dark overrides swap token values, they do not introduce new hues, new spacing, new radii, or new components. If a surface exists only in dark, it is a bug.
+
+| Role | Token | Value |
+| --- | --- | --- |
+| Canvas | `--wj-dark-canvas` | `#0B1226` |
+| Surface | `--wj-dark-surface` | `#121D38` |
+| Raised surface | `--wj-dark-raised` | `#172443` |
+| Hairline | `--wj-dark-hairline` | `#24314F` |
+| Hairline strong | `--wj-dark-hairline-strong` | `#344575` |
+| Ink | `--wj-dark-ink` | `#F5F7FF` |
+| Body | `--wj-dark-body` | `#DFE5FF` |
+| Muted | `--wj-dark-muted` | `#AAB5D6` |
+| Blue on dark | `--wj-dark-blue` | `#8FA3FF` |
+
+```css
+html[data-theme='dark'] {
+  --wj-canvas: var(--wj-dark-canvas);
+  --wj-surface: var(--wj-dark-surface);
+  --wj-surface-soft: var(--wj-dark-raised);
+  --wj-hairline: var(--wj-dark-hairline);
+  --wj-hairline-strong: var(--wj-dark-hairline-strong);
+  --wj-navy: var(--wj-dark-ink);
+  --wj-body: var(--wj-dark-body);
+  --wj-muted: var(--wj-dark-muted);
+}
+```
+
+Rules:
+
+- Components read `--wj-canvas`, `--wj-surface`, `--wj-navy` and so on. They never read a `--wj-dark-*` token directly and never carry their own `html[data-theme="dark"]` color overrides. Remapping happens once, in the block above. A component-level dark override is the same drift problem as a component-level hex.
+- **`--wj-blue` does not change as a fill.** A blue button with a white label works on both canvases. But `#455FF6` as *text* on `#0B1226` measures 3.6:1 and fails AA, so links, selected labels, and blue metric figures switch to `--wj-dark-blue` (7.7:1) in dark.
+- `--wj-blue-soft` and `--wj-blue-tint` are light-theme fills. In dark, a selected chip uses a `--wj-dark-raised` fill with a `--wj-dark-blue` border and label.
+- Shadows carry almost no hierarchy on a dark canvas. Dark surfaces separate with `--wj-dark-hairline` and a raised fill instead of a heavier shadow.
+- The map stays light in both themes. A dark basemap is still forbidden.
+- Contrast meets AA in both themes. Dark mode is checked as carefully as light, not assumed to pass because the text is pale.
 
 ## Typography
 
@@ -192,7 +232,9 @@ Wizy's character, proportions, badge, animation clips, and behavior are **locked
 ## Forbidden
 
 - Any color outside the token table, including raw hex or `rgb()` literals in component styles
-- Decorative gradients — `linear-gradient`, `radial-gradient`, and their repeating forms — and large dark or navy filled panels. A `conic-gradient` with hard stops is permitted **only** to render data such as a progress ring or gauge, using one brand color against a neutral track.
+- Decorative gradients — `linear-gradient`, `radial-gradient`, and their repeating forms. A `conic-gradient` with hard stops is permitted **only** to render data such as a progress ring or gauge, using one brand color against a neutral track.
+- Large dark or navy filled panels in the light theme
+- Component-level `html[data-theme="dark"]` color overrides; the dark ramp is remapped once at the root
 - A dark map basemap
 - Type below 12px, a second font family, or synthesized weights
 - Emoji as interface icons, or a second icon family
@@ -214,9 +256,10 @@ Machine-checked by `node scripts/design-lint.mjs`, which must report zero violat
 
 The target-size rule reads declared dimensions and cannot see padding, so a deliberately small visual control with a large hit area — a checkbox, a radio — will still be reported. That is a prompt to confirm the hit area, not licence to relax the rule.
 
-Verified by hand at 375, 768, 1024, and 1440px on every route:
+Verified by hand at 375, 768, 1024, and 1440px on every route, in both themes:
 
-- [ ] White canvas, generous section spacing, hairline separation
+- [ ] White canvas in light, `--wj-dark-canvas` in dark; generous section spacing, hairline separation
+- [ ] Dark theme reads only remapped root tokens, meets AA, and adds no surface that light lacks
 - [ ] Blue appears only on primary action, selection, and key emphasis
 - [ ] Focus rings, pointer affordances, and accessible names present
 - [ ] Reveals are calm, sequenced, and non-blocking; reduced motion removes movement without hiding content
