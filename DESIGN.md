@@ -20,8 +20,9 @@ Three brand colors only: **WizJobs blue**, **white**, and **deep navy**. Everyth
 
 | Role            | Token                  | Value     | Usage                                                               |
 | --------------- | ---------------------- | --------- | ------------------------------------------------------------------- |
-| Brand blue      | `--wj-blue`            | `#455FF6` | Primary buttons, selected states, links, focus ring, match emphasis |
+| Brand blue      | `--wj-blue`            | `#455FF6` | Primary buttons, selected fills, focus ring (fill role; does not remap) |
 | Blue pressed    | `--wj-blue-press`      | `#3348D8` | Active/pressed state of blue controls only                          |
+| Blue foreground | `--wj-blue-fg`         | `#455FF6` | Blue used as text/icon on canvas; remaps to `--wj-dark-blue` in dark |
 | Blue soft       | `--wj-blue-soft`       | `#EEF1FF` | Selected chips, subtle highlight fills                              |
 | Blue tint       | `--wj-blue-tint`       | `#F6F8FF` | Large quiet fills, hover rows                                       |
 | Ink             | `--wj-navy`            | `#141A3C` | Headings and primary text                                           |
@@ -58,6 +59,7 @@ The status and on-brand tokens were added from evidence rather than invented. An
 :root {
   --wj-blue: #455ff6;
   --wj-blue-press: #3348d8;
+  --wj-blue-fg: #455ff6;
   --wj-blue-soft: #eef1ff;
   --wj-blue-tint: #f6f8ff;
   --wj-navy: #141a3c;
@@ -111,14 +113,17 @@ html[data-theme='dark'] {
   --wj-navy: var(--wj-dark-ink);
   --wj-body: var(--wj-dark-body);
   --wj-muted: var(--wj-dark-muted);
+  --wj-blue-fg: var(--wj-dark-blue);
+  --wj-blue-soft: var(--wj-dark-raised);
+  --wj-blue-tint: var(--wj-dark-raised);
 }
 ```
 
 Rules:
 
-- Components read `--wj-canvas`, `--wj-surface`, `--wj-navy` and so on. They never read a `--wj-dark-*` token directly and never carry their own `html[data-theme="dark"]` color overrides. Remapping happens once, in the block above. A component-level dark override is the same drift problem as a component-level hex.
-- **`--wj-blue` does not change as a fill.** A blue button with a white label works on both canvases. But `#455FF6` as *text* on `#0B1226` measures 3.6:1 and fails AA, so links, selected labels, and blue metric figures switch to `--wj-dark-blue` (7.7:1) in dark.
-- `--wj-blue-soft` and `--wj-blue-tint` are light-theme fills. In dark, a selected chip uses a `--wj-dark-raised` fill with a `--wj-dark-blue` border and label.
+- Components read `--wj-canvas`, `--wj-surface`, `--wj-navy`, `--wj-blue-fg` and so on. They never read a `--wj-dark-*` token directly and never carry their own `html[data-theme="dark"]` color overrides for roles the remap already covers. Remapping happens once, in the block above. A component-level dark override is the same drift problem as a component-level hex.
+- **`--wj-blue` does not change as a fill.** A blue button with a white label works on both canvases. Blue used as *text* or an icon on the canvas reads `--wj-blue-fg`, which remaps to `--wj-dark-blue` (7.7:1) in dark.
+- `--wj-blue-soft` and `--wj-blue-tint` remap to `--wj-dark-raised` in dark so selected chips stay quiet fills, not light washes.
 - Shadows carry almost no hierarchy on a dark canvas. Dark surfaces separate with `--wj-dark-hairline` and a raised fill instead of a heavier shadow.
 - The map stays light in both themes. A dark basemap is still forbidden.
 - Contrast meets AA in both themes. Dark mode is checked as carefully as light, not assumed to pass because the text is pale.

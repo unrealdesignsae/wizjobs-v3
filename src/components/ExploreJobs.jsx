@@ -207,17 +207,19 @@ function ExploreView({ selectedJob, setSelectedJob, saved, toggleSaved, setView,
           <div>{hiringCompanies.map((job) => <button type="button" key={job.company} onClick={() => { setSelectedJob(job); const index = featuredJobs.findIndex((item) => item.company === job.company); if (index >= 0) setFeaturedIndex(index); }} className={selectedJob.company === job.company ? "active" : ""} aria-label={`Show jobs from ${job.company}`} title={job.company}><JobAvatar job={job} small /></button>)}</div>
         </div>
         <div className="featured-role-wrap" onMouseEnter={() => setFeaturedPaused(true)} onMouseLeave={() => setFeaturedPaused(false)}>
-          <div className="featured-role-details">
-            <span>Featured role <b>{featuredIndex + 1}/{featuredJobs.length}</b></span>
-            <h2 key={`role-${featuredJob.id}`}>{featuredJob.role}</h2>
-            <p>{featuredJob.company}<br />{featuredJob.location}</p>
-            <dl><div><dt>Work mode</dt><dd>{featuredJob.mode}</dd></div><div><dt>Employment</dt><dd>{featuredJob.type}</dd></div><div><dt>Salary</dt><dd>{featuredJob.salary}</dd></div></dl>
-          </div>
           <article className="featured-role-card" key={featuredJob.id} style={{ backgroundImage: `url(${featuredJob.image})` }} aria-live="polite">
+            <span className="featured-role-badge">Featured role <b>{featuredIndex + 1}/{featuredJobs.length}</b></span>
             <button type="button" className={saved.has(featuredJob.id) ? "saved" : ""} onClick={() => toggleSaved(featuredJob.id, featuredJob)} aria-label={saved.has(featuredJob.id) ? "Remove saved job" : "Save job"}><Bookmark /></button>
             <JobAvatar job={featuredJob} />
-            <strong>{featuredJob.company}</strong><span>{featuredJob.role}</span>
-            <div><small>{featuredJob.match}% match</small><small>{featuredJob.mode}</small></div>
+            <strong>{featuredJob.company}</strong>
+            <span>{featuredJob.role}</span>
+            <p>{featuredJob.location}</p>
+            <div>
+              <small>{featuredJob.match}% match</small>
+              <small>{featuredJob.mode}</small>
+              <small>{featuredJob.type}</small>
+              <small>{featuredJob.salary}</small>
+            </div>
             <button type="button" onClick={() => openJob(featuredJob)}>View job <ArrowUpRight /></button>
           </article>
           <div className="featured-role-dots" aria-label="Featured role slides">{featuredJobs.map((job, index) => <button type="button" key={job.id} className={featuredIndex === index ? "active" : ""} onClick={() => setFeaturedIndex(index)} aria-label={`Show featured role ${index + 1}: ${job.role}`} />)}</div>

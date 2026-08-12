@@ -18,12 +18,11 @@ import {
   Sparkles,
   Star,
   Target,
-  TrendingUp,
   UserRoundCheck,
-  UsersRound,
 } from "lucide-react";
 import { jobs } from "./ExploreJobs";
 import "../home-v2.css";
+import "../analytics-v2.css";
 
 const HOME_DESTINATIONS = {
   home: "/jobs-dashboard/",
@@ -32,13 +31,12 @@ const HOME_DESTINATIONS = {
   explore: "/explore-jobs/",
 };
 
+/* Same KPI strip as AnalyticsV2 — do not invent a parallel card pattern. */
 const metrics = [
-  { label: "New matches", value: 32, Icon: UsersRound, destination: { hub: "daily" }, detail: "12 curated today" },
-  { label: "Applications", value: 6, Icon: FileCheck2, destination: { hub: "applications" }, detail: "3 updated today" },
-  { label: "Interviews", value: 2, Icon: CalendarCheck2, destination: { hub: "applications" }, detail: "1 call tomorrow" },
-  { label: "Offers", value: 1, Icon: BriefcaseBusiness, destination: { hub: "applications" }, detail: "Review by Friday" },
-  { label: "Search appearances", value: 148, Icon: Search, destination: { route: "analytics" }, detail: "12% this month", trend: true },
-  { label: "Profile views", value: 43, Icon: Eye, destination: { route: "analytics" }, detail: "10% this month", trend: true },
+  { label: "Search appearances", value: 148, Icon: Search, destination: { route: "analytics" }, detail: "Reach", trend: "+12%" },
+  { label: "Profile views", value: 43, Icon: Eye, destination: { route: "analytics" }, detail: "Interest", trend: "+10%" },
+  { label: "Recruiter actions", value: 12, Icon: MessageCircle, destination: { hub: "messages" }, detail: "Engagement", trend: "+33%" },
+  { label: "Matches", value: 32, Icon: Target, destination: { hub: "daily" }, detail: "Opportunity", trend: "+25%" },
 ];
 
 const guidedSteps = [
@@ -349,23 +347,29 @@ export default function HomeV2({ navigate }) {
             <time dateTime="2026-08-11">Tuesday, August 11, 2026</time>
           </section>
 
-          <section className="home-v2-metrics" aria-label="Job search snapshot">
-            {metrics.map(({ label, value, destination, detail, trend }, index) => (
+          <section className="av2-overview-strip" aria-label="Key performance indicators">
+            {metrics.map(({ label, value, Icon, destination, detail, trend }, index) => (
               <button
                 type="button"
                 key={label}
-                className="home-v2-metric home-v2-reveal"
-                style={reveal(index + 2)}
+                className="av2-sequence"
+                style={{ "--av2-order": index }}
                 onClick={() => openDestination(destination)}
               >
-                <strong><AnimatedNumber value={value} delay={240 + index * 110} /></strong>
-                <b>{label}</b>
-                <small className={trend ? "positive" : ""}>{trend && <TrendingUp aria-hidden="true" />}{detail}</small>
+                <span><Icon aria-hidden="true" /></span>
+                <div>
+                  <small>{label}</small>
+                  <strong><AnimatedNumber value={value} delay={index * 100 + 180} /></strong>
+                  <em>{detail}</em>
+                </div>
+                <b className={trend.startsWith("-") ? "negative" : "positive"}>
+                  {trend.startsWith("-") ? "↓" : "↑"} {trend.replace(/^[+-]/, "")}
+                </b>
               </button>
             ))}
           </section>
 
-          <section className="home-v2-hero home-v2-reveal" style={reveal(8)}>
+          <section className="home-v2-hero home-v2-reveal" style={reveal(2)}>
             <div className="home-v2-hero-copy">
               <span><Star aria-hidden="true" /> Today’s best next step</span>
               <h2>Your next opportunity could be a match.</h2>

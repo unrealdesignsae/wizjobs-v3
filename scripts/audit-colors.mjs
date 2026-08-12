@@ -17,8 +17,9 @@ const perFile = new Map();
 
 for (const file of walk('src')) {
   const text = readFileSync(file, 'utf8');
-  // Skip the canonical :root registry so token definitions are not counted.
-  const body = text.replace(/:root\{[\s\S]*?\n\}/g, '');
+  // Skip brace-balanced :root blocks only (token registry + short root). Do not
+  // use [\s\S]*?\n} — that eats minified CSS after the early single-line :root.
+  const body = text.replace(/:root\s*\{[^{}]*\}/g, '');
   const counts = new Map();
   for (const m of body.match(COLOR) || []) {
     let v = m.toLowerCase().replace(/\s+/g, '');

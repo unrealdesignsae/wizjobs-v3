@@ -26,11 +26,14 @@ const PINNED = {
   '#eef1ff': { fg: '--wj-blue-soft', bg: '--wj-blue-soft' },
   '#edf1ff': { fg: '--wj-blue-soft', bg: '--wj-blue-soft' },
   '#f6f8ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
-  '#f7f9ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
+  // Dark ink + light fills share #f7f9ff; apply picks by property.
+  '#f7f9ff': { fg: '--wj-dark-ink', bg: '--wj-blue-tint' },
   '#f7f8ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
   '#f8f9ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
   '#dce3f4': { fg: '--wj-hairline', bg: '--wj-hairline' },
   '#e6eaf3': { fg: '--wj-hairline', bg: '--wj-hairline' },
+  '#dde4fb': { fg: '--wj-hairline', bg: '--wj-hairline' },
+  '#dce3f6': { fg: '--wj-hairline', bg: '--wj-hairline' },
   // Soft canvases and grouped surfaces — not blue washes (DESIGN: blue is voltage).
   '#f4f6fb': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
   '#edf1fb': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
@@ -38,28 +41,45 @@ const PINNED = {
   '#f7f9fe': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
   '#f7f8fd': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
   '#f2f4fb': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
-  // Lifted blues used as metric / emphasis text, not hairlines.
-  '#8ca1ff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#91a3ff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#9eacff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#91a5ff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#8fa2ff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#8da0fc': { fg: '--wj-blue', bg: '--wj-blue-soft' },
+  // Lifted blues used as metric / emphasis text. #8ca1ff ≈ --wj-dark-blue and
+  // must stay that pale on both themes (AA on dark canvas; intentional soft metric on light).
+  '#8ca1ff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
+  '#91a3ff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
+  '#9eacff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
+  '#91a5ff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
+  '#8fa2ff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
+  '#8da0fc': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
   '#8fa3ff': { fg: '--wj-dark-blue', bg: '--wj-blue-soft' },
-  // Saturated pale blues used as hover/selected borders, not resting hairlines.
-  '#aebaff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
-  '#aab7ff': { fg: '--wj-blue', bg: '--wj-blue-soft' },
+  '#8da0ff': { fg: '--wj-dark-blue', bg: '--wj-dark-blue' },
+  // Hover/selected borders: apply uses `bg` for border-color — must be blue, not soft fill.
+  '#aebaff': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#aab7ff': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#b9c4fa': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#b9c4ff': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#b8c4ff': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#b8c3ff': { fg: '--wj-blue', bg: '--wj-blue' },
+  '#9dabff': { fg: '--wj-blue', bg: '--wj-blue' },
   '#cdd5fc': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   '#cfd7ff': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   '#cdd5ff': { fg: '--wj-blue-soft', bg: '--wj-blue-soft' },
   // Near-white card fills and pale explore chrome — not blue-soft wash.
-  '#fbfcff': { fg: '--wj-surface', bg: '--wj-surface' },
+  '#fbfcff': { fg: '--wj-surface-soft', bg: '--wj-surface-soft' },
   '#eaf0ff': { fg: '--wj-blue-tint', bg: '--wj-blue-tint' },
   '#d8e0ff': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
+  // Hover vs resting borders that must not collapse to the same token.
+  '#c7cff7': { fg: '--wj-hairline-strong', bg: '--wj-hairline-strong' },
   // Secondary text on light chrome.
   '#7582cf': { fg: '--wj-muted', bg: '--wj-muted' },
   '#4e587f': { fg: '--wj-muted', bg: '--wj-muted' },
   '#667099': { fg: '--wj-muted', bg: '--wj-muted' },
+  '#aab3d4': { fg: '--wj-muted', bg: '--wj-muted' },
+  '#c9d2ee': { fg: '--wj-dark-muted', bg: '--wj-dark-muted' },
+  // Dark-theme chrome borders — never blue-press.
+  '#3a4d7b': { fg: '--wj-dark-hairline-strong', bg: '--wj-dark-hairline-strong' },
+  '#30436f': { fg: '--wj-dark-hairline-strong', bg: '--wj-dark-hairline-strong' },
+  '#344873': { fg: '--wj-dark-hairline-strong', bg: '--wj-dark-hairline-strong' },
+  '#304676': { fg: '--wj-dark-hairline-strong', bg: '--wj-dark-hairline-strong' },
+  '#2c4076': { fg: '--wj-dark-hairline-strong', bg: '--wj-dark-hairline-strong' },
   // Dark-theme copy that must not become a hairline.
   '#cbd3e8': { fg: '--wj-dark-muted', bg: '--wj-dark-muted' },
   '#aeb9d3': { fg: '--wj-dark-muted', bg: '--wj-dark-muted' },
@@ -83,19 +103,35 @@ const PINNED = {
   '#f5f7ff': { fg: '--wj-dark-ink', bg: '--wj-dark-ink' },
   '#aab5d6': { fg: '--wj-dark-muted', bg: '--wj-dark-muted' },
   'rgba(255,255,255,.82)': { fg: '--wj-on-brand-muted', bg: '--wj-on-brand-muted' },
-  // Only the focus-ring alpha maps to focus. Softer blue alphas are elevation
-  // glows; DESIGN.md wants navy shadows, so they collapse onto the shadow ladder.
+  // Near-opaque glass stays unmapped — --wj-surface would flatten it to solid white.
+  'rgba(255,255,255,.96)': { fg: null, bg: null },
+  'rgba(255,255,255,0.96)': { fg: null, bg: null },
+  'rgba(255,255,255,.94)': { fg: null, bg: null },
+  'rgba(255,255,255,0.94)': { fg: null, bg: null },
+  // Dialog scrim just under the 0.35 classifier band.
+  'rgba(11,22,63,.34)': { fg: '--wj-scrim', bg: '--wj-scrim' },
+  // Soft brand alphas used as rings/outlines — never wholesale shadow tokens.
   'rgba(69,95,246,0.32)': { fg: '--wj-focus', bg: '--wj-focus' },
   'rgba(69,95,246,.32)': { fg: '--wj-focus', bg: '--wj-focus' },
-  'rgba(69,95,246,.12)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
-  'rgba(69,95,246,0.12)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
+  'rgba(69,95,246,.26)': { fg: '--wj-focus', bg: '--wj-focus' },
+  'rgba(69,95,246,0.24)': { fg: '--wj-focus', bg: '--wj-focus' },
+  'rgba(69,95,246,.24)': { fg: '--wj-focus', bg: '--wj-focus' },
+  'rgba(69,95,246,.12)': { fg: '--wj-focus', bg: '--wj-focus' },
+  'rgba(69,95,246,0.12)': { fg: '--wj-focus', bg: '--wj-focus' },
+  'rgba(69,95,246,.17)': { fg: '--wj-focus', bg: '--wj-focus' },
+  // Soft elevation blues (single-layer only; compounds skipped by apply).
   'rgba(69,95,246,.1)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
   'rgba(69,95,246,.15)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
-  'rgba(69,95,246,.17)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
   'rgba(69,95,246,.18)': { fg: '--wj-shadow-md', bg: '--wj-shadow-md' },
-  // Mostly elevation glows (3 of 4). The one fill site (.map-radius) is fixed by hand.
   'rgba(69,95,246,.22)': { fg: '--wj-shadow-lg', bg: '--wj-shadow-lg' },
 };
+
+// Only strip brace-balanced `:root { ... }` blocks. The old `[\s\S]*?\n}` pattern
+// matched the single-line early `:root{...}` and then ate ~32KB of minified CSS
+// until the next real newline-brace — dropping those literals from the map.
+function stripRootBlocks(text) {
+  return text.replace(/:root\s*\{[^{}]*\}/g, '');
+}
 
 function parse(value) {
   const v = value.toLowerCase().replace(/\s+/g, '');
@@ -224,7 +260,7 @@ function walk(dir) {
 
 const counts = new Map();
 for (const file of walk('src')) {
-  const body = readFileSync(file, 'utf8').replace(/:root\{[\s\S]*?\n\}/g, '');
+  const body = stripRootBlocks(readFileSync(file, 'utf8'));
   for (const m of body.match(COLOR) || []) {
     let v = m.toLowerCase().replace(/\s+/g, '');
     const short = v.match(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/);
@@ -241,12 +277,15 @@ for (const [literal, n] of [...counts.entries()].sort((a, b) => b[1] - a[1])) {
   const fg = pinned ? pinned.fg : auto.fg;
   const bg = pinned ? pinned.bg : auto.bg;
   if (!fg && !bg) unmapped += n;
+  const source = pinned
+    ? (fg || bg ? 'pinned' : 'unmapped')
+    : (fg || bg ? 'classified' : 'unmapped');
   map[literal] = {
     uses: n,
     fg,
     bg,
-    source: pinned ? 'pinned' : (fg || bg ? 'classified' : 'unmapped'),
-    why: pinned ? 'read from the code' : auto.why,
+    source,
+    why: pinned ? (fg || bg ? 'read from the code' : 'deliberately unmapped') : auto.why,
   };
 }
 

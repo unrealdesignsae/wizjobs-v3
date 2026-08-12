@@ -153,7 +153,7 @@
   place-items: center;
   background: var(--wj-blue-soft);
   color: var(--wj-blue);
-  font-size: 10px;
+  font-size:12px;
 }
 
 .notification-filters button.active,
@@ -184,7 +184,7 @@
 .notification-preferences strong { color: var(--wj-navy); }
 .notification-preferences small { color: var(--wj-muted); }
 .notification-preferences label { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; color: var(--wj-navy); font-size: 12px; }
-.notification-preferences input { width: 18px; height: 18px; accent-color: var(--wj-blue); }
+.notification-preferences input { width: 44px; height: 44px; accent-color: var(--wj-blue); }
 
 .notification-layout {
   display: grid;
@@ -224,15 +224,15 @@
 
 .notification-icon svg { width: 21px; }
 .notification-feed > article > div { min-width: 0; }
-.notification-feed > article > div > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--wj-blue); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.notification-feed > article > div > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--wj-blue); font-size:12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
 .notification-feed time { color: var(--wj-muted); font-weight: 500; text-transform: none; }
 .notification-feed h3 { margin: 6px 0 3px; color: var(--wj-navy); font-size: 15px; }
 .notification-feed p { margin: 0 0 5px; color: var(--wj-muted); font-size: 12px; }
-.notification-feed small { display: block; color: var(--wj-muted); font-size: 11px; line-height: 1.5; }
+.notification-feed small { display: block; color: var(--wj-muted); font-size:12px; line-height: 1.5; }
 .notification-feed > article > i { width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: var(--wj-blue); }
 
 .notification-actions { margin-top: 12px; display: flex; align-items: center; gap: 8px; }
-.notification-actions button { min-height: 40px; padding: 0 12px; border-radius: 10px; color: var(--wj-blue); background: var(--wj-blue-soft); display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+.notification-actions button { min-height: 44px; padding: 0 12px; border-radius: 10px; color: var(--wj-blue); background: var(--wj-blue-soft); display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
 .notification-actions button:first-child { background: var(--wj-blue); color: var(--wj-on-brand); }
 .notification-actions svg { width: 15px; }
 
@@ -251,11 +251,16 @@
 .notification-next p { margin: 0; color: var(--wj-muted); font-size: 12px; line-height: 1.6; }
 .notification-next > div { padding: 14px; border-radius: 14px; background: var(--wj-blue-soft); }
 .notification-next > div strong { color: var(--wj-navy); font-size: 12px; }
-.notification-next ul { margin: 8px 0 0; padding-left: 16px; color: var(--wj-muted); font-size: 11px; line-height: 1.6; }
+.notification-next ul { margin: 8px 0 0; padding-left: 16px; color: var(--wj-muted); font-size:12px; line-height: 1.6; }
 .notification-next > button { min-height: 44px; border-radius: 12px; background: var(--wj-blue); color: var(--wj-on-brand); font-weight: 700; }
 
-.hiring-steps li.current { padding-bottom: 34px; }
-.hiring-steps li.current::after { top: auto; right: 10px; bottom: 8px; }
+.hiring-steps li.current::after {
+  top: 8px;
+  right: 8px;
+  bottom: auto;
+  white-space: nowrap;
+  width: max-content;
+}
 
 .emoji-picker > header {
   min-height: 36px;
@@ -266,7 +271,7 @@
 }
 
 .emoji-picker > header strong { color: var(--wj-navy); font-size: 12px; }
-.emoji-picker > header button { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; color: var(--wj-blue); background: var(--wj-blue-soft); }
+.emoji-picker > header button { width: 44px; height: 44px; border-radius: 9px; display: grid; place-items: center; color: var(--wj-blue); background: var(--wj-blue-soft); }
 .emoji-picker > header svg { width: 14px; }
 
 .emoji-picker > nav {
@@ -278,7 +283,7 @@
 }
 
 .emoji-picker > nav::-webkit-scrollbar { display: none; }
-.emoji-picker > nav button { min-height: 34px; padding: 0 10px; border-radius: 999px; white-space: nowrap; color: var(--wj-muted); background: var(--wj-blue-tint); font-size: 10px; font-weight: 700; }
+.emoji-picker > nav button { min-height: 44px; padding: 0 10px; border-radius: 999px; white-space: nowrap; color: var(--wj-muted); background: var(--wj-blue-tint); font-size:12px; font-weight: 700; }
 .emoji-picker > nav button.active { color: var(--wj-on-brand); background: var(--wj-blue); }
 .emoji-picker > div > button { transition: transform 140ms var(--wj-ease-out), background-color 140ms ease; }
 

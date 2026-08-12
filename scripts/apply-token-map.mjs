@@ -61,6 +61,16 @@ function transform(text, stats) {
 
     const isForeground = FOREGROUND_PROPS.has(prop);
     const isShadow = SHADOW_PROPS.has(prop);
+    const colorCount = (value.match(COLOR) || []).length;
+    COLOR.lastIndex = 0;
+    // Wholesale shadow replacement is only safe for a single-layer elevation.
+    // Compound shadows and focus rings (0 0 0 Npx) must keep their structure.
+    // `filter` must stay drop-shadow(...); shadow tokens are box-shadow values.
+    const canWholesaleShadow = isShadow
+      && prop !== 'filter'
+      && colorCount === 1
+      && !/\)\s*,/.test(value)
+      && !/\b0\s+0\s+0\b/.test(value);
 
     let replacedWholesale = false;
     const next = value.replace(COLOR, (literal) => {
@@ -73,12 +83,14 @@ function transform(text, stats) {
       if (!token) return literal;
 
       if (isShadow && SHADOW_TOKENS.has(token)) {
-        replacedWholesale = true;
-        return `@@${token}@@`;
+        if (canWholesaleShadow) {
+          replacedWholesale = true;
+          return `@@${token}@@`;
+        }
+        stats.skipped.push(`${prop}: ${literal} (compound/ring shadow)`);
+        return literal;
       }
       if (SHADOW_TOKENS.has(token)) {
-        // A shadow token outside a shadow property would inject offsets into a
-        // colour slot. Leave it for a human rather than emit broken CSS.
         stats.skipped.push(`${prop}: ${literal}`);
         return literal;
       }
